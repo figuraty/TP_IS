@@ -12,20 +12,12 @@ public  abstract class ConversionService
 
   public interface Interface {
     /**
-     * <code>rpc requestCar(.com.dei.isassignment.CarRequest) returns (.com.dei.isassignment.CarReply);</code>
+     * <code>rpc listOfCarsPerOwner(.com.dei.isassignment.Request) returns (.com.dei.isassignment.Response);</code>
      */
-    public abstract void requestCar(
+    public abstract void listOfCarsPerOwner(
         com.google.protobuf.RpcController controller,
-        com.dei.isassignment.CarRequest request,
-        com.google.protobuf.RpcCallback<com.dei.isassignment.CarReply> done);
-
-    /**
-     * <code>rpc requestOwner(.com.dei.isassignment.OwnerRequest) returns (.com.dei.isassignment.OwnerReply);</code>
-     */
-    public abstract void requestOwner(
-        com.google.protobuf.RpcController controller,
-        com.dei.isassignment.OwnerRequest request,
-        com.google.protobuf.RpcCallback<com.dei.isassignment.OwnerReply> done);
+        com.dei.isassignment.Request request,
+        com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done);
 
   }
 
@@ -33,19 +25,11 @@ public  abstract class ConversionService
       final Interface impl) {
     return new ConversionService() {
       @java.lang.Override
-      public  void requestCar(
+      public  void listOfCarsPerOwner(
           com.google.protobuf.RpcController controller,
-          com.dei.isassignment.CarRequest request,
-          com.google.protobuf.RpcCallback<com.dei.isassignment.CarReply> done) {
-        impl.requestCar(controller, request, done);
-      }
-
-      @java.lang.Override
-      public  void requestOwner(
-          com.google.protobuf.RpcController controller,
-          com.dei.isassignment.OwnerRequest request,
-          com.google.protobuf.RpcCallback<com.dei.isassignment.OwnerReply> done) {
-        impl.requestOwner(controller, request, done);
+          com.dei.isassignment.Request request,
+          com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done) {
+        impl.listOfCarsPerOwner(controller, request, done);
       }
 
     };
@@ -71,9 +55,7 @@ public  abstract class ConversionService
         }
         switch(method.getIndex()) {
           case 0:
-            return impl.requestCar(controller, (com.dei.isassignment.CarRequest)request);
-          case 1:
-            return impl.requestOwner(controller, (com.dei.isassignment.OwnerRequest)request);
+            return impl.listOfCarsPerOwner(controller, (com.dei.isassignment.Request)request);
           default:
             throw new java.lang.AssertionError("Can't get here.");
         }
@@ -89,9 +71,7 @@ public  abstract class ConversionService
         }
         switch(method.getIndex()) {
           case 0:
-            return com.dei.isassignment.CarRequest.getDefaultInstance();
-          case 1:
-            return com.dei.isassignment.OwnerRequest.getDefaultInstance();
+            return com.dei.isassignment.Request.getDefaultInstance();
           default:
             throw new java.lang.AssertionError("Can't get here.");
         }
@@ -107,9 +87,7 @@ public  abstract class ConversionService
         }
         switch(method.getIndex()) {
           case 0:
-            return com.dei.isassignment.CarReply.getDefaultInstance();
-          case 1:
-            return com.dei.isassignment.OwnerReply.getDefaultInstance();
+            return com.dei.isassignment.Response.getDefaultInstance();
           default:
             throw new java.lang.AssertionError("Can't get here.");
         }
@@ -119,20 +97,12 @@ public  abstract class ConversionService
   }
 
   /**
-   * <code>rpc requestCar(.com.dei.isassignment.CarRequest) returns (.com.dei.isassignment.CarReply);</code>
+   * <code>rpc listOfCarsPerOwner(.com.dei.isassignment.Request) returns (.com.dei.isassignment.Response);</code>
    */
-  public abstract void requestCar(
+  public abstract void listOfCarsPerOwner(
       com.google.protobuf.RpcController controller,
-      com.dei.isassignment.CarRequest request,
-      com.google.protobuf.RpcCallback<com.dei.isassignment.CarReply> done);
-
-  /**
-   * <code>rpc requestOwner(.com.dei.isassignment.OwnerRequest) returns (.com.dei.isassignment.OwnerReply);</code>
-   */
-  public abstract void requestOwner(
-      com.google.protobuf.RpcController controller,
-      com.dei.isassignment.OwnerRequest request,
-      com.google.protobuf.RpcCallback<com.dei.isassignment.OwnerReply> done);
+      com.dei.isassignment.Request request,
+      com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done);
 
   public static final
       com.google.protobuf.Descriptors.ServiceDescriptor
@@ -157,13 +127,8 @@ public  abstract class ConversionService
     }
     switch(method.getIndex()) {
       case 0:
-        this.requestCar(controller, (com.dei.isassignment.CarRequest)request,
-          com.google.protobuf.RpcUtil.<com.dei.isassignment.CarReply>specializeCallback(
-            done));
-        return;
-      case 1:
-        this.requestOwner(controller, (com.dei.isassignment.OwnerRequest)request,
-          com.google.protobuf.RpcUtil.<com.dei.isassignment.OwnerReply>specializeCallback(
+        this.listOfCarsPerOwner(controller, (com.dei.isassignment.Request)request,
+          com.google.protobuf.RpcUtil.<com.dei.isassignment.Response>specializeCallback(
             done));
         return;
       default:
@@ -181,9 +146,7 @@ public  abstract class ConversionService
     }
     switch(method.getIndex()) {
       case 0:
-        return com.dei.isassignment.CarRequest.getDefaultInstance();
-      case 1:
-        return com.dei.isassignment.OwnerRequest.getDefaultInstance();
+        return com.dei.isassignment.Request.getDefaultInstance();
       default:
         throw new java.lang.AssertionError("Can't get here.");
     }
@@ -199,9 +162,7 @@ public  abstract class ConversionService
     }
     switch(method.getIndex()) {
       case 0:
-        return com.dei.isassignment.CarReply.getDefaultInstance();
-      case 1:
-        return com.dei.isassignment.OwnerReply.getDefaultInstance();
+        return com.dei.isassignment.Response.getDefaultInstance();
       default:
         throw new java.lang.AssertionError("Can't get here.");
     }
@@ -223,34 +184,19 @@ public  abstract class ConversionService
       return channel;
     }
 
-    public  void requestCar(
+    public  void listOfCarsPerOwner(
         com.google.protobuf.RpcController controller,
-        com.dei.isassignment.CarRequest request,
-        com.google.protobuf.RpcCallback<com.dei.isassignment.CarReply> done) {
+        com.dei.isassignment.Request request,
+        com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done) {
       channel.callMethod(
         getDescriptor().getMethods().get(0),
         controller,
         request,
-        com.dei.isassignment.CarReply.getDefaultInstance(),
+        com.dei.isassignment.Response.getDefaultInstance(),
         com.google.protobuf.RpcUtil.generalizeCallback(
           done,
-          com.dei.isassignment.CarReply.class,
-          com.dei.isassignment.CarReply.getDefaultInstance()));
-    }
-
-    public  void requestOwner(
-        com.google.protobuf.RpcController controller,
-        com.dei.isassignment.OwnerRequest request,
-        com.google.protobuf.RpcCallback<com.dei.isassignment.OwnerReply> done) {
-      channel.callMethod(
-        getDescriptor().getMethods().get(1),
-        controller,
-        request,
-        com.dei.isassignment.OwnerReply.getDefaultInstance(),
-        com.google.protobuf.RpcUtil.generalizeCallback(
-          done,
-          com.dei.isassignment.OwnerReply.class,
-          com.dei.isassignment.OwnerReply.getDefaultInstance()));
+          com.dei.isassignment.Response.class,
+          com.dei.isassignment.Response.getDefaultInstance()));
     }
   }
 
@@ -260,14 +206,9 @@ public  abstract class ConversionService
   }
 
   public interface BlockingInterface {
-    public com.dei.isassignment.CarReply requestCar(
+    public com.dei.isassignment.Response listOfCarsPerOwner(
         com.google.protobuf.RpcController controller,
-        com.dei.isassignment.CarRequest request)
-        throws com.google.protobuf.ServiceException;
-
-    public com.dei.isassignment.OwnerReply requestOwner(
-        com.google.protobuf.RpcController controller,
-        com.dei.isassignment.OwnerRequest request)
+        com.dei.isassignment.Request request)
         throws com.google.protobuf.ServiceException;
   }
 
@@ -278,27 +219,15 @@ public  abstract class ConversionService
 
     private final com.google.protobuf.BlockingRpcChannel channel;
 
-    public com.dei.isassignment.CarReply requestCar(
+    public com.dei.isassignment.Response listOfCarsPerOwner(
         com.google.protobuf.RpcController controller,
-        com.dei.isassignment.CarRequest request)
+        com.dei.isassignment.Request request)
         throws com.google.protobuf.ServiceException {
-      return (com.dei.isassignment.CarReply) channel.callBlockingMethod(
+      return (com.dei.isassignment.Response) channel.callBlockingMethod(
         getDescriptor().getMethods().get(0),
         controller,
         request,
-        com.dei.isassignment.CarReply.getDefaultInstance());
-    }
-
-
-    public com.dei.isassignment.OwnerReply requestOwner(
-        com.google.protobuf.RpcController controller,
-        com.dei.isassignment.OwnerRequest request)
-        throws com.google.protobuf.ServiceException {
-      return (com.dei.isassignment.OwnerReply) channel.callBlockingMethod(
-        getDescriptor().getMethods().get(1),
-        controller,
-        request,
-        com.dei.isassignment.OwnerReply.getDefaultInstance());
+        com.dei.isassignment.Response.getDefaultInstance());
     }
 
   }

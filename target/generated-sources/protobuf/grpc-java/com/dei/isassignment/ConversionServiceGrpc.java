@@ -28,78 +28,41 @@ public final class ConversionServiceGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  @java.lang.Deprecated // Use {@link #getRequestCarMethod()} instead. 
-  public static final io.grpc.MethodDescriptor<com.dei.isassignment.CarRequest,
-      com.dei.isassignment.CarReply> METHOD_REQUEST_CAR = getRequestCarMethodHelper();
+  @java.lang.Deprecated // Use {@link #getListOfCarsPerOwnerMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.dei.isassignment.Request,
+      com.dei.isassignment.Response> METHOD_LIST_OF_CARS_PER_OWNER = getListOfCarsPerOwnerMethodHelper();
 
-  private static volatile io.grpc.MethodDescriptor<com.dei.isassignment.CarRequest,
-      com.dei.isassignment.CarReply> getRequestCarMethod;
+  private static volatile io.grpc.MethodDescriptor<com.dei.isassignment.Request,
+      com.dei.isassignment.Response> getListOfCarsPerOwnerMethod;
 
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static io.grpc.MethodDescriptor<com.dei.isassignment.CarRequest,
-      com.dei.isassignment.CarReply> getRequestCarMethod() {
-    return getRequestCarMethodHelper();
+  public static io.grpc.MethodDescriptor<com.dei.isassignment.Request,
+      com.dei.isassignment.Response> getListOfCarsPerOwnerMethod() {
+    return getListOfCarsPerOwnerMethodHelper();
   }
 
-  private static io.grpc.MethodDescriptor<com.dei.isassignment.CarRequest,
-      com.dei.isassignment.CarReply> getRequestCarMethodHelper() {
-    io.grpc.MethodDescriptor<com.dei.isassignment.CarRequest, com.dei.isassignment.CarReply> getRequestCarMethod;
-    if ((getRequestCarMethod = ConversionServiceGrpc.getRequestCarMethod) == null) {
+  private static io.grpc.MethodDescriptor<com.dei.isassignment.Request,
+      com.dei.isassignment.Response> getListOfCarsPerOwnerMethodHelper() {
+    io.grpc.MethodDescriptor<com.dei.isassignment.Request, com.dei.isassignment.Response> getListOfCarsPerOwnerMethod;
+    if ((getListOfCarsPerOwnerMethod = ConversionServiceGrpc.getListOfCarsPerOwnerMethod) == null) {
       synchronized (ConversionServiceGrpc.class) {
-        if ((getRequestCarMethod = ConversionServiceGrpc.getRequestCarMethod) == null) {
-          ConversionServiceGrpc.getRequestCarMethod = getRequestCarMethod = 
-              io.grpc.MethodDescriptor.<com.dei.isassignment.CarRequest, com.dei.isassignment.CarReply>newBuilder()
+        if ((getListOfCarsPerOwnerMethod = ConversionServiceGrpc.getListOfCarsPerOwnerMethod) == null) {
+          ConversionServiceGrpc.getListOfCarsPerOwnerMethod = getListOfCarsPerOwnerMethod = 
+              io.grpc.MethodDescriptor.<com.dei.isassignment.Request, com.dei.isassignment.Response>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "com.dei.isassignment.ConversionService", "requestCar"))
+                  "com.dei.isassignment.ConversionService", "listOfCarsPerOwner"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.dei.isassignment.CarRequest.getDefaultInstance()))
+                  com.dei.isassignment.Request.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.dei.isassignment.CarReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new ConversionServiceMethodDescriptorSupplier("requestCar"))
+                  com.dei.isassignment.Response.getDefaultInstance()))
+                  .setSchemaDescriptor(new ConversionServiceMethodDescriptorSupplier("listOfCarsPerOwner"))
                   .build();
           }
         }
      }
-     return getRequestCarMethod;
-  }
-  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  @java.lang.Deprecated // Use {@link #getRequestOwnerMethod()} instead. 
-  public static final io.grpc.MethodDescriptor<com.dei.isassignment.OwnerRequest,
-      com.dei.isassignment.OwnerReply> METHOD_REQUEST_OWNER = getRequestOwnerMethodHelper();
-
-  private static volatile io.grpc.MethodDescriptor<com.dei.isassignment.OwnerRequest,
-      com.dei.isassignment.OwnerReply> getRequestOwnerMethod;
-
-  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static io.grpc.MethodDescriptor<com.dei.isassignment.OwnerRequest,
-      com.dei.isassignment.OwnerReply> getRequestOwnerMethod() {
-    return getRequestOwnerMethodHelper();
-  }
-
-  private static io.grpc.MethodDescriptor<com.dei.isassignment.OwnerRequest,
-      com.dei.isassignment.OwnerReply> getRequestOwnerMethodHelper() {
-    io.grpc.MethodDescriptor<com.dei.isassignment.OwnerRequest, com.dei.isassignment.OwnerReply> getRequestOwnerMethod;
-    if ((getRequestOwnerMethod = ConversionServiceGrpc.getRequestOwnerMethod) == null) {
-      synchronized (ConversionServiceGrpc.class) {
-        if ((getRequestOwnerMethod = ConversionServiceGrpc.getRequestOwnerMethod) == null) {
-          ConversionServiceGrpc.getRequestOwnerMethod = getRequestOwnerMethod = 
-              io.grpc.MethodDescriptor.<com.dei.isassignment.OwnerRequest, com.dei.isassignment.OwnerReply>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(
-                  "com.dei.isassignment.ConversionService", "requestOwner"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.dei.isassignment.OwnerRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.dei.isassignment.OwnerReply.getDefaultInstance()))
-                  .setSchemaDescriptor(new ConversionServiceMethodDescriptorSupplier("requestOwner"))
-                  .build();
-          }
-        }
-     }
-     return getRequestOwnerMethod;
+     return getListOfCarsPerOwnerMethod;
   }
 
   /**
@@ -131,34 +94,20 @@ public final class ConversionServiceGrpc {
 
     /**
      */
-    public void requestCar(com.dei.isassignment.CarRequest request,
-        io.grpc.stub.StreamObserver<com.dei.isassignment.CarReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getRequestCarMethodHelper(), responseObserver);
-    }
-
-    /**
-     */
-    public void requestOwner(com.dei.isassignment.OwnerRequest request,
-        io.grpc.stub.StreamObserver<com.dei.isassignment.OwnerReply> responseObserver) {
-      asyncUnimplementedUnaryCall(getRequestOwnerMethodHelper(), responseObserver);
+    public void listOfCarsPerOwner(com.dei.isassignment.Request request,
+        io.grpc.stub.StreamObserver<com.dei.isassignment.Response> responseObserver) {
+      asyncUnimplementedUnaryCall(getListOfCarsPerOwnerMethodHelper(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getRequestCarMethodHelper(),
+            getListOfCarsPerOwnerMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.dei.isassignment.CarRequest,
-                com.dei.isassignment.CarReply>(
-                  this, METHODID_REQUEST_CAR)))
-          .addMethod(
-            getRequestOwnerMethodHelper(),
-            asyncUnaryCall(
-              new MethodHandlers<
-                com.dei.isassignment.OwnerRequest,
-                com.dei.isassignment.OwnerReply>(
-                  this, METHODID_REQUEST_OWNER)))
+                com.dei.isassignment.Request,
+                com.dei.isassignment.Response>(
+                  this, METHODID_LIST_OF_CARS_PER_OWNER)))
           .build();
     }
   }
@@ -183,18 +132,10 @@ public final class ConversionServiceGrpc {
 
     /**
      */
-    public void requestCar(com.dei.isassignment.CarRequest request,
-        io.grpc.stub.StreamObserver<com.dei.isassignment.CarReply> responseObserver) {
+    public void listOfCarsPerOwner(com.dei.isassignment.Request request,
+        io.grpc.stub.StreamObserver<com.dei.isassignment.Response> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getRequestCarMethodHelper(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
-    public void requestOwner(com.dei.isassignment.OwnerRequest request,
-        io.grpc.stub.StreamObserver<com.dei.isassignment.OwnerReply> responseObserver) {
-      asyncUnaryCall(
-          getChannel().newCall(getRequestOwnerMethodHelper(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getListOfCarsPerOwnerMethodHelper(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -218,16 +159,9 @@ public final class ConversionServiceGrpc {
 
     /**
      */
-    public com.dei.isassignment.CarReply requestCar(com.dei.isassignment.CarRequest request) {
+    public com.dei.isassignment.Response listOfCarsPerOwner(com.dei.isassignment.Request request) {
       return blockingUnaryCall(
-          getChannel(), getRequestCarMethodHelper(), getCallOptions(), request);
-    }
-
-    /**
-     */
-    public com.dei.isassignment.OwnerReply requestOwner(com.dei.isassignment.OwnerRequest request) {
-      return blockingUnaryCall(
-          getChannel(), getRequestOwnerMethodHelper(), getCallOptions(), request);
+          getChannel(), getListOfCarsPerOwnerMethodHelper(), getCallOptions(), request);
     }
   }
 
@@ -251,23 +185,14 @@ public final class ConversionServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.dei.isassignment.CarReply> requestCar(
-        com.dei.isassignment.CarRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.dei.isassignment.Response> listOfCarsPerOwner(
+        com.dei.isassignment.Request request) {
       return futureUnaryCall(
-          getChannel().newCall(getRequestCarMethodHelper(), getCallOptions()), request);
-    }
-
-    /**
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.dei.isassignment.OwnerReply> requestOwner(
-        com.dei.isassignment.OwnerRequest request) {
-      return futureUnaryCall(
-          getChannel().newCall(getRequestOwnerMethodHelper(), getCallOptions()), request);
+          getChannel().newCall(getListOfCarsPerOwnerMethodHelper(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_REQUEST_CAR = 0;
-  private static final int METHODID_REQUEST_OWNER = 1;
+  private static final int METHODID_LIST_OF_CARS_PER_OWNER = 0;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -286,13 +211,9 @@ public final class ConversionServiceGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_REQUEST_CAR:
-          serviceImpl.requestCar((com.dei.isassignment.CarRequest) request,
-              (io.grpc.stub.StreamObserver<com.dei.isassignment.CarReply>) responseObserver);
-          break;
-        case METHODID_REQUEST_OWNER:
-          serviceImpl.requestOwner((com.dei.isassignment.OwnerRequest) request,
-              (io.grpc.stub.StreamObserver<com.dei.isassignment.OwnerReply>) responseObserver);
+        case METHODID_LIST_OF_CARS_PER_OWNER:
+          serviceImpl.listOfCarsPerOwner((com.dei.isassignment.Request) request,
+              (io.grpc.stub.StreamObserver<com.dei.isassignment.Response>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -355,8 +276,7 @@ public final class ConversionServiceGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new ConversionServiceFileDescriptorSupplier())
-              .addMethod(getRequestCarMethodHelper())
-              .addMethod(getRequestOwnerMethodHelper())
+              .addMethod(getListOfCarsPerOwnerMethodHelper())
               .build();
         }
       }
