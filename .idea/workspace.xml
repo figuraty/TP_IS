@@ -2,9 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="735543b2-27d4-496b-8f7f-adedfac1c9bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ServerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataConversionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/dei/isassignment/DataConversionGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/CarsDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/CarsDatabaseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/DataConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/DataConversionOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/OwnersDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/OwnersDatabaseOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/isAssignment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataConversionServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/ClientServer.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/DataConversion.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClientServer.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Car$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Car$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Car$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Car$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/CarOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/CarOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ClientServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ClientServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService$BlockingInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService$BlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService$Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService$Stub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceBaseDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceBlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceFileDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceFutureStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceImplBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceMethodDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$ConversionServiceStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc$MethodHandlers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ConversionServiceGrpc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Owner$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Owner$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Owner$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Owner$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Owner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Owner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/OwnerOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/OwnerOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Request$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Request$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Request$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Request$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/RequestOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/RequestOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Response$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Response$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Response$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Response$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dei/isassignment/ResponseOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/dei/isassignment/ConversionServiceGrpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/CarOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/CarOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/ClientServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/ConversionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/OwnerOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/OwnerOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/RequestOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/RequestOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/ResponseOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/dei/isassignment/ResponseOrBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/isAssignment-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/isAssignment-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/isAssignment-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/any.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/api.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/compiler/plugin.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/descriptor.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/duration.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/empty.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/field_mask.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/source_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/struct.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/timestamp.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/type.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/37d941c2af4c233f88915e0ccfdd1ee1/google/protobuf/wrappers.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-plugins/protoc-3.5.1-1-linux-x86_64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-plugins/protoc-gen-grpc-java-1.12.0-linux-x86_64.exe" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,15 +108,21 @@
     </option>
   </component>
   <component name="ProjectId" id="1RIAHDRG9KlJV9xENKPzBGf6fF9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/proto" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/proto" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/proto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -78,5 +162,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
