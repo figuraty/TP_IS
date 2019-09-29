@@ -18,7 +18,16 @@ public class DataConversionServer {
     private final Server server;
 
     public DataConversionServer(int port) throws IOException {
-        this(port, DataConversionUtil.getCarsDBFile(), DataConversionUtil.getOwnersDBFile());
+        //this(port, DataConversionUtil.getCarsDBFile(), DataConversionUtil.getOwnersDBFile());
+        List<Car> cars = new ArrayList<>();
+        List<Owner> owners = new ArrayList<>();
+
+        cars.add(Car.newBuilder().setOwnerId(69).setBrand("TT").build());
+
+
+        this.port = port;
+        server = ServerBuilder.forPort(port).addService(new ConversionService(cars, owners))
+                .build();
     }
 
     /** Create a RouteGuide server listening on {@code port} using {@code featureFile} database. */
@@ -73,11 +82,6 @@ public class DataConversionServer {
         server.blockUntilShutdown();
     }
 
-    /**
-     * Our implementation of DataConversion service.
-     *
-     * <p>See route_guide.proto for details of the methods.
-     */
     private static class ConversionService extends DataConversionGrpc.DataConversionImplBase {
 
         private final List<Car> cars;
@@ -90,13 +94,29 @@ public class DataConversionServer {
 
         @Override
         public void listOfCarsPerOwner(Request request, StreamObserver<Response> responseObserver) {
-//          falta fazer uma funcao para validar os owners que vêm no request
-            responseObserver.onNext(Response.newBuilder().addAllCars(cars).build());
+            responseObserver.onNext(Response.newBuilder().addAllCars(processRequest(request)).build());
             responseObserver.onCompleted();
         }
 
+        private List<Car> processRequest(Request request){
+            List<Owner> owners = request.getOwnersList();
+            List<Car> cars = new ArrayList<>();
 
+            for(Owner owner : owners){
+                cars.addAll(getCarsByOwner(owner.getId()));
+            }
+            return cars;
+        }
 
+        private List<Car> getCarsByOwner(int owner_id){
+            List<Car> cars = new ArrayList<>();
 
+            for(Car car : this.cars){
+                if(car.getOwnerId() == owner_id){
+                    cars.add(car);
+                }
+            }
+            return cars;
+        }
     }
 }

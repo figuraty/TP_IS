@@ -21,14 +21,14 @@ public class DataConversionUtil {
    * Gets the default features file from classpath.
    */
   public static URL getCarsDBFile() {
-    return DataConversionServer.class.getResource("owners_and_cars_db.xml");
+    return DataConversionServer.class.getResource("cars_db.json");
   }
 
   /**
    * Gets the default features file from classpath.
    */
   public static URL getOwnersDBFile() {
-    return DataConversionServer.class.getResource("owners_and_cars_db.xml");
+    return DataConversionServer.class.getResource("owners_db.json");
   }
 
   /**
