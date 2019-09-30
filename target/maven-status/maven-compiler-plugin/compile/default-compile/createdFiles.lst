@@ -20,6 +20,7 @@ com/dei/isassignment/Owner$Builder.class
 com/dei/isassignment/OwnersDatabase$1.class
 com/dei/isassignment/DataConversion$Interface.class
 DataConversionUtil.class
+GenerateJsonDb.class
 com/dei/isassignment/Response$Builder.class
 com/dei/isassignment/CarsDatabase$1.class
 com/dei/isassignment/CarsDatabase$Builder.class

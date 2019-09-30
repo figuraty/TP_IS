@@ -45,11 +45,7 @@ public class DataConversionClient {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     }
 
-    /**
-     * Blocking unary call example.  Calls getFeature and prints the response.
-     */
     public void listOfCarsPerOwner(List<Owner> owners) {
-
 
         Request request = Request.newBuilder().addAllOwners(owners).build();
 
@@ -69,47 +65,16 @@ public class DataConversionClient {
         }
 
         System.out.println(response.getCarsList());
-        /*if (DataConversionUtil.exists(feature)) {
-            info("Found feature called \"{0}\" at {1}, {2}",
-                    feature.getName(),
-                    DataConversionUtil.getLatitude(feature.getLocation()),
-                    DataConversionUtil.getLongitude(feature.getLocation()));
-        } else {
-            info("Found no feature at {0}, {1}",
-                    DataConversionUtil.getLatitude(feature.getLocation()),
-                    DataConversionUtil.getLongitude(feature.getLocation()));
-        }*/
     }
-
-    /**
-     * Blocking server-streaming example. Calls listFeatures with a rectangle of interest. Prints each
-     * response feature as it arrives.
-     */
-
-    /**
-     * Async client-streaming example. Sends {@code numPoints} randomly chosen points from {@code
-     * features} with a variable delay in between. Prints the statistics when they are sent from the
-     * server.
-     */
-
-    /**
-     * Bi-directional example, which can only be asynchronous. Send some chat messages, and print any
-     * chat messages that are sent from the server.
-     */
-
 
     /** Issues several different requests and then exits. */
     public static void main(String[] args) throws InterruptedException {
         List<Owner> owners = new ArrayList<>();
+
         owners.add(Owner.newBuilder().setId(69).build());
-        /*try {
-            features = DataConversionUtil.parseFeatures(DataConversionUtil.getDefaultFeaturesFile());
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return;
-        }*/
 
         DataConversionClient client = new DataConversionClient("localhost", 8980);
+
 
         client.listOfCarsPerOwner(owners);
         client.shutdown();

@@ -78,6 +78,7 @@ public class DataConversionServer {
      */
     public static void main(String[] args) throws Exception {
         DataConversionServer server = new DataConversionServer(8980);
+        GenerateJsonDb.generateCarsDb(100, 100);
         server.start();
         server.blockUntilShutdown();
     }
