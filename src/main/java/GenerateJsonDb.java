@@ -1,16 +1,9 @@
 import com.dei.isassignment.Car;
 import com.dei.isassignment.Owner;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
+import com.google.gson.GsonBuilder;
 import java.io.*;
-import java.rmi.server.ExportException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -18,6 +11,7 @@ import java.util.Random;
 public class GenerateJsonDb {
     public static void generateOwnersDb(int entries){
         Faker faker = new Faker();
+        List<Owner> owners = new ArrayList<>();
         for(int i = 0; i < entries; i++){
             Owner owner = Owner.newBuilder()
                     .setAddress(faker.address().streetAddress())
@@ -25,6 +19,18 @@ public class GenerateJsonDb {
                     .setName(faker.name().fullName())
                     .setTelephone(faker.phoneNumber().cellPhone())
                     .build();
+            owners.add(owner);
+        }
+        writeOwnersInFile(owners);
+    }
+
+    private static void writeOwnersInFile(List<Owner> owners) {
+
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        try(Writer writer = new FileWriter("src/main/resources/owners.json")){
+            gson.toJson(owners, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -53,26 +59,13 @@ public class GenerateJsonDb {
     }
 
     private static void writeCarsInFile(List<Car> cars) {
-        JAXBContext contextObj = JAXBContext.newInstance(Car.class);
 
-        Marshaller marshallerObj = contextObj.createMarshaller();
-        marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-
-        for (int i = 0; i < 500; i++){
-            id = Integer.toString(i + 1);
-            name = faker.name().fullName();
-            Random random = new Random();
-            age = random.nextInt(80 - 16) + 16;
-
-            students.add(new Student(id, name, age));
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        try(Writer writer = new FileWriter("src/main/resources/cars.json")){
+            gson.toJson(cars, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        StudentClass std = new StudentClass(students);
-
-        marshallerObj.marshal(std, new FileOutputStream("student1.xml"));
-
-
-
     }
 
     private static String getModel(int brandId) {

@@ -1,0 +1,9002 @@
+[
+  {
+    "id_": 1,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "2598",
+    "size_": 3,
+    "power_": 150,
+    "consumption_": 5.4,
+    "plate_": "QGB-996",
+    "ownerId_": 52,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 2,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2036",
+    "size_": 3,
+    "power_": 155,
+    "consumption_": 4.8,
+    "plate_": "LWO-377",
+    "ownerId_": 96,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 3,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "2505",
+    "size_": 4,
+    "power_": 443,
+    "consumption_": 5.3,
+    "plate_": "YJG-299",
+    "ownerId_": 48,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 4,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1578",
+    "size_": 3,
+    "power_": 426,
+    "consumption_": 4.7,
+    "plate_": "YDI-905",
+    "ownerId_": 12,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 5,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "1136",
+    "size_": 2,
+    "power_": 380,
+    "consumption_": 4.8,
+    "plate_": "HWQ-501",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 6,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "1694",
+    "size_": 3,
+    "power_": 163,
+    "consumption_": 4.0,
+    "plate_": "UKA-179",
+    "ownerId_": 32,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 7,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "2673",
+    "size_": 2,
+    "power_": 200,
+    "consumption_": 7.1,
+    "plate_": "UBH-171",
+    "ownerId_": 83,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 8,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1278",
+    "size_": 2,
+    "power_": 384,
+    "consumption_": 7.3,
+    "plate_": "WUT-613",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 9,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1381",
+    "size_": 4,
+    "power_": 372,
+    "consumption_": 7.6,
+    "plate_": "CPH-172",
+    "ownerId_": 34,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 10,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1127",
+    "size_": 4,
+    "power_": 83,
+    "consumption_": 7.1,
+    "plate_": "JZE-712",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 11,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "1542",
+    "size_": 3,
+    "power_": 464,
+    "consumption_": 4.0,
+    "plate_": "SUS-208",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 12,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2192",
+    "size_": 4,
+    "power_": 219,
+    "consumption_": 5.1,
+    "plate_": "HGJ-129",
+    "ownerId_": 75,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 13,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "2751",
+    "size_": 4,
+    "power_": 183,
+    "consumption_": 6.8,
+    "plate_": "MIM-124",
+    "ownerId_": 52,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 14,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "1099",
+    "size_": 4,
+    "power_": 255,
+    "consumption_": 6.9,
+    "plate_": "FAV-333",
+    "ownerId_": 9,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 15,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1284",
+    "size_": 2,
+    "power_": 261,
+    "consumption_": 5.0,
+    "plate_": "ZLQ-988",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 16,
+    "brand_": "Mercedes",
+    "model_": "F1015",
+    "engine_": "2321",
+    "size_": 4,
+    "power_": 218,
+    "consumption_": 5.9,
+    "plate_": "AEJ-409",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 17,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2437",
+    "size_": 4,
+    "power_": 410,
+    "consumption_": 6.2,
+    "plate_": "BTX-411",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 18,
+    "brand_": "Mercedes",
+    "model_": "F1015",
+    "engine_": "1105",
+    "size_": 3,
+    "power_": 514,
+    "consumption_": 5.6,
+    "plate_": "KRV-944",
+    "ownerId_": 43,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 19,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "2972",
+    "size_": 4,
+    "power_": 365,
+    "consumption_": 5.5,
+    "plate_": "IJS-553",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 20,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2940",
+    "size_": 4,
+    "power_": 333,
+    "consumption_": 7.7,
+    "plate_": "UJK-300",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 21,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1367",
+    "size_": 2,
+    "power_": 207,
+    "consumption_": 4.3,
+    "plate_": "SSN-521",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 22,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "2088",
+    "size_": 4,
+    "power_": 162,
+    "consumption_": 4.1,
+    "plate_": "QLW-778",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 23,
+    "brand_": "Lamborghini",
+    "model_": "Gallardo",
+    "engine_": "2171",
+    "size_": 3,
+    "power_": 189,
+    "consumption_": 4.1,
+    "plate_": "VTK-400",
+    "ownerId_": 90,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 24,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "1847",
+    "size_": 4,
+    "power_": 305,
+    "consumption_": 7.8,
+    "plate_": "QXY-807",
+    "ownerId_": 15,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 25,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "1999",
+    "size_": 4,
+    "power_": 89,
+    "consumption_": 7.1,
+    "plate_": "DFC-572",
+    "ownerId_": 15,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 26,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "1595",
+    "size_": 4,
+    "power_": 311,
+    "consumption_": 5.1,
+    "plate_": "QWG-382",
+    "ownerId_": 60,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 27,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "2905",
+    "size_": 4,
+    "power_": 214,
+    "consumption_": 4.3,
+    "plate_": "MWO-965",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 28,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1729",
+    "size_": 2,
+    "power_": 113,
+    "consumption_": 4.9,
+    "plate_": "VOS-131",
+    "ownerId_": 4,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 29,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "1136",
+    "size_": 2,
+    "power_": 351,
+    "consumption_": 4.8,
+    "plate_": "PYG-788",
+    "ownerId_": 65,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 30,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1791",
+    "size_": 4,
+    "power_": 91,
+    "consumption_": 6.9,
+    "plate_": "GAP-120",
+    "ownerId_": 92,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 31,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "1366",
+    "size_": 3,
+    "power_": 203,
+    "consumption_": 4.2,
+    "plate_": "LIP-486",
+    "ownerId_": 94,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 32,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1156",
+    "size_": 3,
+    "power_": 525,
+    "consumption_": 4.2,
+    "plate_": "JPO-678",
+    "ownerId_": 44,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 33,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1288",
+    "size_": 2,
+    "power_": 583,
+    "consumption_": 7.1,
+    "plate_": "CMK-188",
+    "ownerId_": 82,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 34,
+    "brand_": "Volkswagen",
+    "model_": "Scirocco",
+    "engine_": "2482",
+    "size_": 3,
+    "power_": 290,
+    "consumption_": 4.5,
+    "plate_": "OOX-024",
+    "ownerId_": 12,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 35,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "1917",
+    "size_": 2,
+    "power_": 504,
+    "consumption_": 5.3,
+    "plate_": "NNZ-150",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 36,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2850",
+    "size_": 3,
+    "power_": 125,
+    "consumption_": 6.7,
+    "plate_": "NGB-993",
+    "ownerId_": 34,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 37,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "2321",
+    "size_": 4,
+    "power_": 579,
+    "consumption_": 7.0,
+    "plate_": "IXI-653",
+    "ownerId_": 84,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 38,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "1533",
+    "size_": 4,
+    "power_": 538,
+    "consumption_": 5.9,
+    "plate_": "LFQ-422",
+    "ownerId_": 12,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 39,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "2196",
+    "size_": 3,
+    "power_": 523,
+    "consumption_": 5.4,
+    "plate_": "XKG-197",
+    "ownerId_": 82,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 40,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1915",
+    "size_": 2,
+    "power_": 149,
+    "consumption_": 4.3,
+    "plate_": "FDK-380",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 41,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "1914",
+    "size_": 3,
+    "power_": 422,
+    "consumption_": 4.3,
+    "plate_": "JUH-463",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 42,
+    "brand_": "Toyota",
+    "model_": "GT86",
+    "engine_": "1874",
+    "size_": 4,
+    "power_": 570,
+    "consumption_": 4.0,
+    "plate_": "OZD-179",
+    "ownerId_": 34,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 43,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "2825",
+    "size_": 3,
+    "power_": 437,
+    "consumption_": 6.2,
+    "plate_": "YSE-056",
+    "ownerId_": 57,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 44,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "1620",
+    "size_": 2,
+    "power_": 169,
+    "consumption_": 6.9,
+    "plate_": "UXW-725",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 45,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2033",
+    "size_": 2,
+    "power_": 494,
+    "consumption_": 7.9,
+    "plate_": "IJH-888",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 46,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "2653",
+    "size_": 3,
+    "power_": 525,
+    "consumption_": 7.3,
+    "plate_": "QPW-903",
+    "ownerId_": 7,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 47,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "2516",
+    "size_": 3,
+    "power_": 280,
+    "consumption_": 7.9,
+    "plate_": "XIE-279",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 48,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2815",
+    "size_": 4,
+    "power_": 465,
+    "consumption_": 4.1,
+    "plate_": "WBP-037",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 49,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1676",
+    "size_": 2,
+    "power_": 355,
+    "consumption_": 7.5,
+    "plate_": "ZLC-458",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 50,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "1925",
+    "size_": 2,
+    "power_": 271,
+    "consumption_": 4.3,
+    "plate_": "SLU-579",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 51,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "1370",
+    "size_": 2,
+    "power_": 177,
+    "consumption_": 4.2,
+    "plate_": "AID-876",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 52,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2665",
+    "size_": 3,
+    "power_": 341,
+    "consumption_": 5.9,
+    "plate_": "ZVO-773",
+    "ownerId_": 1,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 53,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1801",
+    "size_": 3,
+    "power_": 396,
+    "consumption_": 7.9,
+    "plate_": "BOS-382",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 54,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "2986",
+    "size_": 4,
+    "power_": 141,
+    "consumption_": 5.2,
+    "plate_": "WVE-922",
+    "ownerId_": 37,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 55,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1767",
+    "size_": 2,
+    "power_": 422,
+    "consumption_": 7.6,
+    "plate_": "GTB-141",
+    "ownerId_": 46,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 56,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "1237",
+    "size_": 3,
+    "power_": 176,
+    "consumption_": 6.6,
+    "plate_": "QWO-798",
+    "ownerId_": 46,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 57,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "2580",
+    "size_": 2,
+    "power_": 223,
+    "consumption_": 5.9,
+    "plate_": "MAI-538",
+    "ownerId_": 27,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 58,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2807",
+    "size_": 2,
+    "power_": 128,
+    "consumption_": 6.4,
+    "plate_": "UNJ-942",
+    "ownerId_": 41,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 59,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1010",
+    "size_": 3,
+    "power_": 439,
+    "consumption_": 5.6,
+    "plate_": "KKD-790",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 60,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2805",
+    "size_": 3,
+    "power_": 304,
+    "consumption_": 6.0,
+    "plate_": "WJH-566",
+    "ownerId_": 59,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 61,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "1120",
+    "size_": 2,
+    "power_": 345,
+    "consumption_": 6.1,
+    "plate_": "RQS-523",
+    "ownerId_": 76,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 62,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "1680",
+    "size_": 3,
+    "power_": 313,
+    "consumption_": 5.5,
+    "plate_": "WBG-986",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 63,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1851",
+    "size_": 4,
+    "power_": 367,
+    "consumption_": 4.5,
+    "plate_": "EYE-396",
+    "ownerId_": 74,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 64,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1520",
+    "size_": 3,
+    "power_": 595,
+    "consumption_": 7.0,
+    "plate_": "ISA-594",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 65,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1403",
+    "size_": 4,
+    "power_": 464,
+    "consumption_": 6.8,
+    "plate_": "PTI-944",
+    "ownerId_": 94,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 66,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1780",
+    "size_": 4,
+    "power_": 556,
+    "consumption_": 5.5,
+    "plate_": "PUB-910",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 67,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "1279",
+    "size_": 4,
+    "power_": 315,
+    "consumption_": 6.4,
+    "plate_": "LUG-793",
+    "ownerId_": 61,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 68,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2683",
+    "size_": 2,
+    "power_": 137,
+    "consumption_": 8.0,
+    "plate_": "QRN-137",
+    "ownerId_": 84,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 69,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "2141",
+    "size_": 4,
+    "power_": 415,
+    "consumption_": 5.4,
+    "plate_": "MAA-781",
+    "ownerId_": 23,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 70,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "1290",
+    "size_": 2,
+    "power_": 256,
+    "consumption_": 7.9,
+    "plate_": "XYY-839",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 71,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1553",
+    "size_": 4,
+    "power_": 241,
+    "consumption_": 7.9,
+    "plate_": "HCZ-822",
+    "ownerId_": 74,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 72,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "2627",
+    "size_": 3,
+    "power_": 463,
+    "consumption_": 5.7,
+    "plate_": "DSH-713",
+    "ownerId_": 42,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 73,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "1784",
+    "size_": 3,
+    "power_": 281,
+    "consumption_": 5.0,
+    "plate_": "UOX-561",
+    "ownerId_": 48,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 74,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1015",
+    "size_": 2,
+    "power_": 236,
+    "consumption_": 7.7,
+    "plate_": "MTV-267",
+    "ownerId_": 65,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 75,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "2064",
+    "size_": 2,
+    "power_": 177,
+    "consumption_": 5.7,
+    "plate_": "OXT-136",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 76,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1696",
+    "size_": 3,
+    "power_": 193,
+    "consumption_": 4.2,
+    "plate_": "CKK-598",
+    "ownerId_": 71,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 77,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "2024",
+    "size_": 3,
+    "power_": 275,
+    "consumption_": 5.7,
+    "plate_": "CFJ-752",
+    "ownerId_": 82,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 78,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "2901",
+    "size_": 3,
+    "power_": 570,
+    "consumption_": 7.0,
+    "plate_": "QNU-754",
+    "ownerId_": 87,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 79,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "1831",
+    "size_": 3,
+    "power_": 109,
+    "consumption_": 5.8,
+    "plate_": "UYW-826",
+    "ownerId_": 84,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 80,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "1218",
+    "size_": 3,
+    "power_": 238,
+    "consumption_": 5.3,
+    "plate_": "OGR-663",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 81,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "1330",
+    "size_": 2,
+    "power_": 380,
+    "consumption_": 4.1,
+    "plate_": "MWV-170",
+    "ownerId_": 43,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 82,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "1643",
+    "size_": 3,
+    "power_": 271,
+    "consumption_": 5.1,
+    "plate_": "PFL-997",
+    "ownerId_": 14,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 83,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2022",
+    "size_": 2,
+    "power_": 107,
+    "consumption_": 5.5,
+    "plate_": "TNS-163",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 84,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2086",
+    "size_": 4,
+    "power_": 270,
+    "consumption_": 4.6,
+    "plate_": "ZZX-198",
+    "ownerId_": 74,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 85,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "1431",
+    "size_": 2,
+    "power_": 287,
+    "consumption_": 6.7,
+    "plate_": "RTT-087",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 86,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "1627",
+    "size_": 2,
+    "power_": 559,
+    "consumption_": 7.0,
+    "plate_": "TTI-164",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 87,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2605",
+    "size_": 3,
+    "power_": 137,
+    "consumption_": 4.4,
+    "plate_": "VNW-729",
+    "ownerId_": 20,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 88,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2241",
+    "size_": 2,
+    "power_": 133,
+    "consumption_": 6.5,
+    "plate_": "FQY-744",
+    "ownerId_": 20,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 89,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "1953",
+    "size_": 3,
+    "power_": 550,
+    "consumption_": 7.5,
+    "plate_": "KAB-889",
+    "ownerId_": 15,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 90,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "1165",
+    "size_": 3,
+    "power_": 364,
+    "consumption_": 5.4,
+    "plate_": "YLG-712",
+    "ownerId_": 10,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 91,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1280",
+    "size_": 3,
+    "power_": 478,
+    "consumption_": 6.8,
+    "plate_": "DVT-774",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 92,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "1153",
+    "size_": 4,
+    "power_": 264,
+    "consumption_": 6.7,
+    "plate_": "NVB-296",
+    "ownerId_": 46,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 93,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1300",
+    "size_": 3,
+    "power_": 423,
+    "consumption_": 7.4,
+    "plate_": "JPX-780",
+    "ownerId_": 94,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 94,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "2295",
+    "size_": 3,
+    "power_": 102,
+    "consumption_": 6.2,
+    "plate_": "GOH-634",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 95,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "2306",
+    "size_": 3,
+    "power_": 198,
+    "consumption_": 7.3,
+    "plate_": "ZPL-215",
+    "ownerId_": 28,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 96,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "2786",
+    "size_": 3,
+    "power_": 542,
+    "consumption_": 7.5,
+    "plate_": "YIY-244",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 97,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2029",
+    "size_": 2,
+    "power_": 554,
+    "consumption_": 8.0,
+    "plate_": "ZFT-835",
+    "ownerId_": 28,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 98,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2088",
+    "size_": 4,
+    "power_": 442,
+    "consumption_": 4.2,
+    "plate_": "AGK-138",
+    "ownerId_": 76,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 99,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "1326",
+    "size_": 2,
+    "power_": 149,
+    "consumption_": 4.7,
+    "plate_": "KTJ-944",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 100,
+    "brand_": "BMW",
+    "model_": "M4",
+    "engine_": "2917",
+    "size_": 2,
+    "power_": 111,
+    "consumption_": 7.5,
+    "plate_": "GUN-790",
+    "ownerId_": 5,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 101,
+    "brand_": "BMW",
+    "model_": "M4",
+    "engine_": "1013",
+    "size_": 2,
+    "power_": 392,
+    "consumption_": 6.5,
+    "plate_": "BBC-439",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 102,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "2150",
+    "size_": 4,
+    "power_": 334,
+    "consumption_": 7.4,
+    "plate_": "AKF-270",
+    "ownerId_": 1,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 103,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1447",
+    "size_": 2,
+    "power_": 185,
+    "consumption_": 4.8,
+    "plate_": "CMT-686",
+    "ownerId_": 86,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 104,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "1977",
+    "size_": 4,
+    "power_": 599,
+    "consumption_": 4.6,
+    "plate_": "YRG-436",
+    "ownerId_": 57,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 105,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1133",
+    "size_": 3,
+    "power_": 268,
+    "consumption_": 6.0,
+    "plate_": "AZG-349",
+    "ownerId_": 7,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 106,
+    "brand_": "Lamborghini",
+    "model_": "Gallardo",
+    "engine_": "2054",
+    "size_": 2,
+    "power_": 194,
+    "consumption_": 4.5,
+    "plate_": "EIE-283",
+    "ownerId_": 45,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 107,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "2622",
+    "size_": 2,
+    "power_": 523,
+    "consumption_": 5.1,
+    "plate_": "IZD-269",
+    "ownerId_": 11,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 108,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "2133",
+    "size_": 2,
+    "power_": 426,
+    "consumption_": 7.3,
+    "plate_": "OKS-217",
+    "ownerId_": 18,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 109,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "2977",
+    "size_": 4,
+    "power_": 571,
+    "consumption_": 4.2,
+    "plate_": "GWR-619",
+    "ownerId_": 74,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 110,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "2884",
+    "size_": 2,
+    "power_": 399,
+    "consumption_": 6.6,
+    "plate_": "ZKI-098",
+    "ownerId_": 88,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 111,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1195",
+    "size_": 2,
+    "power_": 125,
+    "consumption_": 7.5,
+    "plate_": "YFD-888",
+    "ownerId_": 88,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 112,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2538",
+    "size_": 4,
+    "power_": 216,
+    "consumption_": 6.0,
+    "plate_": "YJC-307",
+    "ownerId_": 45,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 113,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1048",
+    "size_": 2,
+    "power_": 478,
+    "consumption_": 6.0,
+    "plate_": "GMN-372",
+    "ownerId_": 10,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 114,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1989",
+    "size_": 3,
+    "power_": 162,
+    "consumption_": 4.4,
+    "plate_": "EBP-087",
+    "ownerId_": 33,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 115,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "1152",
+    "size_": 4,
+    "power_": 84,
+    "consumption_": 7.0,
+    "plate_": "QCB-585",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 116,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "2404",
+    "size_": 4,
+    "power_": 305,
+    "consumption_": 7.1,
+    "plate_": "PHK-400",
+    "ownerId_": 66,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 117,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "2337",
+    "size_": 2,
+    "power_": 118,
+    "consumption_": 7.5,
+    "plate_": "GOC-918",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 118,
+    "brand_": "Audi",
+    "model_": "A6",
+    "engine_": "1962",
+    "size_": 2,
+    "power_": 585,
+    "consumption_": 6.5,
+    "plate_": "FRF-785",
+    "ownerId_": 84,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 119,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2508",
+    "size_": 2,
+    "power_": 542,
+    "consumption_": 6.6,
+    "plate_": "WEA-790",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 120,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "1016",
+    "size_": 4,
+    "power_": 128,
+    "consumption_": 5.3,
+    "plate_": "KLI-691",
+    "ownerId_": 41,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 121,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2710",
+    "size_": 3,
+    "power_": 309,
+    "consumption_": 7.4,
+    "plate_": "YGP-556",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 122,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "1726",
+    "size_": 2,
+    "power_": 299,
+    "consumption_": 4.7,
+    "plate_": "YIQ-245",
+    "ownerId_": 78,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 123,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "2725",
+    "size_": 2,
+    "power_": 188,
+    "consumption_": 6.7,
+    "plate_": "DHJ-117",
+    "ownerId_": 75,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 124,
+    "brand_": "Lamborghini",
+    "model_": "Gallardo",
+    "engine_": "2054",
+    "size_": 4,
+    "power_": 403,
+    "consumption_": 6.5,
+    "plate_": "QZC-271",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 125,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "2988",
+    "size_": 4,
+    "power_": 571,
+    "consumption_": 5.7,
+    "plate_": "ALD-351",
+    "ownerId_": 10,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 126,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "2693",
+    "size_": 3,
+    "power_": 315,
+    "consumption_": 4.0,
+    "plate_": "SJC-854",
+    "ownerId_": 79,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 127,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1691",
+    "size_": 4,
+    "power_": 240,
+    "consumption_": 4.8,
+    "plate_": "BVH-890",
+    "ownerId_": 10,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 128,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "1783",
+    "size_": 4,
+    "power_": 367,
+    "consumption_": 5.5,
+    "plate_": "TNT-674",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 129,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "1167",
+    "size_": 2,
+    "power_": 285,
+    "consumption_": 6.1,
+    "plate_": "UWM-263",
+    "ownerId_": 98,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 130,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "1038",
+    "size_": 3,
+    "power_": 460,
+    "consumption_": 5.8,
+    "plate_": "DOU-172",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 131,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2058",
+    "size_": 2,
+    "power_": 301,
+    "consumption_": 6.4,
+    "plate_": "QLQ-793",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 132,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "1919",
+    "size_": 3,
+    "power_": 239,
+    "consumption_": 5.1,
+    "plate_": "CNX-244",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 133,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2680",
+    "size_": 4,
+    "power_": 589,
+    "consumption_": 5.0,
+    "plate_": "QCQ-489",
+    "ownerId_": 2,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 134,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1617",
+    "size_": 4,
+    "power_": 228,
+    "consumption_": 6.5,
+    "plate_": "JHW-455",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 135,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1271",
+    "size_": 4,
+    "power_": 468,
+    "consumption_": 5.6,
+    "plate_": "MLP-735",
+    "ownerId_": 79,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 136,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2523",
+    "size_": 2,
+    "power_": 245,
+    "consumption_": 7.7,
+    "plate_": "IIV-538",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 137,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "2762",
+    "size_": 2,
+    "power_": 95,
+    "consumption_": 5.9,
+    "plate_": "SPH-843",
+    "ownerId_": 45,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 138,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1921",
+    "size_": 4,
+    "power_": 507,
+    "consumption_": 6.3,
+    "plate_": "NXS-293",
+    "ownerId_": 36,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 139,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "2849",
+    "size_": 2,
+    "power_": 420,
+    "consumption_": 5.4,
+    "plate_": "ZOJ-319",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 140,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "2658",
+    "size_": 2,
+    "power_": 557,
+    "consumption_": 7.7,
+    "plate_": "OHI-206",
+    "ownerId_": 45,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 141,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "2463",
+    "size_": 2,
+    "power_": 129,
+    "consumption_": 4.2,
+    "plate_": "VHN-222",
+    "ownerId_": 18,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 142,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "2025",
+    "size_": 3,
+    "power_": 116,
+    "consumption_": 4.7,
+    "plate_": "LJG-209",
+    "ownerId_": 47,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 143,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1536",
+    "size_": 3,
+    "power_": 152,
+    "consumption_": 4.6,
+    "plate_": "PXR-427",
+    "ownerId_": 93,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 144,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1942",
+    "size_": 3,
+    "power_": 592,
+    "consumption_": 7.2,
+    "plate_": "GZH-949",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 145,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "2910",
+    "size_": 3,
+    "power_": 81,
+    "consumption_": 7.7,
+    "plate_": "TIA-856",
+    "ownerId_": 90,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 146,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "2097",
+    "size_": 2,
+    "power_": 138,
+    "consumption_": 5.3,
+    "plate_": "WSX-444",
+    "ownerId_": 44,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 147,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "1528",
+    "size_": 3,
+    "power_": 332,
+    "consumption_": 7.8,
+    "plate_": "HLJ-163",
+    "ownerId_": 22,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 148,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "2866",
+    "size_": 3,
+    "power_": 109,
+    "consumption_": 6.9,
+    "plate_": "EBX-057",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 149,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2806",
+    "size_": 4,
+    "power_": 537,
+    "consumption_": 8.0,
+    "plate_": "CTI-726",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 150,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1208",
+    "size_": 3,
+    "power_": 459,
+    "consumption_": 4.3,
+    "plate_": "QOY-246",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 151,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1589",
+    "size_": 4,
+    "power_": 119,
+    "consumption_": 7.9,
+    "plate_": "SEM-108",
+    "ownerId_": 25,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 152,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "2413",
+    "size_": 3,
+    "power_": 329,
+    "consumption_": 7.1,
+    "plate_": "NZF-438",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 153,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "2147",
+    "size_": 4,
+    "power_": 405,
+    "consumption_": 5.5,
+    "plate_": "YTM-072",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 154,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "1338",
+    "size_": 2,
+    "power_": 334,
+    "consumption_": 4.7,
+    "plate_": "CKH-268",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 155,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "1087",
+    "size_": 4,
+    "power_": 296,
+    "consumption_": 5.3,
+    "plate_": "VWR-928",
+    "ownerId_": 86,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 156,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "1764",
+    "size_": 4,
+    "power_": 255,
+    "consumption_": 5.4,
+    "plate_": "MXF-580",
+    "ownerId_": 18,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 157,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "1735",
+    "size_": 2,
+    "power_": 426,
+    "consumption_": 6.4,
+    "plate_": "EAM-144",
+    "ownerId_": 45,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 158,
+    "brand_": "Volvo",
+    "model_": "S60",
+    "engine_": "2170",
+    "size_": 4,
+    "power_": 303,
+    "consumption_": 8.0,
+    "plate_": "SLX-305",
+    "ownerId_": 92,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 159,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "2230",
+    "size_": 3,
+    "power_": 428,
+    "consumption_": 6.1,
+    "plate_": "IAG-781",
+    "ownerId_": 36,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 160,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1154",
+    "size_": 2,
+    "power_": 278,
+    "consumption_": 6.6,
+    "plate_": "QBW-176",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 161,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "1584",
+    "size_": 2,
+    "power_": 368,
+    "consumption_": 6.4,
+    "plate_": "DOQ-061",
+    "ownerId_": 45,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 162,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1543",
+    "size_": 4,
+    "power_": 121,
+    "consumption_": 4.9,
+    "plate_": "ZQK-984",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 163,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "2469",
+    "size_": 2,
+    "power_": 389,
+    "consumption_": 5.1,
+    "plate_": "CZX-834",
+    "ownerId_": 33,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 164,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "2266",
+    "size_": 3,
+    "power_": 144,
+    "consumption_": 5.5,
+    "plate_": "LVK-731",
+    "ownerId_": 88,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 165,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "1607",
+    "size_": 2,
+    "power_": 167,
+    "consumption_": 7.8,
+    "plate_": "PFB-371",
+    "ownerId_": 27,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 166,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1338",
+    "size_": 3,
+    "power_": 337,
+    "consumption_": 7.3,
+    "plate_": "NCG-573",
+    "ownerId_": 22,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 167,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "2417",
+    "size_": 2,
+    "power_": 146,
+    "consumption_": 4.8,
+    "plate_": "ZHD-314",
+    "ownerId_": 80,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 168,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2602",
+    "size_": 4,
+    "power_": 136,
+    "consumption_": 5.5,
+    "plate_": "TXF-548",
+    "ownerId_": 13,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 169,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "1982",
+    "size_": 3,
+    "power_": 332,
+    "consumption_": 7.7,
+    "plate_": "WAB-990",
+    "ownerId_": 83,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 170,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "1989",
+    "size_": 2,
+    "power_": 216,
+    "consumption_": 7.6,
+    "plate_": "ZOC-870",
+    "ownerId_": 79,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 171,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2282",
+    "size_": 2,
+    "power_": 292,
+    "consumption_": 4.6,
+    "plate_": "LNC-446",
+    "ownerId_": 59,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 172,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "2280",
+    "size_": 4,
+    "power_": 514,
+    "consumption_": 4.2,
+    "plate_": "KTA-039",
+    "ownerId_": 74,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 173,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1328",
+    "size_": 4,
+    "power_": 267,
+    "consumption_": 4.9,
+    "plate_": "IOL-507",
+    "ownerId_": 56,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 174,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2373",
+    "size_": 2,
+    "power_": 448,
+    "consumption_": 7.5,
+    "plate_": "CVW-085",
+    "ownerId_": 78,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 175,
+    "brand_": "Mercedes",
+    "model_": "F1015",
+    "engine_": "2167",
+    "size_": 2,
+    "power_": 454,
+    "consumption_": 5.9,
+    "plate_": "WME-936",
+    "ownerId_": 4,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 176,
+    "brand_": "Volvo",
+    "model_": "S60",
+    "engine_": "2231",
+    "size_": 4,
+    "power_": 502,
+    "consumption_": 6.4,
+    "plate_": "CDH-293",
+    "ownerId_": 80,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 177,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1507",
+    "size_": 2,
+    "power_": 205,
+    "consumption_": 7.8,
+    "plate_": "WLZ-197",
+    "ownerId_": 66,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 178,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "1007",
+    "size_": 2,
+    "power_": 541,
+    "consumption_": 7.0,
+    "plate_": "ZLW-499",
+    "ownerId_": 93,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 179,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "2877",
+    "size_": 2,
+    "power_": 507,
+    "consumption_": 6.1,
+    "plate_": "OZR-319",
+    "ownerId_": 46,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 180,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "1970",
+    "size_": 4,
+    "power_": 388,
+    "consumption_": 4.2,
+    "plate_": "HJA-493",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 181,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "1287",
+    "size_": 2,
+    "power_": 106,
+    "consumption_": 7.5,
+    "plate_": "HMX-112",
+    "ownerId_": 82,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 182,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2133",
+    "size_": 3,
+    "power_": 556,
+    "consumption_": 7.0,
+    "plate_": "QHF-657",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 183,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1192",
+    "size_": 2,
+    "power_": 330,
+    "consumption_": 5.9,
+    "plate_": "ZKW-206",
+    "ownerId_": 13,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 184,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "2894",
+    "size_": 3,
+    "power_": 151,
+    "consumption_": 6.3,
+    "plate_": "AUS-114",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 185,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "2455",
+    "size_": 3,
+    "power_": 534,
+    "consumption_": 7.2,
+    "plate_": "OOA-177",
+    "ownerId_": 5,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 186,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1424",
+    "size_": 2,
+    "power_": 533,
+    "consumption_": 5.0,
+    "plate_": "YEC-675",
+    "ownerId_": 65,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 187,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "2910",
+    "size_": 4,
+    "power_": 283,
+    "consumption_": 4.2,
+    "plate_": "RFG-433",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 188,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2058",
+    "size_": 4,
+    "power_": 548,
+    "consumption_": 7.8,
+    "plate_": "AIG-692",
+    "ownerId_": 11,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 189,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2582",
+    "size_": 2,
+    "power_": 335,
+    "consumption_": 7.3,
+    "plate_": "YAD-120",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 190,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2133",
+    "size_": 2,
+    "power_": 459,
+    "consumption_": 6.9,
+    "plate_": "WWR-179",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 191,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "1282",
+    "size_": 2,
+    "power_": 138,
+    "consumption_": 5.4,
+    "plate_": "VSP-499",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 192,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "1745",
+    "size_": 4,
+    "power_": 91,
+    "consumption_": 7.8,
+    "plate_": "OFX-863",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 193,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "1825",
+    "size_": 3,
+    "power_": 596,
+    "consumption_": 5.4,
+    "plate_": "DML-805",
+    "ownerId_": 41,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 194,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "2035",
+    "size_": 2,
+    "power_": 89,
+    "consumption_": 6.1,
+    "plate_": "FCL-634",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 195,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "1885",
+    "size_": 2,
+    "power_": 506,
+    "consumption_": 6.6,
+    "plate_": "JLG-184",
+    "ownerId_": 60,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 196,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2517",
+    "size_": 4,
+    "power_": 515,
+    "consumption_": 5.6,
+    "plate_": "QLU-702",
+    "ownerId_": 2,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 197,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1154",
+    "size_": 4,
+    "power_": 142,
+    "consumption_": 4.1,
+    "plate_": "LLX-288",
+    "ownerId_": 76,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 198,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2322",
+    "size_": 3,
+    "power_": 502,
+    "consumption_": 6.8,
+    "plate_": "XQJ-376",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 199,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "2853",
+    "size_": 2,
+    "power_": 146,
+    "consumption_": 4.5,
+    "plate_": "TRA-722",
+    "ownerId_": 76,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 200,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1237",
+    "size_": 4,
+    "power_": 497,
+    "consumption_": 6.2,
+    "plate_": "XEF-327",
+    "ownerId_": 91,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 201,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1258",
+    "size_": 4,
+    "power_": 385,
+    "consumption_": 7.8,
+    "plate_": "ZCX-313",
+    "ownerId_": 82,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 202,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2037",
+    "size_": 3,
+    "power_": 249,
+    "consumption_": 5.7,
+    "plate_": "XNT-594",
+    "ownerId_": 86,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 203,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2504",
+    "size_": 3,
+    "power_": 386,
+    "consumption_": 7.8,
+    "plate_": "VGM-669",
+    "ownerId_": 36,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 204,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "2407",
+    "size_": 2,
+    "power_": 528,
+    "consumption_": 6.8,
+    "plate_": "CFE-248",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 205,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "1988",
+    "size_": 2,
+    "power_": 402,
+    "consumption_": 7.1,
+    "plate_": "KOZ-994",
+    "ownerId_": 34,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 206,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "1271",
+    "size_": 3,
+    "power_": 316,
+    "consumption_": 5.2,
+    "plate_": "GCG-572",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 207,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2640",
+    "size_": 2,
+    "power_": 405,
+    "consumption_": 4.0,
+    "plate_": "LPH-138",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 208,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "2332",
+    "size_": 4,
+    "power_": 89,
+    "consumption_": 7.1,
+    "plate_": "AXJ-945",
+    "ownerId_": 65,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 209,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "1640",
+    "size_": 4,
+    "power_": 313,
+    "consumption_": 6.5,
+    "plate_": "KZN-086",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 210,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2720",
+    "size_": 2,
+    "power_": 331,
+    "consumption_": 6.0,
+    "plate_": "OBR-615",
+    "ownerId_": 17,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 211,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "2160",
+    "size_": 3,
+    "power_": 144,
+    "consumption_": 6.8,
+    "plate_": "WIT-780",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 212,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "2625",
+    "size_": 4,
+    "power_": 195,
+    "consumption_": 6.8,
+    "plate_": "CIN-278",
+    "ownerId_": 69,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 213,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "1028",
+    "size_": 4,
+    "power_": 231,
+    "consumption_": 6.3,
+    "plate_": "UEX-284",
+    "ownerId_": 53,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 214,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2720",
+    "size_": 4,
+    "power_": 500,
+    "consumption_": 4.3,
+    "plate_": "AAM-394",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 215,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1748",
+    "size_": 2,
+    "power_": 583,
+    "consumption_": 6.4,
+    "plate_": "FXA-096",
+    "ownerId_": 99,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 216,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2619",
+    "size_": 3,
+    "power_": 546,
+    "consumption_": 6.3,
+    "plate_": "QAA-050",
+    "ownerId_": 58,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 217,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "2883",
+    "size_": 3,
+    "power_": 367,
+    "consumption_": 8.0,
+    "plate_": "IKG-342",
+    "ownerId_": 53,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 218,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1793",
+    "size_": 4,
+    "power_": 496,
+    "consumption_": 6.3,
+    "plate_": "MSI-766",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 219,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "2499",
+    "size_": 4,
+    "power_": 429,
+    "consumption_": 4.7,
+    "plate_": "VAG-005",
+    "ownerId_": 42,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 220,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "1689",
+    "size_": 2,
+    "power_": 91,
+    "consumption_": 4.8,
+    "plate_": "MKV-336",
+    "ownerId_": 32,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 221,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "1976",
+    "size_": 2,
+    "power_": 88,
+    "consumption_": 4.8,
+    "plate_": "IHB-852",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 222,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "2759",
+    "size_": 3,
+    "power_": 135,
+    "consumption_": 4.5,
+    "plate_": "ZLJ-180",
+    "ownerId_": 97,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 223,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1551",
+    "size_": 4,
+    "power_": 195,
+    "consumption_": 7.7,
+    "plate_": "RHX-652",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 224,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "2149",
+    "size_": 3,
+    "power_": 573,
+    "consumption_": 6.9,
+    "plate_": "ESO-738",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 225,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1778",
+    "size_": 2,
+    "power_": 432,
+    "consumption_": 4.2,
+    "plate_": "OVM-271",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 226,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1394",
+    "size_": 3,
+    "power_": 206,
+    "consumption_": 4.6,
+    "plate_": "TLW-857",
+    "ownerId_": 18,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 227,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1986",
+    "size_": 4,
+    "power_": 471,
+    "consumption_": 4.1,
+    "plate_": "ZGL-224",
+    "ownerId_": 6,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 228,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "2370",
+    "size_": 4,
+    "power_": 384,
+    "consumption_": 6.0,
+    "plate_": "IEM-884",
+    "ownerId_": 80,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 229,
+    "brand_": "Ford",
+    "model_": "Mustang",
+    "engine_": "1960",
+    "size_": 3,
+    "power_": 209,
+    "consumption_": 7.8,
+    "plate_": "UMN-448",
+    "ownerId_": 76,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 230,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "1177",
+    "size_": 3,
+    "power_": 491,
+    "consumption_": 7.5,
+    "plate_": "ONK-097",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 231,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1426",
+    "size_": 3,
+    "power_": 509,
+    "consumption_": 6.9,
+    "plate_": "RSI-527",
+    "ownerId_": 50,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 232,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1149",
+    "size_": 4,
+    "power_": 183,
+    "consumption_": 6.6,
+    "plate_": "OLQ-801",
+    "ownerId_": 11,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 233,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2125",
+    "size_": 4,
+    "power_": 174,
+    "consumption_": 6.9,
+    "plate_": "XRP-165",
+    "ownerId_": 11,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 234,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "1087",
+    "size_": 3,
+    "power_": 509,
+    "consumption_": 4.5,
+    "plate_": "KPH-781",
+    "ownerId_": 72,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 235,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "2572",
+    "size_": 3,
+    "power_": 440,
+    "consumption_": 4.3,
+    "plate_": "BOB-711",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 236,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "1934",
+    "size_": 3,
+    "power_": 440,
+    "consumption_": 7.6,
+    "plate_": "BVX-194",
+    "ownerId_": 69,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 237,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "1165",
+    "size_": 4,
+    "power_": 517,
+    "consumption_": 5.3,
+    "plate_": "FON-653",
+    "ownerId_": 59,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 238,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1889",
+    "size_": 4,
+    "power_": 152,
+    "consumption_": 6.8,
+    "plate_": "TFG-809",
+    "ownerId_": 69,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 239,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "2347",
+    "size_": 3,
+    "power_": 88,
+    "consumption_": 4.9,
+    "plate_": "NWI-028",
+    "ownerId_": 98,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 240,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1766",
+    "size_": 3,
+    "power_": 522,
+    "consumption_": 6.2,
+    "plate_": "NYB-687",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 241,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2108",
+    "size_": 4,
+    "power_": 277,
+    "consumption_": 5.0,
+    "plate_": "CNZ-299",
+    "ownerId_": 44,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 242,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2980",
+    "size_": 2,
+    "power_": 141,
+    "consumption_": 5.9,
+    "plate_": "WIP-167",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 243,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "2160",
+    "size_": 3,
+    "power_": 587,
+    "consumption_": 6.0,
+    "plate_": "OJX-798",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 244,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "1890",
+    "size_": 3,
+    "power_": 517,
+    "consumption_": 6.6,
+    "plate_": "ZCD-878",
+    "ownerId_": 43,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 245,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1036",
+    "size_": 3,
+    "power_": 384,
+    "consumption_": 7.2,
+    "plate_": "SQL-221",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 246,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "1930",
+    "size_": 4,
+    "power_": 373,
+    "consumption_": 8.0,
+    "plate_": "YZR-998",
+    "ownerId_": 56,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 247,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2362",
+    "size_": 3,
+    "power_": 360,
+    "consumption_": 7.5,
+    "plate_": "NSX-718",
+    "ownerId_": 97,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 248,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2197",
+    "size_": 4,
+    "power_": 236,
+    "consumption_": 7.2,
+    "plate_": "RMZ-225",
+    "ownerId_": 69,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 249,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "1750",
+    "size_": 3,
+    "power_": 257,
+    "consumption_": 5.6,
+    "plate_": "BDE-787",
+    "ownerId_": 37,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 250,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "2540",
+    "size_": 2,
+    "power_": 302,
+    "consumption_": 5.8,
+    "plate_": "CNT-525",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 251,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1806",
+    "size_": 2,
+    "power_": 405,
+    "consumption_": 7.6,
+    "plate_": "YLQ-108",
+    "ownerId_": 10,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 252,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "1697",
+    "size_": 2,
+    "power_": 380,
+    "consumption_": 6.2,
+    "plate_": "TTK-644",
+    "ownerId_": 11,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 253,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "1198",
+    "size_": 2,
+    "power_": 550,
+    "consumption_": 6.4,
+    "plate_": "QNF-999",
+    "ownerId_": 47,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 254,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1744",
+    "size_": 2,
+    "power_": 386,
+    "consumption_": 5.6,
+    "plate_": "CYK-181",
+    "ownerId_": 80,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 255,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2894",
+    "size_": 3,
+    "power_": 231,
+    "consumption_": 6.4,
+    "plate_": "MEF-906",
+    "ownerId_": 83,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 256,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "1277",
+    "size_": 2,
+    "power_": 572,
+    "consumption_": 4.0,
+    "plate_": "YGJ-331",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 257,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "2914",
+    "size_": 3,
+    "power_": 525,
+    "consumption_": 4.7,
+    "plate_": "SMF-430",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 258,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "2067",
+    "size_": 2,
+    "power_": 414,
+    "consumption_": 6.9,
+    "plate_": "CXI-717",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 259,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1861",
+    "size_": 3,
+    "power_": 266,
+    "consumption_": 5.4,
+    "plate_": "HWD-852",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 260,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "2254",
+    "size_": 4,
+    "power_": 246,
+    "consumption_": 8.0,
+    "plate_": "XUV-544",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 261,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "2426",
+    "size_": 2,
+    "power_": 417,
+    "consumption_": 5.5,
+    "plate_": "KHT-451",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 262,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "1966",
+    "size_": 2,
+    "power_": 527,
+    "consumption_": 4.9,
+    "plate_": "OSV-357",
+    "ownerId_": 65,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 263,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1096",
+    "size_": 4,
+    "power_": 403,
+    "consumption_": 4.6,
+    "plate_": "ATS-629",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 264,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2897",
+    "size_": 4,
+    "power_": 515,
+    "consumption_": 4.0,
+    "plate_": "XEZ-951",
+    "ownerId_": 56,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 265,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2008",
+    "size_": 3,
+    "power_": 116,
+    "consumption_": 7.0,
+    "plate_": "HKT-731",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 266,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1300",
+    "size_": 2,
+    "power_": 261,
+    "consumption_": 4.0,
+    "plate_": "BVY-774",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 267,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2294",
+    "size_": 3,
+    "power_": 163,
+    "consumption_": 6.6,
+    "plate_": "QCR-615",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 268,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1950",
+    "size_": 2,
+    "power_": 98,
+    "consumption_": 6.8,
+    "plate_": "RWN-232",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 269,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "2456",
+    "size_": 4,
+    "power_": 141,
+    "consumption_": 4.1,
+    "plate_": "HOB-187",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 270,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "2305",
+    "size_": 2,
+    "power_": 195,
+    "consumption_": 8.0,
+    "plate_": "EGK-398",
+    "ownerId_": 28,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 271,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "2087",
+    "size_": 3,
+    "power_": 581,
+    "consumption_": 6.2,
+    "plate_": "GVX-690",
+    "ownerId_": 32,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 272,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "1557",
+    "size_": 3,
+    "power_": 272,
+    "consumption_": 7.9,
+    "plate_": "JLH-164",
+    "ownerId_": 71,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 273,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1344",
+    "size_": 2,
+    "power_": 163,
+    "consumption_": 6.2,
+    "plate_": "NPD-254",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 274,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2746",
+    "size_": 4,
+    "power_": 275,
+    "consumption_": 7.6,
+    "plate_": "VFU-405",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 275,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "2638",
+    "size_": 4,
+    "power_": 446,
+    "consumption_": 7.4,
+    "plate_": "IVC-584",
+    "ownerId_": 66,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 276,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1843",
+    "size_": 3,
+    "power_": 208,
+    "consumption_": 4.4,
+    "plate_": "DYN-790",
+    "ownerId_": 43,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 277,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2064",
+    "size_": 4,
+    "power_": 382,
+    "consumption_": 6.6,
+    "plate_": "WYN-992",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 278,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "1186",
+    "size_": 3,
+    "power_": 277,
+    "consumption_": 4.6,
+    "plate_": "ATZ-654",
+    "ownerId_": 77,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 279,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "2377",
+    "size_": 4,
+    "power_": 82,
+    "consumption_": 4.8,
+    "plate_": "SZW-129",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 280,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "1292",
+    "size_": 4,
+    "power_": 275,
+    "consumption_": 7.5,
+    "plate_": "XEE-717",
+    "ownerId_": 15,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 281,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "2785",
+    "size_": 4,
+    "power_": 540,
+    "consumption_": 7.0,
+    "plate_": "FHO-399",
+    "ownerId_": 90,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 282,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2738",
+    "size_": 3,
+    "power_": 583,
+    "consumption_": 5.9,
+    "plate_": "GHF-086",
+    "ownerId_": 92,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 283,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2510",
+    "size_": 4,
+    "power_": 484,
+    "consumption_": 6.6,
+    "plate_": "EWD-259",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 284,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "2449",
+    "size_": 2,
+    "power_": 590,
+    "consumption_": 7.5,
+    "plate_": "XSP-349",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 285,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1400",
+    "size_": 3,
+    "power_": 248,
+    "consumption_": 7.3,
+    "plate_": "QPL-228",
+    "ownerId_": 58,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 286,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1023",
+    "size_": 4,
+    "power_": 269,
+    "consumption_": 6.0,
+    "plate_": "IOG-748",
+    "ownerId_": 28,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 287,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "2351",
+    "size_": 3,
+    "power_": 134,
+    "consumption_": 7.6,
+    "plate_": "TMH-995",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 288,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1370",
+    "size_": 3,
+    "power_": 130,
+    "consumption_": 7.8,
+    "plate_": "JWO-817",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 289,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "2738",
+    "size_": 4,
+    "power_": 499,
+    "consumption_": 5.1,
+    "plate_": "MNI-881",
+    "ownerId_": 71,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 290,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "2471",
+    "size_": 3,
+    "power_": 281,
+    "consumption_": 7.4,
+    "plate_": "YVX-798",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 291,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1958",
+    "size_": 4,
+    "power_": 507,
+    "consumption_": 4.6,
+    "plate_": "EMO-890",
+    "ownerId_": 81,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 292,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "1020",
+    "size_": 3,
+    "power_": 310,
+    "consumption_": 7.9,
+    "plate_": "SAA-278",
+    "ownerId_": 19,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 293,
+    "brand_": "Ford",
+    "model_": "Mustang",
+    "engine_": "1032",
+    "size_": 2,
+    "power_": 141,
+    "consumption_": 7.0,
+    "plate_": "OPV-093",
+    "ownerId_": 78,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 294,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1106",
+    "size_": 3,
+    "power_": 139,
+    "consumption_": 6.1,
+    "plate_": "HMA-844",
+    "ownerId_": 50,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 295,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2472",
+    "size_": 2,
+    "power_": 243,
+    "consumption_": 6.2,
+    "plate_": "QBN-225",
+    "ownerId_": 12,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 296,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1602",
+    "size_": 3,
+    "power_": 317,
+    "consumption_": 5.2,
+    "plate_": "XBB-194",
+    "ownerId_": 33,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 297,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2427",
+    "size_": 3,
+    "power_": 523,
+    "consumption_": 5.9,
+    "plate_": "DNA-310",
+    "ownerId_": 91,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 298,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "1123",
+    "size_": 4,
+    "power_": 489,
+    "consumption_": 5.2,
+    "plate_": "YTD-138",
+    "ownerId_": 14,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 299,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "1237",
+    "size_": 4,
+    "power_": 277,
+    "consumption_": 7.5,
+    "plate_": "LFA-501",
+    "ownerId_": 79,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 300,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2182",
+    "size_": 2,
+    "power_": 285,
+    "consumption_": 4.3,
+    "plate_": "VLK-140",
+    "ownerId_": 41,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 301,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "1144",
+    "size_": 4,
+    "power_": 482,
+    "consumption_": 6.6,
+    "plate_": "DNJ-555",
+    "ownerId_": 12,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 302,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "1863",
+    "size_": 2,
+    "power_": 93,
+    "consumption_": 5.8,
+    "plate_": "MHK-078",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 303,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2548",
+    "size_": 3,
+    "power_": 157,
+    "consumption_": 7.6,
+    "plate_": "IJM-890",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 304,
+    "brand_": "Volvo",
+    "model_": "S60",
+    "engine_": "1816",
+    "size_": 4,
+    "power_": 141,
+    "consumption_": 5.8,
+    "plate_": "OHK-485",
+    "ownerId_": 33,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 305,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "2676",
+    "size_": 3,
+    "power_": 425,
+    "consumption_": 7.0,
+    "plate_": "THD-783",
+    "ownerId_": 63,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 306,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1508",
+    "size_": 2,
+    "power_": 461,
+    "consumption_": 6.0,
+    "plate_": "BAM-555",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 307,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "2042",
+    "size_": 4,
+    "power_": 558,
+    "consumption_": 6.8,
+    "plate_": "NPC-906",
+    "ownerId_": 28,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 308,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1253",
+    "size_": 4,
+    "power_": 428,
+    "consumption_": 7.0,
+    "plate_": "GAI-229",
+    "ownerId_": 14,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 309,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "1631",
+    "size_": 2,
+    "power_": 217,
+    "consumption_": 5.1,
+    "plate_": "KYA-826",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 310,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "2665",
+    "size_": 4,
+    "power_": 324,
+    "consumption_": 5.9,
+    "plate_": "JKV-208",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 311,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1842",
+    "size_": 3,
+    "power_": 336,
+    "consumption_": 4.6,
+    "plate_": "HYD-421",
+    "ownerId_": 60,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 312,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "1088",
+    "size_": 4,
+    "power_": 479,
+    "consumption_": 4.4,
+    "plate_": "NDP-315",
+    "ownerId_": 32,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 313,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1316",
+    "size_": 3,
+    "power_": 87,
+    "consumption_": 6.2,
+    "plate_": "OBR-606",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 314,
+    "brand_": "Volvo",
+    "model_": "S60",
+    "engine_": "1811",
+    "size_": 4,
+    "power_": 149,
+    "consumption_": 5.4,
+    "plate_": "ZLI-341",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 315,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "1492",
+    "size_": 4,
+    "power_": 186,
+    "consumption_": 5.6,
+    "plate_": "GKE-686",
+    "ownerId_": 60,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 316,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "2426",
+    "size_": 4,
+    "power_": 434,
+    "consumption_": 5.7,
+    "plate_": "YAR-868",
+    "ownerId_": 61,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 317,
+    "brand_": "Audi",
+    "model_": "A6",
+    "engine_": "1557",
+    "size_": 4,
+    "power_": 463,
+    "consumption_": 5.2,
+    "plate_": "JZX-985",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 318,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "2517",
+    "size_": 4,
+    "power_": 304,
+    "consumption_": 7.5,
+    "plate_": "WAO-681",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 319,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2722",
+    "size_": 3,
+    "power_": 319,
+    "consumption_": 8.0,
+    "plate_": "HGP-443",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 320,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1212",
+    "size_": 3,
+    "power_": 117,
+    "consumption_": 7.7,
+    "plate_": "YKE-445",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 321,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "1442",
+    "size_": 4,
+    "power_": 145,
+    "consumption_": 7.1,
+    "plate_": "HUJ-690",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 322,
+    "brand_": "Ford",
+    "model_": "Mustang",
+    "engine_": "1933",
+    "size_": 3,
+    "power_": 249,
+    "consumption_": 5.2,
+    "plate_": "MHF-109",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 323,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1909",
+    "size_": 4,
+    "power_": 363,
+    "consumption_": 5.6,
+    "plate_": "HEC-869",
+    "ownerId_": 86,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 324,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "2058",
+    "size_": 3,
+    "power_": 447,
+    "consumption_": 5.5,
+    "plate_": "XHM-172",
+    "ownerId_": 13,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 325,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1345",
+    "size_": 4,
+    "power_": 86,
+    "consumption_": 7.3,
+    "plate_": "YPM-206",
+    "ownerId_": 18,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 326,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2804",
+    "size_": 3,
+    "power_": 182,
+    "consumption_": 8.0,
+    "plate_": "GOE-591",
+    "ownerId_": 8,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 327,
+    "brand_": "Mercedes",
+    "model_": "A180",
+    "engine_": "2626",
+    "size_": 4,
+    "power_": 590,
+    "consumption_": 6.6,
+    "plate_": "TDH-735",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 328,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "1264",
+    "size_": 2,
+    "power_": 221,
+    "consumption_": 5.5,
+    "plate_": "IVO-463",
+    "ownerId_": 46,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 329,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2470",
+    "size_": 4,
+    "power_": 362,
+    "consumption_": 6.1,
+    "plate_": "LHG-231",
+    "ownerId_": 8,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 330,
+    "brand_": "Lamborghini",
+    "model_": "Gallardo",
+    "engine_": "2173",
+    "size_": 3,
+    "power_": 560,
+    "consumption_": 7.6,
+    "plate_": "UPQ-164",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 331,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1130",
+    "size_": 4,
+    "power_": 206,
+    "consumption_": 6.3,
+    "plate_": "KOS-376",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 332,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1287",
+    "size_": 4,
+    "power_": 578,
+    "consumption_": 7.8,
+    "plate_": "XOC-120",
+    "ownerId_": 42,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 333,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1291",
+    "size_": 2,
+    "power_": 99,
+    "consumption_": 5.3,
+    "plate_": "TPZ-630",
+    "ownerId_": 52,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 334,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "1140",
+    "size_": 3,
+    "power_": 128,
+    "consumption_": 7.4,
+    "plate_": "MBA-864",
+    "ownerId_": 44,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 335,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2756",
+    "size_": 2,
+    "power_": 232,
+    "consumption_": 5.7,
+    "plate_": "LMV-005",
+    "ownerId_": 61,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 336,
+    "brand_": "Volkswagen",
+    "model_": "Scirocco",
+    "engine_": "1536",
+    "size_": 4,
+    "power_": 246,
+    "consumption_": 7.0,
+    "plate_": "AJS-131",
+    "ownerId_": 78,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 337,
+    "brand_": "Audi",
+    "model_": "A6",
+    "engine_": "2375",
+    "size_": 2,
+    "power_": 591,
+    "consumption_": 6.3,
+    "plate_": "WQI-994",
+    "ownerId_": 81,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 338,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "2575",
+    "size_": 4,
+    "power_": 122,
+    "consumption_": 4.4,
+    "plate_": "YRR-869",
+    "ownerId_": 84,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 339,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "1187",
+    "size_": 4,
+    "power_": 566,
+    "consumption_": 5.3,
+    "plate_": "FPI-680",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 340,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1335",
+    "size_": 4,
+    "power_": 114,
+    "consumption_": 4.2,
+    "plate_": "XPY-728",
+    "ownerId_": 57,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 341,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2538",
+    "size_": 3,
+    "power_": 184,
+    "consumption_": 6.3,
+    "plate_": "TNP-647",
+    "ownerId_": 31,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 342,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1551",
+    "size_": 2,
+    "power_": 252,
+    "consumption_": 7.4,
+    "plate_": "YFC-122",
+    "ownerId_": 2,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 343,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2901",
+    "size_": 3,
+    "power_": 584,
+    "consumption_": 7.4,
+    "plate_": "LAO-112",
+    "ownerId_": 79,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 344,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1536",
+    "size_": 3,
+    "power_": 161,
+    "consumption_": 8.0,
+    "plate_": "AZT-851",
+    "ownerId_": 74,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 345,
+    "brand_": "Volkswagen",
+    "model_": "Scirocco",
+    "engine_": "2430",
+    "size_": 2,
+    "power_": 226,
+    "consumption_": 7.8,
+    "plate_": "ITS-252",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 346,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2046",
+    "size_": 2,
+    "power_": 150,
+    "consumption_": 4.8,
+    "plate_": "SRI-011",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 347,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "1328",
+    "size_": 4,
+    "power_": 342,
+    "consumption_": 7.4,
+    "plate_": "TSV-153",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 348,
+    "brand_": "BMW",
+    "model_": "M4",
+    "engine_": "1675",
+    "size_": 3,
+    "power_": 160,
+    "consumption_": 5.6,
+    "plate_": "SRQ-654",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 349,
+    "brand_": "Ford",
+    "model_": "Mustang",
+    "engine_": "2038",
+    "size_": 4,
+    "power_": 570,
+    "consumption_": 7.1,
+    "plate_": "RPA-484",
+    "ownerId_": 35,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 350,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "2913",
+    "size_": 3,
+    "power_": 122,
+    "consumption_": 4.2,
+    "plate_": "YQG-938",
+    "ownerId_": 12,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 351,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1830",
+    "size_": 2,
+    "power_": 123,
+    "consumption_": 7.9,
+    "plate_": "RHR-613",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 352,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "1794",
+    "size_": 3,
+    "power_": 229,
+    "consumption_": 4.9,
+    "plate_": "VZP-026",
+    "ownerId_": 50,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 353,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "2881",
+    "size_": 3,
+    "power_": 520,
+    "consumption_": 6.3,
+    "plate_": "YVI-456",
+    "ownerId_": 77,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 354,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "2326",
+    "size_": 2,
+    "power_": 172,
+    "consumption_": 4.3,
+    "plate_": "CFM-867",
+    "ownerId_": 8,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 355,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2305",
+    "size_": 2,
+    "power_": 554,
+    "consumption_": 5.4,
+    "plate_": "UPJ-122",
+    "ownerId_": 81,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 356,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "2696",
+    "size_": 2,
+    "power_": 570,
+    "consumption_": 4.2,
+    "plate_": "CEL-759",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 357,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2758",
+    "size_": 3,
+    "power_": 148,
+    "consumption_": 7.2,
+    "plate_": "GCZ-566",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 358,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "2246",
+    "size_": 3,
+    "power_": 329,
+    "consumption_": 5.3,
+    "plate_": "BJY-096",
+    "ownerId_": 23,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 359,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "1286",
+    "size_": 4,
+    "power_": 571,
+    "consumption_": 7.4,
+    "plate_": "FPD-009",
+    "ownerId_": 34,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 360,
+    "brand_": "Ford",
+    "model_": "Mustang",
+    "engine_": "2123",
+    "size_": 3,
+    "power_": 362,
+    "consumption_": 5.3,
+    "plate_": "BRT-560",
+    "ownerId_": 35,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 361,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "1288",
+    "size_": 3,
+    "power_": 82,
+    "consumption_": 5.9,
+    "plate_": "BNC-692",
+    "ownerId_": 52,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 362,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "2210",
+    "size_": 3,
+    "power_": 395,
+    "consumption_": 6.0,
+    "plate_": "ALQ-854",
+    "ownerId_": 11,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 363,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "1396",
+    "size_": 4,
+    "power_": 598,
+    "consumption_": 7.7,
+    "plate_": "NBM-542",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 364,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "2529",
+    "size_": 3,
+    "power_": 352,
+    "consumption_": 5.1,
+    "plate_": "RBB-783",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 365,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "1426",
+    "size_": 4,
+    "power_": 473,
+    "consumption_": 7.5,
+    "plate_": "XUK-749",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 366,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2120",
+    "size_": 4,
+    "power_": 234,
+    "consumption_": 7.1,
+    "plate_": "GXS-365",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 367,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "2372",
+    "size_": 2,
+    "power_": 189,
+    "consumption_": 6.5,
+    "plate_": "XNI-428",
+    "ownerId_": 44,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 368,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2349",
+    "size_": 3,
+    "power_": 182,
+    "consumption_": 4.9,
+    "plate_": "BVI-131",
+    "ownerId_": 4,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 369,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "2266",
+    "size_": 3,
+    "power_": 318,
+    "consumption_": 6.2,
+    "plate_": "IUF-769",
+    "ownerId_": 47,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 370,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "1870",
+    "size_": 2,
+    "power_": 394,
+    "consumption_": 8.0,
+    "plate_": "PLP-312",
+    "ownerId_": 75,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 371,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2442",
+    "size_": 4,
+    "power_": 564,
+    "consumption_": 4.5,
+    "plate_": "CZK-646",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 372,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "2426",
+    "size_": 3,
+    "power_": 226,
+    "consumption_": 4.1,
+    "plate_": "GTT-422",
+    "ownerId_": 16,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 373,
+    "brand_": "Audi",
+    "model_": "A6",
+    "engine_": "2417",
+    "size_": 4,
+    "power_": 132,
+    "consumption_": 6.5,
+    "plate_": "RVG-150",
+    "ownerId_": 36,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 374,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "2260",
+    "size_": 3,
+    "power_": 515,
+    "consumption_": 4.6,
+    "plate_": "YRU-197",
+    "ownerId_": 94,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 375,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1377",
+    "size_": 2,
+    "power_": 267,
+    "consumption_": 5.8,
+    "plate_": "KTX-840",
+    "ownerId_": 96,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 376,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "2349",
+    "size_": 3,
+    "power_": 201,
+    "consumption_": 4.4,
+    "plate_": "WKN-539",
+    "ownerId_": 66,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 377,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2640",
+    "size_": 4,
+    "power_": 111,
+    "consumption_": 6.0,
+    "plate_": "WXR-260",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 378,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2852",
+    "size_": 3,
+    "power_": 218,
+    "consumption_": 5.3,
+    "plate_": "OBI-094",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 379,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "2641",
+    "size_": 2,
+    "power_": 241,
+    "consumption_": 5.7,
+    "plate_": "VPZ-636",
+    "ownerId_": 96,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 380,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1237",
+    "size_": 3,
+    "power_": 343,
+    "consumption_": 8.0,
+    "plate_": "EZQ-432",
+    "ownerId_": 53,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 381,
+    "brand_": "Audi",
+    "model_": "A4",
+    "engine_": "1675",
+    "size_": 2,
+    "power_": 202,
+    "consumption_": 4.1,
+    "plate_": "YFO-613",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 382,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "1940",
+    "size_": 2,
+    "power_": 444,
+    "consumption_": 4.5,
+    "plate_": "NIW-242",
+    "ownerId_": 15,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 383,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2572",
+    "size_": 3,
+    "power_": 225,
+    "consumption_": 4.5,
+    "plate_": "OOL-737",
+    "ownerId_": 81,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 384,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1117",
+    "size_": 4,
+    "power_": 388,
+    "consumption_": 4.1,
+    "plate_": "LNR-806",
+    "ownerId_": 53,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 385,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1760",
+    "size_": 4,
+    "power_": 399,
+    "consumption_": 5.3,
+    "plate_": "ZKS-264",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 386,
+    "brand_": "Volkswagen",
+    "model_": "Passat",
+    "engine_": "1426",
+    "size_": 4,
+    "power_": 250,
+    "consumption_": 7.3,
+    "plate_": "MON-717",
+    "ownerId_": 53,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 387,
+    "brand_": "Toyota",
+    "model_": "Corolla",
+    "engine_": "2458",
+    "size_": 4,
+    "power_": 552,
+    "consumption_": 5.6,
+    "plate_": "FPG-284",
+    "ownerId_": 88,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 388,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2967",
+    "size_": 4,
+    "power_": 135,
+    "consumption_": 6.5,
+    "plate_": "WVM-215",
+    "ownerId_": 78,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 389,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "2023",
+    "size_": 4,
+    "power_": 566,
+    "consumption_": 7.7,
+    "plate_": "LZT-588",
+    "ownerId_": 99,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 390,
+    "brand_": "Mercedes",
+    "model_": "F125",
+    "engine_": "2981",
+    "size_": 4,
+    "power_": 116,
+    "consumption_": 4.7,
+    "plate_": "NVA-749",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 391,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2291",
+    "size_": 4,
+    "power_": 227,
+    "consumption_": 4.0,
+    "plate_": "XWH-209",
+    "ownerId_": 36,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 392,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1634",
+    "size_": 3,
+    "power_": 196,
+    "consumption_": 6.3,
+    "plate_": "LAX-101",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 393,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "2689",
+    "size_": 2,
+    "power_": 195,
+    "consumption_": 7.9,
+    "plate_": "WAM-900",
+    "ownerId_": 64,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 394,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "1137",
+    "size_": 3,
+    "power_": 193,
+    "consumption_": 4.1,
+    "plate_": "CWE-191",
+    "ownerId_": 52,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 395,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "1028",
+    "size_": 4,
+    "power_": 564,
+    "consumption_": 5.8,
+    "plate_": "HUX-346",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 396,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "1076",
+    "size_": 2,
+    "power_": 465,
+    "consumption_": 4.7,
+    "plate_": "XUA-322",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 397,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1356",
+    "size_": 3,
+    "power_": 451,
+    "consumption_": 6.5,
+    "plate_": "BZP-782",
+    "ownerId_": 4,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 398,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "1282",
+    "size_": 3,
+    "power_": 499,
+    "consumption_": 4.7,
+    "plate_": "AXC-179",
+    "ownerId_": 71,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 399,
+    "brand_": "Lamborghini",
+    "model_": "Gallardo",
+    "engine_": "1623",
+    "size_": 4,
+    "power_": 156,
+    "consumption_": 5.9,
+    "plate_": "SRB-496",
+    "ownerId_": 48,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 400,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2494",
+    "size_": 4,
+    "power_": 91,
+    "consumption_": 6.7,
+    "plate_": "YDC-284",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 401,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "1485",
+    "size_": 4,
+    "power_": 326,
+    "consumption_": 7.3,
+    "plate_": "CYD-406",
+    "ownerId_": 6,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 402,
+    "brand_": "Volkswagen",
+    "model_": "Scirocco",
+    "engine_": "1502",
+    "size_": 3,
+    "power_": 583,
+    "consumption_": 5.4,
+    "plate_": "PKF-708",
+    "ownerId_": 19,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 403,
+    "brand_": "Renault",
+    "model_": "Express",
+    "engine_": "1582",
+    "size_": 2,
+    "power_": 329,
+    "consumption_": 4.1,
+    "plate_": "JRZ-173",
+    "ownerId_": 13,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 404,
+    "brand_": "Volvo",
+    "model_": "V30",
+    "engine_": "1325",
+    "size_": 2,
+    "power_": 324,
+    "consumption_": 4.2,
+    "plate_": "TKI-677",
+    "ownerId_": 41,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 405,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "1955",
+    "size_": 4,
+    "power_": 437,
+    "consumption_": 7.0,
+    "plate_": "UZM-976",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 406,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1111",
+    "size_": 3,
+    "power_": 289,
+    "consumption_": 5.3,
+    "plate_": "OQE-533",
+    "ownerId_": 55,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 407,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "1511",
+    "size_": 2,
+    "power_": 584,
+    "consumption_": 4.0,
+    "plate_": "ZEP-271",
+    "ownerId_": 82,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 408,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "2902",
+    "size_": 2,
+    "power_": 87,
+    "consumption_": 7.5,
+    "plate_": "CLL-009",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 409,
+    "brand_": "Honda",
+    "model_": "Element",
+    "engine_": "2217",
+    "size_": 3,
+    "power_": 316,
+    "consumption_": 6.4,
+    "plate_": "CDV-629",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 410,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2037",
+    "size_": 2,
+    "power_": 475,
+    "consumption_": 6.3,
+    "plate_": "KWI-894",
+    "ownerId_": 14,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 411,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "1720",
+    "size_": 4,
+    "power_": 410,
+    "consumption_": 4.6,
+    "plate_": "XQC-690",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 412,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "2664",
+    "size_": 2,
+    "power_": 280,
+    "consumption_": 4.2,
+    "plate_": "CDG-709",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 413,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "1507",
+    "size_": 2,
+    "power_": 127,
+    "consumption_": 8.0,
+    "plate_": "EZI-811",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 414,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "2622",
+    "size_": 3,
+    "power_": 533,
+    "consumption_": 6.0,
+    "plate_": "KCF-670",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 415,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2003",
+    "size_": 3,
+    "power_": 450,
+    "consumption_": 4.9,
+    "plate_": "GUQ-743",
+    "ownerId_": 54,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 416,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2381",
+    "size_": 4,
+    "power_": 335,
+    "consumption_": 5.3,
+    "plate_": "GXG-142",
+    "ownerId_": 70,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 417,
+    "brand_": "Volkswagen",
+    "model_": "Polo",
+    "engine_": "1726",
+    "size_": 4,
+    "power_": 303,
+    "consumption_": 7.7,
+    "plate_": "TKQ-251",
+    "ownerId_": 93,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 418,
+    "brand_": "Honda",
+    "model_": "Passport",
+    "engine_": "1776",
+    "size_": 3,
+    "power_": 412,
+    "consumption_": 6.3,
+    "plate_": "QIU-371",
+    "ownerId_": 6,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 419,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "2834",
+    "size_": 3,
+    "power_": 92,
+    "consumption_": 7.7,
+    "plate_": "XCZ-244",
+    "ownerId_": 88,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 420,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "2119",
+    "size_": 3,
+    "power_": 405,
+    "consumption_": 4.7,
+    "plate_": "KLV-964",
+    "ownerId_": 20,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 421,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2867",
+    "size_": 4,
+    "power_": 381,
+    "consumption_": 6.9,
+    "plate_": "CUF-436",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 422,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "2052",
+    "size_": 2,
+    "power_": 526,
+    "consumption_": 4.7,
+    "plate_": "WJD-970",
+    "ownerId_": 5,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 423,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "1610",
+    "size_": 3,
+    "power_": 158,
+    "consumption_": 6.5,
+    "plate_": "KGP-505",
+    "ownerId_": 50,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 424,
+    "brand_": "Volvo",
+    "model_": "S60",
+    "engine_": "2469",
+    "size_": 3,
+    "power_": 556,
+    "consumption_": 6.3,
+    "plate_": "VLP-415",
+    "ownerId_": 13,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 425,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1459",
+    "size_": 4,
+    "power_": 132,
+    "consumption_": 5.9,
+    "plate_": "RSG-477",
+    "ownerId_": 43,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 426,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1803",
+    "size_": 2,
+    "power_": 195,
+    "consumption_": 6.8,
+    "plate_": "FSI-319",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 427,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2298",
+    "size_": 2,
+    "power_": 537,
+    "consumption_": 4.1,
+    "plate_": "LIM-885",
+    "ownerId_": 61,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 428,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1615",
+    "size_": 2,
+    "power_": 554,
+    "consumption_": 7.8,
+    "plate_": "DNR-779",
+    "ownerId_": 36,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 429,
+    "brand_": "Toyota",
+    "model_": "GT86",
+    "engine_": "2842",
+    "size_": 4,
+    "power_": 322,
+    "consumption_": 6.4,
+    "plate_": "HLG-649",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 430,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1363",
+    "size_": 3,
+    "power_": 525,
+    "consumption_": 6.5,
+    "plate_": "IOL-693",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 431,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1419",
+    "size_": 4,
+    "power_": 311,
+    "consumption_": 5.5,
+    "plate_": "MTF-580",
+    "ownerId_": 92,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 432,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1348",
+    "size_": 4,
+    "power_": 373,
+    "consumption_": 7.4,
+    "plate_": "VMI-527",
+    "ownerId_": 94,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 433,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "2207",
+    "size_": 4,
+    "power_": 287,
+    "consumption_": 5.6,
+    "plate_": "CCC-313",
+    "ownerId_": 48,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 434,
+    "brand_": "Volkswagen",
+    "model_": "Golf",
+    "engine_": "1218",
+    "size_": 3,
+    "power_": 487,
+    "consumption_": 6.4,
+    "plate_": "KSA-610",
+    "ownerId_": 7,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 435,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "1152",
+    "size_": 2,
+    "power_": 396,
+    "consumption_": 5.4,
+    "plate_": "EYH-850",
+    "ownerId_": 56,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 436,
+    "brand_": "Ford",
+    "model_": "Mustang",
+    "engine_": "1553",
+    "size_": 3,
+    "power_": 143,
+    "consumption_": 5.5,
+    "plate_": "YNS-009",
+    "ownerId_": 85,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 437,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2145",
+    "size_": 3,
+    "power_": 146,
+    "consumption_": 6.3,
+    "plate_": "SON-906",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 438,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "1080",
+    "size_": 4,
+    "power_": 175,
+    "consumption_": 4.9,
+    "plate_": "NTH-374",
+    "ownerId_": 32,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 439,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2791",
+    "size_": 2,
+    "power_": 192,
+    "consumption_": 4.1,
+    "plate_": "ILL-545",
+    "ownerId_": 72,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 440,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "1868",
+    "size_": 2,
+    "power_": 570,
+    "consumption_": 5.5,
+    "plate_": "ZQE-836",
+    "ownerId_": 21,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 441,
+    "brand_": "Ford",
+    "model_": "Escort",
+    "engine_": "1738",
+    "size_": 4,
+    "power_": 89,
+    "consumption_": 6.7,
+    "plate_": "KAL-167",
+    "ownerId_": 39,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 442,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "1296",
+    "size_": 4,
+    "power_": 214,
+    "consumption_": 7.8,
+    "plate_": "HXH-680",
+    "ownerId_": 10,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 443,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "2805",
+    "size_": 4,
+    "power_": 219,
+    "consumption_": 4.3,
+    "plate_": "SBQ-355",
+    "ownerId_": 84,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 444,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "2323",
+    "size_": 4,
+    "power_": 555,
+    "consumption_": 4.2,
+    "plate_": "GBN-964",
+    "ownerId_": 5,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 445,
+    "brand_": "Lamborghini",
+    "model_": "Aventador",
+    "engine_": "2383",
+    "size_": 3,
+    "power_": 305,
+    "consumption_": 4.1,
+    "plate_": "ZIG-188",
+    "ownerId_": 87,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 446,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "1726",
+    "size_": 2,
+    "power_": 238,
+    "consumption_": 5.2,
+    "plate_": "OMJ-977",
+    "ownerId_": 37,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 447,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2268",
+    "size_": 4,
+    "power_": 182,
+    "consumption_": 8.0,
+    "plate_": "VPQ-615",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 448,
+    "brand_": "BMW",
+    "model_": "M4",
+    "engine_": "1201",
+    "size_": 4,
+    "power_": 81,
+    "consumption_": 7.1,
+    "plate_": "DYA-003",
+    "ownerId_": 96,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 449,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "1788",
+    "size_": 4,
+    "power_": 176,
+    "consumption_": 6.0,
+    "plate_": "VZO-776",
+    "ownerId_": 2,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 450,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2465",
+    "size_": 4,
+    "power_": 274,
+    "consumption_": 5.8,
+    "plate_": "MDH-538",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 451,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "2503",
+    "size_": 4,
+    "power_": 591,
+    "consumption_": 5.2,
+    "plate_": "PEG-915",
+    "ownerId_": 6,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 452,
+    "brand_": "Audi",
+    "model_": "TT",
+    "engine_": "2504",
+    "size_": 3,
+    "power_": 509,
+    "consumption_": 7.0,
+    "plate_": "PIY-952",
+    "ownerId_": 38,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 453,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "1002",
+    "size_": 3,
+    "power_": 81,
+    "consumption_": 6.2,
+    "plate_": "LUQ-351",
+    "ownerId_": 48,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 454,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "2256",
+    "size_": 3,
+    "power_": 160,
+    "consumption_": 5.0,
+    "plate_": "NNU-311",
+    "ownerId_": 89,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 455,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "1914",
+    "size_": 4,
+    "power_": 299,
+    "consumption_": 5.4,
+    "plate_": "OHL-732",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 456,
+    "brand_": "Toyota",
+    "model_": "Mirai",
+    "engine_": "2854",
+    "size_": 2,
+    "power_": 410,
+    "consumption_": 5.3,
+    "plate_": "UAZ-437",
+    "ownerId_": 49,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 457,
+    "brand_": "Renault",
+    "model_": "Espace",
+    "engine_": "2828",
+    "size_": 4,
+    "power_": 398,
+    "consumption_": 6.2,
+    "plate_": "ACZ-319",
+    "ownerId_": 44,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 458,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "1824",
+    "size_": 3,
+    "power_": 465,
+    "consumption_": 6.4,
+    "plate_": "UHW-757",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 459,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "2453",
+    "size_": 4,
+    "power_": 84,
+    "consumption_": 4.0,
+    "plate_": "ASP-494",
+    "ownerId_": 77,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 460,
+    "brand_": "Honda",
+    "model_": "Civic",
+    "engine_": "1826",
+    "size_": 2,
+    "power_": 278,
+    "consumption_": 4.6,
+    "plate_": "HSI-362",
+    "ownerId_": 22,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 461,
+    "brand_": "Lamborghini",
+    "model_": "Murcielago",
+    "engine_": "2476",
+    "size_": 4,
+    "power_": 86,
+    "consumption_": 5.2,
+    "plate_": "IXG-567",
+    "ownerId_": 77,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 462,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2859",
+    "size_": 2,
+    "power_": 493,
+    "consumption_": 6.4,
+    "plate_": "PGL-281",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 463,
+    "brand_": "Audi",
+    "model_": "A6",
+    "engine_": "1457",
+    "size_": 2,
+    "power_": 204,
+    "consumption_": 4.8,
+    "plate_": "XJW-178",
+    "ownerId_": 42,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 464,
+    "brand_": "Mercedes",
+    "model_": "AMG",
+    "engine_": "2623",
+    "size_": 4,
+    "power_": 494,
+    "consumption_": 5.0,
+    "plate_": "EVV-662",
+    "ownerId_": 50,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 465,
+    "brand_": "Audi",
+    "model_": "A3",
+    "engine_": "1697",
+    "size_": 3,
+    "power_": 472,
+    "consumption_": 5.1,
+    "plate_": "IHO-765",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 466,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2616",
+    "size_": 4,
+    "power_": 562,
+    "consumption_": 7.3,
+    "plate_": "SFB-008",
+    "ownerId_": 4,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 467,
+    "brand_": "Renault",
+    "model_": "Clio",
+    "engine_": "2496",
+    "size_": 4,
+    "power_": 310,
+    "consumption_": 4.6,
+    "plate_": "RYG-052",
+    "ownerId_": 22,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 468,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "2054",
+    "size_": 2,
+    "power_": 540,
+    "consumption_": 4.3,
+    "plate_": "AIO-301",
+    "ownerId_": 58,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 469,
+    "brand_": "Ford",
+    "model_": "Fista",
+    "engine_": "2219",
+    "size_": 3,
+    "power_": 492,
+    "consumption_": 4.9,
+    "plate_": "AXU-406",
+    "ownerId_": 75,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 470,
+    "brand_": "BMW",
+    "model_": "M4",
+    "engine_": "1000",
+    "size_": 3,
+    "power_": 141,
+    "consumption_": 6.2,
+    "plate_": "KUO-926",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 471,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "1328",
+    "size_": 4,
+    "power_": 563,
+    "consumption_": 5.4,
+    "plate_": "OCK-318",
+    "ownerId_": 80,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 472,
+    "brand_": "Toyota",
+    "model_": "GT86",
+    "engine_": "2239",
+    "size_": 3,
+    "power_": 498,
+    "consumption_": 7.1,
+    "plate_": "XYM-346",
+    "ownerId_": 3,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 473,
+    "brand_": "Volkswagen",
+    "model_": "Scirocco",
+    "engine_": "1891",
+    "size_": 4,
+    "power_": 367,
+    "consumption_": 5.1,
+    "plate_": "HEM-938",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 474,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "2966",
+    "size_": 4,
+    "power_": 238,
+    "consumption_": 4.8,
+    "plate_": "LOF-457",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 475,
+    "brand_": "Mercedes",
+    "model_": "SLK",
+    "engine_": "2119",
+    "size_": 4,
+    "power_": 193,
+    "consumption_": 4.8,
+    "plate_": "PQM-988",
+    "ownerId_": 13,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 476,
+    "brand_": "Lamborghini",
+    "model_": "Centenario",
+    "engine_": "2743",
+    "size_": 2,
+    "power_": 599,
+    "consumption_": 6.7,
+    "plate_": "DXW-234",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 477,
+    "brand_": "Ford",
+    "model_": "Focus",
+    "engine_": "2174",
+    "size_": 4,
+    "power_": 191,
+    "consumption_": 4.4,
+    "plate_": "UXR-555",
+    "ownerId_": 95,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 478,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "1605",
+    "size_": 3,
+    "power_": 103,
+    "consumption_": 5.0,
+    "plate_": "IBH-542",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 479,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "2806",
+    "size_": 4,
+    "power_": 252,
+    "consumption_": 7.8,
+    "plate_": "DOQ-438",
+    "ownerId_": 80,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 480,
+    "brand_": "Volkswagen",
+    "model_": "Jetta",
+    "engine_": "1385",
+    "size_": 3,
+    "power_": 464,
+    "consumption_": 5.5,
+    "plate_": "FRV-181",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 481,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "2826",
+    "size_": 4,
+    "power_": 105,
+    "consumption_": 4.2,
+    "plate_": "ARR-631",
+    "ownerId_": 62,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 482,
+    "brand_": "BMW",
+    "model_": "M3",
+    "engine_": "2628",
+    "size_": 3,
+    "power_": 139,
+    "consumption_": 4.7,
+    "plate_": "ZLF-768",
+    "ownerId_": 68,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 483,
+    "brand_": "Toyota",
+    "model_": "Prius",
+    "engine_": "2937",
+    "size_": 3,
+    "power_": 488,
+    "consumption_": 5.9,
+    "plate_": "YNY-372",
+    "ownerId_": 40,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 484,
+    "brand_": "Audi",
+    "model_": "A6",
+    "engine_": "2617",
+    "size_": 4,
+    "power_": 543,
+    "consumption_": 6.6,
+    "plate_": "CXG-512",
+    "ownerId_": 94,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 485,
+    "brand_": "Volvo",
+    "model_": "XC 70",
+    "engine_": "2862",
+    "size_": 3,
+    "power_": 113,
+    "consumption_": 7.7,
+    "plate_": "NDA-669",
+    "ownerId_": 81,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 486,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2988",
+    "size_": 2,
+    "power_": 530,
+    "consumption_": 6.7,
+    "plate_": "OGX-877",
+    "ownerId_": 72,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 487,
+    "brand_": "Honda",
+    "model_": "Integra",
+    "engine_": "2420",
+    "size_": 3,
+    "power_": 419,
+    "consumption_": 5.8,
+    "plate_": "AKN-086",
+    "ownerId_": 88,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 488,
+    "brand_": "BMW",
+    "model_": "120",
+    "engine_": "1203",
+    "size_": 4,
+    "power_": 414,
+    "consumption_": 7.4,
+    "plate_": "EIA-375",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 489,
+    "brand_": "Toyota",
+    "model_": "Supra",
+    "engine_": "1916",
+    "size_": 2,
+    "power_": 577,
+    "consumption_": 6.0,
+    "plate_": "SGY-889",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 490,
+    "brand_": "Honda",
+    "model_": "NSX-R",
+    "engine_": "2319",
+    "size_": 2,
+    "power_": 210,
+    "consumption_": 7.3,
+    "plate_": "CVI-022",
+    "ownerId_": 26,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 491,
+    "brand_": "BMW",
+    "model_": "420",
+    "engine_": "1958",
+    "size_": 4,
+    "power_": 310,
+    "consumption_": 4.2,
+    "plate_": "MGW-803",
+    "ownerId_": 67,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 492,
+    "brand_": "Audi",
+    "model_": "A5",
+    "engine_": "1822",
+    "size_": 2,
+    "power_": 178,
+    "consumption_": 6.5,
+    "plate_": "THA-557",
+    "ownerId_": 30,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 493,
+    "brand_": "Renault",
+    "model_": "Captur",
+    "engine_": "2177",
+    "size_": 4,
+    "power_": 94,
+    "consumption_": 4.3,
+    "plate_": "ZHL-482",
+    "ownerId_": 73,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 494,
+    "brand_": "Lamborghini",
+    "model_": "Veneno",
+    "engine_": "2665",
+    "size_": 3,
+    "power_": 350,
+    "consumption_": 7.6,
+    "plate_": "LQG-305",
+    "ownerId_": 7,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 495,
+    "brand_": "Renault",
+    "model_": "Laguna",
+    "engine_": "2872",
+    "size_": 4,
+    "power_": 475,
+    "consumption_": 6.2,
+    "plate_": "EJI-562",
+    "ownerId_": 51,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 496,
+    "brand_": "Volvo",
+    "model_": "V40",
+    "engine_": "1422",
+    "size_": 4,
+    "power_": 292,
+    "consumption_": 6.8,
+    "plate_": "ZRD-542",
+    "ownerId_": 15,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 497,
+    "brand_": "Volkswagen",
+    "model_": "Scirocco",
+    "engine_": "1154",
+    "size_": 3,
+    "power_": 473,
+    "consumption_": 5.4,
+    "plate_": "GSS-444",
+    "ownerId_": 53,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 498,
+    "brand_": "BMW",
+    "model_": "320",
+    "engine_": "1009",
+    "size_": 4,
+    "power_": 161,
+    "consumption_": 4.8,
+    "plate_": "GQN-887",
+    "ownerId_": 97,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 499,
+    "brand_": "Volvo",
+    "model_": "XC 90",
+    "engine_": "2590",
+    "size_": 4,
+    "power_": 279,
+    "consumption_": 4.4,
+    "plate_": "QQM-919",
+    "ownerId_": 24,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  },
+  {
+    "id_": 500,
+    "brand_": "Ford",
+    "model_": "GT",
+    "engine_": "2332",
+    "size_": 3,
+    "power_": 178,
+    "consumption_": 5.7,
+    "plate_": "SLS-775",
+    "ownerId_": 29,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 0
+  }
+]
