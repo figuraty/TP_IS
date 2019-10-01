@@ -12,12 +12,20 @@ public  abstract class DataConversion
 
   public interface Interface {
     /**
-     * <code>rpc listOfCarsPerOwner(.com.dei.isassignment.Request) returns (.com.dei.isassignment.Response);</code>
+     * <code>rpc listOfCarsPerOwnerProtobuf(.com.dei.isassignment.Request) returns (.com.dei.isassignment.Response);</code>
      */
-    public abstract void listOfCarsPerOwner(
+    public abstract void listOfCarsPerOwnerProtobuf(
         com.google.protobuf.RpcController controller,
         com.dei.isassignment.Request request,
         com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done);
+
+    /**
+     * <code>rpc listOfCarsPerOwnerXML(.com.dei.isassignment.XMLRequest) returns (.com.dei.isassignment.XMLResponse);</code>
+     */
+    public abstract void listOfCarsPerOwnerXML(
+        com.google.protobuf.RpcController controller,
+        com.dei.isassignment.XMLRequest request,
+        com.google.protobuf.RpcCallback<com.dei.isassignment.XMLResponse> done);
 
   }
 
@@ -25,11 +33,19 @@ public  abstract class DataConversion
       final Interface impl) {
     return new DataConversion() {
       @java.lang.Override
-      public  void listOfCarsPerOwner(
+      public  void listOfCarsPerOwnerProtobuf(
           com.google.protobuf.RpcController controller,
           com.dei.isassignment.Request request,
           com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done) {
-        impl.listOfCarsPerOwner(controller, request, done);
+        impl.listOfCarsPerOwnerProtobuf(controller, request, done);
+      }
+
+      @java.lang.Override
+      public  void listOfCarsPerOwnerXML(
+          com.google.protobuf.RpcController controller,
+          com.dei.isassignment.XMLRequest request,
+          com.google.protobuf.RpcCallback<com.dei.isassignment.XMLResponse> done) {
+        impl.listOfCarsPerOwnerXML(controller, request, done);
       }
 
     };
@@ -55,7 +71,9 @@ public  abstract class DataConversion
         }
         switch(method.getIndex()) {
           case 0:
-            return impl.listOfCarsPerOwner(controller, (com.dei.isassignment.Request)request);
+            return impl.listOfCarsPerOwnerProtobuf(controller, (com.dei.isassignment.Request)request);
+          case 1:
+            return impl.listOfCarsPerOwnerXML(controller, (com.dei.isassignment.XMLRequest)request);
           default:
             throw new java.lang.AssertionError("Can't get here.");
         }
@@ -72,6 +90,8 @@ public  abstract class DataConversion
         switch(method.getIndex()) {
           case 0:
             return com.dei.isassignment.Request.getDefaultInstance();
+          case 1:
+            return com.dei.isassignment.XMLRequest.getDefaultInstance();
           default:
             throw new java.lang.AssertionError("Can't get here.");
         }
@@ -88,6 +108,8 @@ public  abstract class DataConversion
         switch(method.getIndex()) {
           case 0:
             return com.dei.isassignment.Response.getDefaultInstance();
+          case 1:
+            return com.dei.isassignment.XMLResponse.getDefaultInstance();
           default:
             throw new java.lang.AssertionError("Can't get here.");
         }
@@ -97,12 +119,20 @@ public  abstract class DataConversion
   }
 
   /**
-   * <code>rpc listOfCarsPerOwner(.com.dei.isassignment.Request) returns (.com.dei.isassignment.Response);</code>
+   * <code>rpc listOfCarsPerOwnerProtobuf(.com.dei.isassignment.Request) returns (.com.dei.isassignment.Response);</code>
    */
-  public abstract void listOfCarsPerOwner(
+  public abstract void listOfCarsPerOwnerProtobuf(
       com.google.protobuf.RpcController controller,
       com.dei.isassignment.Request request,
       com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done);
+
+  /**
+   * <code>rpc listOfCarsPerOwnerXML(.com.dei.isassignment.XMLRequest) returns (.com.dei.isassignment.XMLResponse);</code>
+   */
+  public abstract void listOfCarsPerOwnerXML(
+      com.google.protobuf.RpcController controller,
+      com.dei.isassignment.XMLRequest request,
+      com.google.protobuf.RpcCallback<com.dei.isassignment.XMLResponse> done);
 
   public static final
       com.google.protobuf.Descriptors.ServiceDescriptor
@@ -127,8 +157,13 @@ public  abstract class DataConversion
     }
     switch(method.getIndex()) {
       case 0:
-        this.listOfCarsPerOwner(controller, (com.dei.isassignment.Request)request,
+        this.listOfCarsPerOwnerProtobuf(controller, (com.dei.isassignment.Request)request,
           com.google.protobuf.RpcUtil.<com.dei.isassignment.Response>specializeCallback(
+            done));
+        return;
+      case 1:
+        this.listOfCarsPerOwnerXML(controller, (com.dei.isassignment.XMLRequest)request,
+          com.google.protobuf.RpcUtil.<com.dei.isassignment.XMLResponse>specializeCallback(
             done));
         return;
       default:
@@ -147,6 +182,8 @@ public  abstract class DataConversion
     switch(method.getIndex()) {
       case 0:
         return com.dei.isassignment.Request.getDefaultInstance();
+      case 1:
+        return com.dei.isassignment.XMLRequest.getDefaultInstance();
       default:
         throw new java.lang.AssertionError("Can't get here.");
     }
@@ -163,6 +200,8 @@ public  abstract class DataConversion
     switch(method.getIndex()) {
       case 0:
         return com.dei.isassignment.Response.getDefaultInstance();
+      case 1:
+        return com.dei.isassignment.XMLResponse.getDefaultInstance();
       default:
         throw new java.lang.AssertionError("Can't get here.");
     }
@@ -184,7 +223,7 @@ public  abstract class DataConversion
       return channel;
     }
 
-    public  void listOfCarsPerOwner(
+    public  void listOfCarsPerOwnerProtobuf(
         com.google.protobuf.RpcController controller,
         com.dei.isassignment.Request request,
         com.google.protobuf.RpcCallback<com.dei.isassignment.Response> done) {
@@ -198,6 +237,21 @@ public  abstract class DataConversion
           com.dei.isassignment.Response.class,
           com.dei.isassignment.Response.getDefaultInstance()));
     }
+
+    public  void listOfCarsPerOwnerXML(
+        com.google.protobuf.RpcController controller,
+        com.dei.isassignment.XMLRequest request,
+        com.google.protobuf.RpcCallback<com.dei.isassignment.XMLResponse> done) {
+      channel.callMethod(
+        getDescriptor().getMethods().get(1),
+        controller,
+        request,
+        com.dei.isassignment.XMLResponse.getDefaultInstance(),
+        com.google.protobuf.RpcUtil.generalizeCallback(
+          done,
+          com.dei.isassignment.XMLResponse.class,
+          com.dei.isassignment.XMLResponse.getDefaultInstance()));
+    }
   }
 
   public static BlockingInterface newBlockingStub(
@@ -206,9 +260,14 @@ public  abstract class DataConversion
   }
 
   public interface BlockingInterface {
-    public com.dei.isassignment.Response listOfCarsPerOwner(
+    public com.dei.isassignment.Response listOfCarsPerOwnerProtobuf(
         com.google.protobuf.RpcController controller,
         com.dei.isassignment.Request request)
+        throws com.google.protobuf.ServiceException;
+
+    public com.dei.isassignment.XMLResponse listOfCarsPerOwnerXML(
+        com.google.protobuf.RpcController controller,
+        com.dei.isassignment.XMLRequest request)
         throws com.google.protobuf.ServiceException;
   }
 
@@ -219,7 +278,7 @@ public  abstract class DataConversion
 
     private final com.google.protobuf.BlockingRpcChannel channel;
 
-    public com.dei.isassignment.Response listOfCarsPerOwner(
+    public com.dei.isassignment.Response listOfCarsPerOwnerProtobuf(
         com.google.protobuf.RpcController controller,
         com.dei.isassignment.Request request)
         throws com.google.protobuf.ServiceException {
@@ -228,6 +287,18 @@ public  abstract class DataConversion
         controller,
         request,
         com.dei.isassignment.Response.getDefaultInstance());
+    }
+
+
+    public com.dei.isassignment.XMLResponse listOfCarsPerOwnerXML(
+        com.google.protobuf.RpcController controller,
+        com.dei.isassignment.XMLRequest request)
+        throws com.google.protobuf.ServiceException {
+      return (com.dei.isassignment.XMLResponse) channel.callBlockingMethod(
+        getDescriptor().getMethods().get(1),
+        controller,
+        request,
+        com.dei.isassignment.XMLResponse.getDefaultInstance());
     }
 
   }

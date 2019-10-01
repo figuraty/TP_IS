@@ -9,6 +9,15 @@ import java.util.List;
 import java.util.Random;
 
 public class GenerateJsonDb {
+    public static void main(String[] args) throws Exception {
+        if (args.length == 2){
+            generateOwnersDb(Integer.valueOf(args[0]));
+            generateCarsDb(Integer.valueOf(args[1]), Integer.valueOf(args[0]));
+        } else {
+            System.out.println("Invalid number of arguments");
+        }
+    }
+
     public static void generateOwnersDb(int entries){
         Faker faker = new Faker();
         List<Owner> owners = new ArrayList<>();

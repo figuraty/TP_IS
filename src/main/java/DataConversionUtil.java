@@ -1,15 +1,10 @@
 
 import com.dei.isassignment.Car;
-import com.dei.isassignment.CarsDatabase;
 import com.dei.isassignment.Owner;
-import com.dei.isassignment.OwnersDatabase;
-import com.google.protobuf.util.JsonFormat;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.URL;
-import java.nio.charset.Charset;
+import com.google.gson.Gson;
+
+import java.io.*;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -18,54 +13,39 @@ import java.util.List;
 public class DataConversionUtil {
 
   /**
-   * Gets the default features file from classpath.
+   * Parses the JSON input file containing the list of features.
    */
-  public static URL getCarsDBFile() {
-    return DataConversionServer.class.getResource("cars_db.json");
-  }
+  public static List<Car> parseCars() throws IOException {
 
-  /**
-   * Gets the default features file from classpath.
-   */
-  public static URL getOwnersDBFile() {
-    return DataConversionServer.class.getResource("owners_db.json");
+    Gson gson = new Gson();
+
+    try (Reader reader = new FileReader("src/main/resources/cars.json")) {
+
+      // Convert JSON File to Java Object
+      Car [] cars = gson.fromJson(reader, Car[].class);
+      return Arrays.asList(cars);
+
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return null;
   }
 
   /**
    * Parses the JSON input file containing the list of features.
    */
-  public static List<Car> parseCars(URL file) throws IOException {
-    InputStream input = file.openStream();
-    try {
-      Reader reader = new InputStreamReader(input, Charset.forName("UTF-8"));
-      try {
-        CarsDatabase.Builder carsDatabase = CarsDatabase.newBuilder();
-        JsonFormat.parser().merge(reader, carsDatabase);
-        return carsDatabase.getCarsList();
-      } finally {
-        reader.close();
-      }
-    } finally {
-      input.close();
-    }
-  }
+  public static List<Owner> parseOwners() throws IOException {
+    Gson gson = new Gson();
 
-  /**
-   * Parses the JSON input file containing the list of features.
-   */
-  public static List<Owner> parseOwners(URL file) throws IOException {
-    InputStream input = file.openStream();
-    try {
-      Reader reader = new InputStreamReader(input, Charset.forName("UTF-8"));
-      try {
-        OwnersDatabase.Builder ownersDatabase = OwnersDatabase.newBuilder();
-        JsonFormat.parser().merge(reader, ownersDatabase);
-        return ownersDatabase.getOwnersList();
-      } finally {
-        reader.close();
-      }
-    } finally {
-      input.close();
+    try (Reader reader = new FileReader("src/main/resources/owners.json")) {
+
+      // Convert JSON File to Java Object
+      Owner [] owners = gson.fromJson(reader, Owner[].class);
+      return Arrays.asList(owners);
+
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+    return null;
   }
 }

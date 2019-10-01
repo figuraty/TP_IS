@@ -30,20 +30,20 @@ public final class DataConversionOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_dei_isassignment_Request_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_dei_isassignment_OwnersDatabase_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_dei_isassignment_OwnersDatabase_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_dei_isassignment_Response_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_dei_isassignment_Response_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_dei_isassignment_CarsDatabase_descriptor;
+    internal_static_com_dei_isassignment_XMLRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_dei_isassignment_CarsDatabase_fieldAccessorTable;
+      internal_static_com_dei_isassignment_XMLRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_dei_isassignment_XMLResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_dei_isassignment_XMLResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -61,14 +61,15 @@ public final class DataConversionOuterClass {
       "ower\030\006 \001(\005\022\023\n\013consumption\030\007 \001(\002\022\r\n\005plate" +
       "\030\010 \001(\t\022\017\n\007ownerId\030\t \001(\005\"6\n\007Request\022+\n\006ow" +
       "ners\030\001 \003(\0132\033.com.dei.isassignment.Owner\"" +
-      "=\n\016OwnersDatabase\022+\n\006owners\030\001 \003(\0132\033.com." +
-      "dei.isassignment.Owner\"3\n\010Response\022\'\n\004ca" +
-      "rs\030\001 \003(\0132\031.com.dei.isassignment.Car\"7\n\014C" +
-      "arsDatabase\022\'\n\004cars\030\001 \003(\0132\031.com.dei.isas" +
-      "signment.Car2g\n\016DataConversion\022U\n\022listOf" +
-      "CarsPerOwner\022\035.com.dei.isassignment.Requ" +
-      "est\032\036.com.dei.isassignment.Response\"\000B\005P" +
-      "\001\210\001\001b\006proto3"
+      "3\n\010Response\022\'\n\004cars\030\001 \003(\0132\031.com.dei.isas" +
+      "signment.Car\"\035\n\nXMLRequest\022\017\n\007request\030\001 " +
+      "\001(\t\"\037\n\013XMLResponse\022\020\n\010response\030\001 \001(\t2\317\001\n" +
+      "\016DataConversion\022]\n\032listOfCarsPerOwnerPro" +
+      "tobuf\022\035.com.dei.isassignment.Request\032\036.c" +
+      "om.dei.isassignment.Response\"\000\022^\n\025listOf" +
+      "CarsPerOwnerXML\022 .com.dei.isassignment.X" +
+      "MLRequest\032!.com.dei.isassignment.XMLResp" +
+      "onse\"\000B\005P\001\210\001\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -92,24 +93,24 @@ public final class DataConversionOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_dei_isassignment_Request_descriptor,
         new java.lang.String[] { "Owners", });
-    internal_static_com_dei_isassignment_OwnersDatabase_descriptor =
-      getDescriptor().getMessageTypes().get(3);
-    internal_static_com_dei_isassignment_OwnersDatabase_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_dei_isassignment_OwnersDatabase_descriptor,
-        new java.lang.String[] { "Owners", });
     internal_static_com_dei_isassignment_Response_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_com_dei_isassignment_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_dei_isassignment_Response_descriptor,
         new java.lang.String[] { "Cars", });
-    internal_static_com_dei_isassignment_CarsDatabase_descriptor =
-      getDescriptor().getMessageTypes().get(5);
-    internal_static_com_dei_isassignment_CarsDatabase_fieldAccessorTable = new
+    internal_static_com_dei_isassignment_XMLRequest_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_com_dei_isassignment_XMLRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_dei_isassignment_CarsDatabase_descriptor,
-        new java.lang.String[] { "Cars", });
+        internal_static_com_dei_isassignment_XMLRequest_descriptor,
+        new java.lang.String[] { "Request", });
+    internal_static_com_dei_isassignment_XMLResponse_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_com_dei_isassignment_XMLResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_dei_isassignment_XMLResponse_descriptor,
+        new java.lang.String[] { "Response", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

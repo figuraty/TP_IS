@@ -52,7 +52,8 @@ public class DataConversionClient {
         Response response;
 
         try {
-            response = blockingStub.listOfCarsPerOwner(request);
+            response = blockingStub.listOfCarsPerOwnerProtobuf(request);
+//            response = blockingStub.listOfCarsPerOwnerXML(request);
             if (testHelper != null) {
                 testHelper.onMessage(response);
             }

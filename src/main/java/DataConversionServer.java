@@ -5,7 +5,6 @@ import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -17,22 +16,9 @@ public class DataConversionServer {
     private final int port;
     private final Server server;
 
-    public DataConversionServer(int port) throws IOException {
-        //this(port, DataConversionUtil.getCarsDBFile(), DataConversionUtil.getOwnersDBFile());
-        List<Car> cars = new ArrayList<>();
-        List<Owner> owners = new ArrayList<>();
-
-        cars.add(Car.newBuilder().setOwnerId(69).setBrand("TT").build());
-
-
-        this.port = port;
-        server = ServerBuilder.forPort(port).addService(new ConversionService(cars, owners))
-                .build();
-    }
-
     /** Create a RouteGuide server listening on {@code port} using {@code featureFile} database. */
-    public DataConversionServer(int port, URL carsDatabaseFile, URL ownersDatabaseFile) throws IOException {
-        this(ServerBuilder.forPort(port), port, DataConversionUtil.parseCars(carsDatabaseFile), DataConversionUtil.parseOwners(ownersDatabaseFile));
+    public DataConversionServer(int port) throws IOException {
+        this(ServerBuilder.forPort(port), port, DataConversionUtil.parseCars(), DataConversionUtil.parseOwners());
     }
 
     /** Create a RouteGuide server using serverBuilder as a base and features as data. */
@@ -78,8 +64,6 @@ public class DataConversionServer {
      */
     public static void main(String[] args) throws Exception {
         DataConversionServer server = new DataConversionServer(8980);
-        GenerateJsonDb.generateOwnersDb(100);
-        GenerateJsonDb.generateCarsDb(500, 100);
         server.start();
         server.blockUntilShutdown();
     }
@@ -95,12 +79,18 @@ public class DataConversionServer {
         }
 
         @Override
-        public void listOfCarsPerOwner(Request request, StreamObserver<Response> responseObserver) {
-            responseObserver.onNext(Response.newBuilder().addAllCars(processRequest(request)).build());
+        public void listOfCarsPerOwnerProtobuf(Request request, StreamObserver<Response> responseObserver) {
+            responseObserver.onNext(Response.newBuilder().addAllCars(processProtobufRequest(request)).build());
             responseObserver.onCompleted();
         }
 
-        private List<Car> processRequest(Request request){
+        @Override
+        public void listOfCarsPerOwnerXML(XMLRequest request, StreamObserver<XMLResponse> responseObserver) {
+            responseObserver.onNext(XMLResponse.newBuilder().setResponse(processXMLRequest(request)).build());
+            responseObserver.onCompleted();
+        }
+
+        private List<Car> processProtobufRequest(Request request){
             List<Owner> owners = request.getOwnersList();
             List<Car> cars = new ArrayList<>();
 
@@ -119,6 +109,17 @@ public class DataConversionServer {
                 }
             }
             return cars;
+        }
+
+        private String processXMLRequest(XMLRequest request){
+//            List<Owner> owners = request.getOwnersList();
+//            List<Car> cars = new ArrayList<>();
+//
+//            for(Owner owner : owners){
+//                cars.addAll(getCarsByOwner(owner.getId()));
+//            }
+//            return cars;
+            return null;
         }
     }
 }

@@ -28,34 +28,65 @@ public final class DataConversionGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.dei.isassignment.Request,
-      com.dei.isassignment.Response> getListOfCarsPerOwnerMethod;
+      com.dei.isassignment.Response> getListOfCarsPerOwnerProtobufMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "listOfCarsPerOwner",
+      fullMethodName = SERVICE_NAME + '/' + "listOfCarsPerOwnerProtobuf",
       requestType = com.dei.isassignment.Request.class,
       responseType = com.dei.isassignment.Response.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.dei.isassignment.Request,
-      com.dei.isassignment.Response> getListOfCarsPerOwnerMethod() {
-    io.grpc.MethodDescriptor<com.dei.isassignment.Request, com.dei.isassignment.Response> getListOfCarsPerOwnerMethod;
-    if ((getListOfCarsPerOwnerMethod = DataConversionGrpc.getListOfCarsPerOwnerMethod) == null) {
+      com.dei.isassignment.Response> getListOfCarsPerOwnerProtobufMethod() {
+    io.grpc.MethodDescriptor<com.dei.isassignment.Request, com.dei.isassignment.Response> getListOfCarsPerOwnerProtobufMethod;
+    if ((getListOfCarsPerOwnerProtobufMethod = DataConversionGrpc.getListOfCarsPerOwnerProtobufMethod) == null) {
       synchronized (DataConversionGrpc.class) {
-        if ((getListOfCarsPerOwnerMethod = DataConversionGrpc.getListOfCarsPerOwnerMethod) == null) {
-          DataConversionGrpc.getListOfCarsPerOwnerMethod = getListOfCarsPerOwnerMethod =
+        if ((getListOfCarsPerOwnerProtobufMethod = DataConversionGrpc.getListOfCarsPerOwnerProtobufMethod) == null) {
+          DataConversionGrpc.getListOfCarsPerOwnerProtobufMethod = getListOfCarsPerOwnerProtobufMethod =
               io.grpc.MethodDescriptor.<com.dei.isassignment.Request, com.dei.isassignment.Response>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "listOfCarsPerOwner"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "listOfCarsPerOwnerProtobuf"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.dei.isassignment.Request.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.dei.isassignment.Response.getDefaultInstance()))
-              .setSchemaDescriptor(new DataConversionMethodDescriptorSupplier("listOfCarsPerOwner"))
+              .setSchemaDescriptor(new DataConversionMethodDescriptorSupplier("listOfCarsPerOwnerProtobuf"))
               .build();
         }
       }
     }
-    return getListOfCarsPerOwnerMethod;
+    return getListOfCarsPerOwnerProtobufMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.dei.isassignment.XMLRequest,
+      com.dei.isassignment.XMLResponse> getListOfCarsPerOwnerXMLMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "listOfCarsPerOwnerXML",
+      requestType = com.dei.isassignment.XMLRequest.class,
+      responseType = com.dei.isassignment.XMLResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<com.dei.isassignment.XMLRequest,
+      com.dei.isassignment.XMLResponse> getListOfCarsPerOwnerXMLMethod() {
+    io.grpc.MethodDescriptor<com.dei.isassignment.XMLRequest, com.dei.isassignment.XMLResponse> getListOfCarsPerOwnerXMLMethod;
+    if ((getListOfCarsPerOwnerXMLMethod = DataConversionGrpc.getListOfCarsPerOwnerXMLMethod) == null) {
+      synchronized (DataConversionGrpc.class) {
+        if ((getListOfCarsPerOwnerXMLMethod = DataConversionGrpc.getListOfCarsPerOwnerXMLMethod) == null) {
+          DataConversionGrpc.getListOfCarsPerOwnerXMLMethod = getListOfCarsPerOwnerXMLMethod =
+              io.grpc.MethodDescriptor.<com.dei.isassignment.XMLRequest, com.dei.isassignment.XMLResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "listOfCarsPerOwnerXML"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.dei.isassignment.XMLRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.dei.isassignment.XMLResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new DataConversionMethodDescriptorSupplier("listOfCarsPerOwnerXML"))
+              .build();
+        }
+      }
+    }
+    return getListOfCarsPerOwnerXMLMethod;
   }
 
   /**
@@ -87,20 +118,34 @@ public final class DataConversionGrpc {
 
     /**
      */
-    public void listOfCarsPerOwner(com.dei.isassignment.Request request,
+    public void listOfCarsPerOwnerProtobuf(com.dei.isassignment.Request request,
         io.grpc.stub.StreamObserver<com.dei.isassignment.Response> responseObserver) {
-      asyncUnimplementedUnaryCall(getListOfCarsPerOwnerMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListOfCarsPerOwnerProtobufMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void listOfCarsPerOwnerXML(com.dei.isassignment.XMLRequest request,
+        io.grpc.stub.StreamObserver<com.dei.isassignment.XMLResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getListOfCarsPerOwnerXMLMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getListOfCarsPerOwnerMethod(),
+            getListOfCarsPerOwnerProtobufMethod(),
             asyncUnaryCall(
               new MethodHandlers<
                 com.dei.isassignment.Request,
                 com.dei.isassignment.Response>(
-                  this, METHODID_LIST_OF_CARS_PER_OWNER)))
+                  this, METHODID_LIST_OF_CARS_PER_OWNER_PROTOBUF)))
+          .addMethod(
+            getListOfCarsPerOwnerXMLMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.dei.isassignment.XMLRequest,
+                com.dei.isassignment.XMLResponse>(
+                  this, METHODID_LIST_OF_CARS_PER_OWNER_XML)))
           .build();
     }
   }
@@ -125,10 +170,18 @@ public final class DataConversionGrpc {
 
     /**
      */
-    public void listOfCarsPerOwner(com.dei.isassignment.Request request,
+    public void listOfCarsPerOwnerProtobuf(com.dei.isassignment.Request request,
         io.grpc.stub.StreamObserver<com.dei.isassignment.Response> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListOfCarsPerOwnerMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getListOfCarsPerOwnerProtobufMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void listOfCarsPerOwnerXML(com.dei.isassignment.XMLRequest request,
+        io.grpc.stub.StreamObserver<com.dei.isassignment.XMLResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getListOfCarsPerOwnerXMLMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -152,9 +205,16 @@ public final class DataConversionGrpc {
 
     /**
      */
-    public com.dei.isassignment.Response listOfCarsPerOwner(com.dei.isassignment.Request request) {
+    public com.dei.isassignment.Response listOfCarsPerOwnerProtobuf(com.dei.isassignment.Request request) {
       return blockingUnaryCall(
-          getChannel(), getListOfCarsPerOwnerMethod(), getCallOptions(), request);
+          getChannel(), getListOfCarsPerOwnerProtobufMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.dei.isassignment.XMLResponse listOfCarsPerOwnerXML(com.dei.isassignment.XMLRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getListOfCarsPerOwnerXMLMethod(), getCallOptions(), request);
     }
   }
 
@@ -178,14 +238,23 @@ public final class DataConversionGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.dei.isassignment.Response> listOfCarsPerOwner(
+    public com.google.common.util.concurrent.ListenableFuture<com.dei.isassignment.Response> listOfCarsPerOwnerProtobuf(
         com.dei.isassignment.Request request) {
       return futureUnaryCall(
-          getChannel().newCall(getListOfCarsPerOwnerMethod(), getCallOptions()), request);
+          getChannel().newCall(getListOfCarsPerOwnerProtobufMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.dei.isassignment.XMLResponse> listOfCarsPerOwnerXML(
+        com.dei.isassignment.XMLRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getListOfCarsPerOwnerXMLMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_LIST_OF_CARS_PER_OWNER = 0;
+  private static final int METHODID_LIST_OF_CARS_PER_OWNER_PROTOBUF = 0;
+  private static final int METHODID_LIST_OF_CARS_PER_OWNER_XML = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -204,9 +273,13 @@ public final class DataConversionGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_LIST_OF_CARS_PER_OWNER:
-          serviceImpl.listOfCarsPerOwner((com.dei.isassignment.Request) request,
+        case METHODID_LIST_OF_CARS_PER_OWNER_PROTOBUF:
+          serviceImpl.listOfCarsPerOwnerProtobuf((com.dei.isassignment.Request) request,
               (io.grpc.stub.StreamObserver<com.dei.isassignment.Response>) responseObserver);
+          break;
+        case METHODID_LIST_OF_CARS_PER_OWNER_XML:
+          serviceImpl.listOfCarsPerOwnerXML((com.dei.isassignment.XMLRequest) request,
+              (io.grpc.stub.StreamObserver<com.dei.isassignment.XMLResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -269,7 +342,8 @@ public final class DataConversionGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new DataConversionFileDescriptorSupplier())
-              .addMethod(getListOfCarsPerOwnerMethod())
+              .addMethod(getListOfCarsPerOwnerProtobufMethod())
+              .addMethod(getListOfCarsPerOwnerXMLMethod())
               .build();
         }
       }

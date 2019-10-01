@@ -27,20 +27,21 @@ message Request {
     repeated Owner owners = 1;
 }
 
-message OwnersDatabase {
-    repeated Owner owners = 1;
-}
-
 message Response {
     repeated Car cars = 1;
 }
 
-message CarsDatabase {
-    repeated Car cars = 1;
+message XMLRequest {
+    string request = 1;
+}
+
+message XMLResponse {
+    string response = 1;
 }
 
 service DataConversion {
-    rpc listOfCarsPerOwner (Request) returns (Response) {}
+    rpc listOfCarsPerOwnerProtobuf (Request) returns (Response) {}
+    rpc listOfCarsPerOwnerXML (XMLRequest) returns (XMLResponse) {}
 }
 
 
