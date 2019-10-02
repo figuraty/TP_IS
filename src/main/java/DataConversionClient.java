@@ -1,33 +1,30 @@
-import com.dei.isassignment.DataConversionGrpc;
+import com.dei.isassignment.*;
 import com.dei.isassignment.DataConversionGrpc.*;
-import com.dei.isassignment.Owner;
-import com.dei.isassignment.Request;
-import com.dei.isassignment.Response;
-import com.google.common.annotations.VisibleForTesting;
-import com.google.protobuf.Message;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import io.grpc.StatusRuntimeException;
+import xmlClasses.car.CarListXML;
+import xmlClasses.car.CarXML;
+import xmlClasses.owner.OwnerListXML;
+import xmlClasses.owner.OwnerXML;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Sample client code that makes gRPC calls to the server.
  */
 public class DataConversionClient {
-    private static final Logger logger = Logger.getLogger(DataConversionClient.class.getName());
 
     private final ManagedChannel channel;
     private final DataConversionBlockingStub blockingStub;
     private final DataConversionStub asyncStub;
-
-    private Random random = new Random();
-    private TestHelper testHelper;
 
     /** Construct client for accessing DataConversion server at {@code host:port}. */
     public DataConversionClient(String host, int port) {
@@ -45,56 +42,106 @@ public class DataConversionClient {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     }
 
-    public void listOfCarsPerOwner(List<Owner> owners) {
+    public void listOfCarsPerOwnerProtobuf(List<Owner> owners) {
 
         Request request = Request.newBuilder().addAllOwners(owners).build();
 
-        Response response;
+        Response response = blockingStub.listOfCarsPerOwnerProtobuf(request);
 
+        System.out.println(response.getCarsList().size());
+    }
+
+    public void listOfCarsPerOwnerXML(List<Owner> owners) {
+
+        XMLRequest request = XMLRequest.newBuilder().setRequest(serializeXMLRequest(owners)).build();
+
+        XMLResponse response = blockingStub.listOfCarsPerOwnerXML(request);
+
+        System.out.println(deserializeXMLResponse(response.getResponse()).size());
+    }
+
+    private String serializeXMLRequest(List<Owner> owners){
         try {
-            response = blockingStub.listOfCarsPerOwnerProtobuf(request);
-//            response = blockingStub.listOfCarsPerOwnerXML(request);
-            if (testHelper != null) {
-                testHelper.onMessage(response);
-            }
-        } catch (StatusRuntimeException e) {
-            warning("RPC failed: {0}", e.getStatus());
-            if (testHelper != null) {
-                testHelper.onRpcError(e);
-            }
-            return;
+            StringWriter writer = new StringWriter();
+
+            JAXBContext contextObj = JAXBContext.newInstance(OwnerListXML.class);
+            Marshaller marshallerObj = contextObj.createMarshaller();
+            marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+            marshallerObj.marshal(convertObjectsToXML(owners), writer);
+
+            return writer.toString();
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private OwnerListXML convertObjectsToXML(List<Owner> owners){
+        List<OwnerXML> ownerXMLList = new ArrayList<>();
+
+        for (Owner owner : owners) {
+            ownerXMLList.add(
+                    new OwnerXML(
+                            owner.getId(),
+                            owner.getName(),
+                            owner.getTelephone(),
+                            owner.getAddress()
+                    )
+            );
         }
 
-        System.out.println(response.getCarsList());
+        return new OwnerListXML(ownerXMLList);
+    }
+
+    private List<Car> deserializeXMLResponse(String xmlResponse){
+        try {
+            StringReader reader = new StringReader(xmlResponse);
+
+            JAXBContext jaxbContext = JAXBContext.newInstance(CarListXML.class);
+            Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+            CarListXML carListXML = (CarListXML) jaxbUnmarshaller.unmarshal(reader);
+
+            List<CarXML> cars = carListXML.getCars();
+            return convertXMLToObjects(cars);
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private List<Car> convertXMLToObjects(List<CarXML> carXMLList){
+        List<Car> cars = new ArrayList<>();
+        for (CarXML carXML : carXMLList) {
+            cars.add(
+                    Car.newBuilder()
+                            .setId(carXML.getId())
+                            .setBrand(carXML.getBrand())
+                            .setModel(carXML.getModel())
+                            .setEngine(carXML.getEngine())
+                            .setSize(carXML.getSize())
+                            .setPower(carXML.getPower())
+                            .setConsumption(carXML.getConsumption())
+                            .setPlate(carXML.getPlate())
+                            .setOwnerId(carXML.getOwnerId())
+                            .build());
+        }
+
+        return cars;
     }
 
     /** Issues several different requests and then exits. */
     public static void main(String[] args) throws InterruptedException {
         List<Owner> owners = new ArrayList<>();
 
-        owners.add(Owner.newBuilder().setId(69).build());
+        owners.add(Owner.newBuilder().setId(66).build());
 
         DataConversionClient client = new DataConversionClient("localhost", 8980);
 
 
-        client.listOfCarsPerOwner(owners);
+        client.listOfCarsPerOwnerXML(owners);
         client.shutdown();
-    }
-
-    private void warning(String msg, Object... params) {
-        logger.log(Level.WARNING, msg, params);
-    }
-
-    @VisibleForTesting
-    interface TestHelper {
-        /**
-         * Used for verify/inspect message received from server.
-         */
-        void onMessage(Message message);
-
-        /**
-         * Used for verify/inspect error received from server.
-         */
-        void onRpcError(Throwable exception);
     }
 }

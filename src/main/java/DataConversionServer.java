@@ -3,8 +3,18 @@ import com.dei.isassignment.*;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
+import xmlClasses.car.CarListXML;
+import xmlClasses.car.CarXML;
+import xmlClasses.owner.OwnerListXML;
+import xmlClasses.owner.OwnerXML;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -50,18 +60,14 @@ public class DataConversionServer {
         }
     }
 
-    /**
-     * Await termination on the main thread since the grpc library uses daemon threads.
-     */
+    /** Await termination on the main thread since the grpc library uses daemon threads. */
     private void blockUntilShutdown() throws InterruptedException {
         if (server != null) {
             server.awaitTermination();
         }
     }
 
-    /**
-     * Main method.  This comment makes the linter happy.
-     */
+    /** Main method.  This comment makes the linter happy.  */
     public static void main(String[] args) throws Exception {
         DataConversionServer server = new DataConversionServer(8980);
         server.start();
@@ -112,14 +118,85 @@ public class DataConversionServer {
         }
 
         private String processXMLRequest(XMLRequest request){
-//            List<Owner> owners = request.getOwnersList();
-//            List<Car> cars = new ArrayList<>();
-//
-//            for(Owner owner : owners){
-//                cars.addAll(getCarsByOwner(owner.getId()));
-//            }
-//            return cars;
+            List<Owner> owners = deserializeXMLRequest(request.getRequest());
+            List<Car> cars = new ArrayList<>();
+
+            for(Owner owner : owners){
+                cars.addAll(getCarsByOwner(owner.getId()));
+            }
+
+            return serializeXMLResponse(cars);
+        }
+
+        private List<Owner> deserializeXMLRequest(String xmlRequest){
+            try {
+                StringReader reader = new StringReader(xmlRequest);
+
+                JAXBContext jaxbContext = JAXBContext.newInstance(OwnerListXML.class);
+                Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+                OwnerListXML ownerListXML = (OwnerListXML) jaxbUnmarshaller.unmarshal(reader);
+
+                List<OwnerXML> owners = ownerListXML.getOwners();
+                return convertXMLToObjects(owners);
+
+            } catch (JAXBException e) {
+                e.printStackTrace();
+                return null;
+            }
+        }
+
+        private List<Owner> convertXMLToObjects(List<OwnerXML> ownerXMLList){
+            List<Owner> owners = new ArrayList<>();
+            for (OwnerXML ownerXML : ownerXMLList) {
+                owners.add(
+                        Owner.newBuilder()
+                        .setId(ownerXML.getId())
+                        .setName(ownerXML.getName())
+                        .setTelephone(ownerXML.getTelephone())
+                        .setAddress(ownerXML.getAddress())
+                        .build());
+            }
+            return owners;
+        }
+
+        private String serializeXMLResponse(List<Car> cars){
+            try {
+                StringWriter writer = new StringWriter();
+
+                JAXBContext contextObj = JAXBContext.newInstance(CarListXML.class);
+                Marshaller marshallerObj = contextObj.createMarshaller();
+                marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+                marshallerObj.marshal(convertObjectsToXML(cars), writer);
+
+                return writer.toString();
+
+            } catch (JAXBException e) {
+                e.printStackTrace();
+            }
             return null;
+        }
+
+        private CarListXML convertObjectsToXML(List<Car> cars){
+            List<CarXML> carXMLList = new ArrayList<>();
+
+            for (Car car : cars) {
+                carXMLList.add(
+                        new CarXML(
+                                car.getId(),
+                                car.getBrand(),
+                                car.getModel(),
+                                car.getEngine(),
+                                car.getSize(),
+                                car.getPower(),
+                                car.getConsumption(),
+                                car.getPlate(),
+                                car.getOwnerId()
+                        )
+                );
+            }
+
+            return new CarListXML(carXMLList);
         }
     }
 }
