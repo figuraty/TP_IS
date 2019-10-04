@@ -11,8 +11,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import java.io.StringReader;
-import java.io.StringWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -46,18 +45,33 @@ public class DataConversionClient {
 
         Request request = Request.newBuilder().addAllOwners(owners).build();
 
+        Long time1 = System.currentTimeMillis();
+
         Response response = blockingStub.listOfCarsPerOwnerProtobuf(request);
 
-        System.out.println(response.getCarsList().size());
+        Long time2 = System.currentTimeMillis();
+
+        Long diff = time2 - time1;
+
+        System.out.println(diff);
     }
 
     public void listOfCarsPerOwnerXML(List<Owner> owners) {
 
+
         XMLRequest request = XMLRequest.newBuilder().setRequest(serializeXMLRequest(owners)).build();
+
+        Long time1 = System.currentTimeMillis();
 
         XMLResponse response = blockingStub.listOfCarsPerOwnerXML(request);
 
-        System.out.println(deserializeXMLResponse(response.getResponse()).size());
+        Long time2 = System.currentTimeMillis();
+
+        Long diff = time2 - time1;
+
+        System.out.println("Receive: " + response.getResponse().getBytes().length);
+
+        System.out.println("Time: " + diff);
     }
 
     private String serializeXMLRequest(List<Owner> owners){
@@ -69,6 +83,8 @@ public class DataConversionClient {
             marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
             marshallerObj.marshal(convertObjectsToXML(owners), writer);
+
+            System.out.println("Send: " + writer.toString().getBytes().length);
 
             return writer.toString();
 
@@ -133,15 +149,14 @@ public class DataConversionClient {
     }
 
     /** Issues several different requests and then exits. */
-    public static void main(String[] args) throws InterruptedException {
-        List<Owner> owners = new ArrayList<>();
-
-        owners.add(Owner.newBuilder().setId(66).build());
+    public static void main(String[] args) throws InterruptedException, IOException {
+        List<Owner> owners = DataConversionUtil.parseOwners();
 
         DataConversionClient client = new DataConversionClient("localhost", 8980);
 
-
-        client.listOfCarsPerOwnerXML(owners);
+        for (int i = 0; i < 11; i++) {
+            client.listOfCarsPerOwnerXML(owners);
+        }
         client.shutdown();
     }
 }
