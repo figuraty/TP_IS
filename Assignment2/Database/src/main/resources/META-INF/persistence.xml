@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+    <persistence-unit name="User" transaction-type="JTA">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<!--        <jta-data-source>java:/IS_Assignment2</jta-data-source>-->
+        <class>com.uc.dei.is.Assignment2.database.User</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/IS_Assignment2" />
+            <property name="javax.persistence.jdbc.user" value="user" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="com.uc.dei.is.Assignment2.database.Item" transaction-type="JTA">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <jta-data-source>java:/MySqlDS</jta-data-source>
+        <class>com.uc.dei.is.Assignment2.database.Item</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://database:3306/IS_Assignment2" />
+            <property name="javax.persistence.jdbc.user" value="user" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+        </properties>
+    </persistence-unit>
+
+</persistence>
+
+

@@ -1,0 +1,51 @@
+version: '3.3'
+services:
+#  web-service:
+#    build: ./WebService
+#    restart: always
+#    container_name: web-service
+#    ports:
+#      - "8080:8080"
+#  central-manager:
+#    build: ./CentralManager
+#    restart: always
+#    container_name: central-manager
+#    depends_on:
+#      - rabbit
+#      - web-service
+#      - database
+#  files-directory-manager:
+#    build: ./FilesDirectoryManager
+#    restart: always
+#    container_name: files-directory-manager
+#    depends_on:
+#      - rabbit
+#    volumes:
+#      - support:/mini-project/Support
+  database:
+    image: mysql:8.0.18
+    container_name: database
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: IS_Assignment2
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 1234
+    ports:
+      - "3306:3306"
+#  rabbit:
+#    image: rabbitmq:3-management
+#    container_name: rabbit
+#    ports:
+#      - "15672:15672"
+#      - "5672:5672"
+#    expose:
+#      - 15672
+#      - 5672
+#volumes:
+#  support:
+#    driver: local
+#    driver_opts:
+#      type: none
+#      o: bind
+#      device: /home/francisco/projects/mini-project/Support
