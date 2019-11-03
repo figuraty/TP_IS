@@ -1,24 +1,16 @@
-package com.uc.dei.is.Assignment2.database;
+package com.uc.dei.is.Assignment2.database.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
-@Table(name = "user")
+@Table(name = "User")
 public class User implements Serializable {
 
-    public User() {
-    }
-
-    public User(String name, String email, String password, String country) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.country = country;
-    }
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "userID", unique = true)
     private int id;
 
@@ -33,6 +25,24 @@ public class User implements Serializable {
 
     @Column(name = "country", nullable = false)
     private String country;
+
+    @Column(name = "dk", nullable = false)
+    private String dk;
+
+    @OneToMany(mappedBy="user")
+    @Column(name = "items")
+    private Set<Item> items;
+
+    public User() {
+    }
+
+    public User(String name, String email, String password, String country) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.country = country;
+        this.items = new HashSet<>();
+    }
 
     public int getId() {
         return id;
@@ -68,5 +78,21 @@ public class User implements Serializable {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getDk() {
+        return dk;
+    }
+
+    public void setDk(String dk) {
+        this.dk = dk;
+    }
+
+    public Set<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(Set<Item> items) {
+        this.items = items;
     }
 }

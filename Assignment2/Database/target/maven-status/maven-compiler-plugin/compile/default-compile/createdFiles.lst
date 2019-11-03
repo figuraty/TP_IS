@@ -1,3 +1,4 @@
-Item.class
-teste.class
-User.class
+com/uc/dei/is/Assignment2/database/Item.class
+com/uc/dei/is/Assignment2/database/HibernateUtil.class
+com/uc/dei/is/Assignment2/database/User.class
+com/uc/dei/is/Assignment2/database/teste.class
