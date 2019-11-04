@@ -6,26 +6,222 @@
 
     <groupId>com.uc.mei.is</groupId>
     <artifactId>Assignment2</artifactId>
-    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Assignment2</name>
+    <url>http://maven.apache.org</url>
+
+    <!-- 2. Definir modulos associados ao pom principal-->
     <modules>
-        <module>Database</module>
+        <module>Data</module>
         <module>Business</module>
-        <module>Presentation</module>
+        <module>Web</module>
+        <module>Ear</module>
     </modules>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <!-- 3. Definir propriedades-->
+    <properties>
+        <!-- encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--java version -->
+        <java-version>1.8</java-version>
 
+        <!-- plugin versions -->
+        <ejb-plugin-version>3.0.0</ejb-plugin-version>
+        <war-plugin-version>3.2.0</war-plugin-version>
+        <ear-plugin-version>2.10</ear-plugin-version>
+        <compiler-plugin-version>3.7.0</compiler-plugin-version>
+        <wildfly-plugin-version>1.2.0.Final</wildfly-plugin-version>
+
+        <!-- dependency versions -->
+        <javaee-api-version>7.0</javaee-api-version>
+
+        <!-- EJB spec version -->
+        <ejb-spec-version>3.2</ejb-spec-version>
+
+        <!-- Hibernate -->
+        <hibernate.version>5.2.11.Final</hibernate.version>
+
+        <!-- Logs et al. -->
+        <slf4j.version>1.7.25</slf4j.version>
+        <slf4jlog4.version>1.7.25</slf4jlog4.version>
+
+        <junit-version>3.8.1</junit-version>
+
+        <hibernate.validator.version>6.0.2.Final</hibernate.validator.version>
+        <hibernatecore.version>5.2.11.Final</hibernatecore.version>
+        <hibernate.commons.annotations.version>5.0.1.Final</hibernate.commons.annotations.version>
+        <hibernate.jpa.api>1.0.1.Final</hibernate.jpa.api>
+        <validation.api>2.0.0.Final</validation.api>
+        <jboss.logging>3.3.1.Final</jboss.logging>
+        <mysql.connector.java>8.0.8-dmr</mysql.connector.java>
+
+        <server.port>9990</server.port>
+    </properties>
+
+    <!-- 4. Dependencias pom principal -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>${javaee-api-version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4jlog4.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit-version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernatecore.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.common</groupId>
+                <artifactId>hibernate-commons-annotations</artifactId>
+                <version>${hibernate.commons.annotations.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.0-api</artifactId>
+                <version>${hibernate.jpa.api}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${validation.api}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging</artifactId>
+                <version>${jboss.logging}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.java}</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 5. Plugins a serem usados -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.wildfly.plugins</groupId>
+                    <artifactId>wildfly-maven-plugin</artifactId>
+                    <version>${wildfly-plugin-version}</version>
+                    <configuration>
+                        <skip>true</skip>
+                        <hostname>localhost</hostname>
+                        <port>${server.port}</port>
+                    </configuration>
+
+                </plugin>
+
+                <!-- compiler plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${compiler-plugin-version}</version>
+                    <configuration>
+                        <source>${java-version}</source>
+                        <target>${java-version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+
+                <!-- maven ear plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <version>${ear-plugin-version}</version>
+                    <configuration>
+                        <generateModuleId>true</generateModuleId>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+
+                <!-- ejb plugin -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>${ejb-plugin-version}</version>
+                    <configuration>
+                        <ejbVersion>${ejb-spec-version}</ejbVersion>
+                    </configuration>
+                </plugin>
+
+                <!-- war plugin -skinny wars mode! -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${war-plugin-version}</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                        <!-- <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes> -->
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <classpathPrefix>lib/</classpathPrefix>
+                            </manifest>
+                        </archive>
+                        <webResources>
+                            <resource>
+                                <filtering>true</filtering>
+                                <directory>src/main/webapp</directory>
+                                <includes>
+                                    <include>**/web.xml</include>
+                                </includes>
+                            </resource>
+                        </webResources>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
