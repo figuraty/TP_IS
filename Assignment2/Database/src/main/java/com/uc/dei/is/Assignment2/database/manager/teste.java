@@ -13,10 +13,11 @@ public class teste {
     public static void main(String[] args) {
 
 //        addUser("Francisco", "abilio@gmail.com", "teste", "Portugal");
-//        addItem("abilio@gmail.com", "lapis", "utensilios", "Portugal", "ref");
-//        updateUser("abilio@gmail.com", "Francisco", "abilio@gmail.com", "cenas", "Portugal");
+//        updateUser(1, "Abilio", "abilio@gmail.com", "cenas", "Portugal");
 //        getUser("abilio@gmail.com");
-//        deleteUser("abilio@gmail.com");
+//        deleteUser(1);
+//        addItem("abilio@gmail.com", "lapis", "utensilios", "Portugal", "ref");
+        updateItem(1, "Caneta", "utensilios", "Portugal", "ref");
 
         ENTITY_MANAGER_FACTORY.close();
     }
@@ -45,7 +46,7 @@ public class teste {
         }
     }
 
-    public static void updateUser(String userEmail, String name, String email, String password, String country){
+    public static void updateUser(int userId, String name, String email, String password, String country){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -55,10 +56,7 @@ public class teste {
             et.begin();
             String[] passEncrypted = EncryptionManager.encprypt(password);
             if (passEncrypted!= null && passEncrypted.length == 2) {
-                String query = "SELECT u FROM User u WHERE u.email = :email";
-                TypedQuery<User> tq = em.createQuery(query, User.class)
-                        .setParameter("email", userEmail);
-                User user = tq.getSingleResult();
+                User user = em.find(User.class, userId);
                 user.setName(name);
                 user.setEmail(email);
                 user.setPassword(passEncrypted[1]);
@@ -76,7 +74,7 @@ public class teste {
         }
     }
 
-    public static void deleteUser(String email){
+    public static void deleteUser(int userId){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -84,10 +82,7 @@ public class teste {
         try {
             et = em.getTransaction();
             et.begin();
-            String query = "SELECT u FROM User u WHERE u.email = :email";
-            TypedQuery<User> tq = em.createQuery(query, User.class)
-                    .setParameter("email", email);
-            User user = tq.getSingleResult();
+            User user = em.find(User.class, userId);
             for (Item item : user.getItems()) {
                 em.remove(item);
             }
@@ -126,29 +121,53 @@ public class teste {
         }
     }
 
-//    public static void updateItem(String email, String name, String category, String country, String picture){
-//
-//        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-//        EntityTransaction et = null;
-//
-//        try {
-//            et = em.getTransaction();
-//            et.begin();
-//            String query = "SELECT u FROM User u WHERE u.email = :email";
-//            TypedQuery<User> tq = em.createQuery(query, User.class)
-//                    .setParameter("email", email);
-//            User user = tq.getSingleResult();
-//            Item item = new Item(name, category, country, picture, user);
-//            em.persist(item);
-//            et.commit();
-//        } catch (Exception ex){
-//            if(et != null)
-//                et.rollback();
-//            ex.printStackTrace();
-//        } finally {
-//            em.close();
-//        }
-//    }
+    public static void updateItem(int itemId, String name, String category, String country, String picture){
+
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction et = null;
+
+        try {
+            et = em.getTransaction();
+            et.begin();
+            Item item = em.find(Item.class, itemId);
+            item.setName(name);
+            item.setCategory(category);
+            item.setCountry(country);
+            item.setPicture(picture);
+            em.merge(item);
+            et.commit();
+        } catch (Exception ex){
+            if(et != null)
+                et.rollback();
+            ex.printStackTrace();
+        } finally {
+            em.close();
+        }
+    }
+
+    public static void deleteItem(int itemId){
+
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction et = null;
+
+        try {
+            et = em.getTransaction();
+            et.begin();
+            Item item = em.find(Item.class, itemId);
+            item.setName(name);
+            item.setCategory(category);
+            item.setCountry(country);
+            item.setPicture(picture);
+            em.merge(item);
+            et.commit();
+        } catch (Exception ex){
+            if(et != null)
+                et.rollback();
+            ex.printStackTrace();
+        } finally {
+            em.close();
+        }
+    }
 
 
 
