@@ -17,7 +17,7 @@ public class teste {
 //        getUser("abilio@gmail.com");
 //        deleteUser(1);
 //        addItem("abilio@gmail.com", "lapis", "utensilios", "Portugal", "ref");
-        updateItem(1, "Caneta", "utensilios", "Portugal", "ref");
+//        updateItem(1, "Caderno", "utensilios", "Portugal", "ref");
 
         ENTITY_MANAGER_FACTORY.close();
     }

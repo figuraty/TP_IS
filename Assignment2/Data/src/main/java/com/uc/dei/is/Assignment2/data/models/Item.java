@@ -2,13 +2,15 @@ package com.uc.dei.is.Assignment2.data.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "Item")
 public class Item implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "itemID", unique = true)
     private int id;
 
@@ -24,19 +26,34 @@ public class Item implements Serializable {
     @Column(name = "picture", nullable = false)
     private String picture;
 
+    @Temporal(TemporalType.DATE)
+    @Column(name = "date", nullable = false)
+    private Date insertionDate;
+
+    @Column(name = "price", nullable = false)
+    private float price;
+
     @ManyToOne
-    @JoinColumn(name="userID", nullable=false)
+    @JoinColumn(name="userID")
     private User user;
 
     public Item() {
+        super();
     }
 
-    public Item(String name, String category, String country, String picture, User user) {
+    public Item(String name, String category, String country, String picture, Date insertionDate, float price, User user) {
+        super();
         this.name = name;
         this.category = category;
         this.country = country;
         this.picture = picture;
+        this.insertionDate = insertionDate;
+        this.price = price;
         this.user = user;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -77,5 +94,18 @@ public class Item implements Serializable {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", country='" + country + '\'' +
+                ", picture='" + picture + '\'' +
+                ", insertionDate=" + insertionDate +
+                ", price=" + price +
+                ", user=" + user.getId() +
+                '}';
     }
 }

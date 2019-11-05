@@ -2,15 +2,15 @@ package com.uc.dei.is.Assignment2.data.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 @Table(name = "User")
 public class User implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "userID", unique = true)
     private int id;
 
@@ -29,9 +29,9 @@ public class User implements Serializable {
     @Column(name = "dk", nullable = false)
     private String dk;
 
-    @OneToMany(mappedBy="user")
+    @OneToMany(mappedBy="user", cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @Column(name = "items")
-    private Set<Item> items;
+    private List<Item> items;
 
     public User() {
     }
@@ -41,7 +41,6 @@ public class User implements Serializable {
         this.email = email;
         this.password = password;
         this.country = country;
-        this.items = new HashSet<>();
     }
 
     public int getId() {
@@ -88,11 +87,22 @@ public class User implements Serializable {
         this.dk = dk;
     }
 
-    public Set<Item> getItems() {
+    public List<Item> getItems() {
         return items;
     }
 
-    public void setItems(Set<Item> items) {
+    public void setItems(List<Item> items) {
         this.items = items;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", country='" + country + '\'' +
+                ", items=" + items +
+                '}';
     }
 }

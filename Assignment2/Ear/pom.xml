@@ -56,7 +56,7 @@
                 <artifactId>maven-ear-plugin</artifactId>
                 <configuration>
                     <finalName>Assignment2</finalName>
-<!--                    <defaultJavaBundleDir>lib/</defaultJavaBundleDir>-->
+                    <!--                    <defaultJavaBundleDir>lib/</defaultJavaBundleDir>-->
                     <skinnyWars>true</skinnyWars>
                     <modules>
                         <webModule>
