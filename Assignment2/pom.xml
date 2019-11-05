@@ -67,76 +67,76 @@
                 <groupId>javax</groupId>
                 <artifactId>javaee-api</artifactId>
                 <version>${javaee-api-version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${slf4jlog4.version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit-version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernatecore.version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate.validator.version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.hibernate.common</groupId>
                 <artifactId>hibernate-commons-annotations</artifactId>
                 <version>${hibernate.commons.annotations.version}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
                 <artifactId>hibernate-jpa-2.0-api</artifactId>
                 <version>${hibernate.jpa.api}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
                 <version>${validation.api}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.jboss.logging</groupId>
                 <artifactId>jboss-logging</artifactId>
                 <version>${jboss.logging}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.connector.java}</version>
-<!--                <scope>provided</scope>-->
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -202,7 +202,7 @@
                     <version>${war-plugin-version}</version>
                     <configuration>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
-                        <!-- <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes> -->
+                         <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>

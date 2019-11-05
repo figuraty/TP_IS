@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: francisco
+Class-Path: lib/Business-1.0-SNAPSHOT.jar lib/Data-1.0-SNAPSHOT.jar
+Created-By: Apache Maven 3.6.1
+Build-Jdk: 1.8.0_222
+

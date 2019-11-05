@@ -1,5 +1,5 @@
 
-package com.uc.dei.is.Assignment2.web.serverlet;
+package com.uc.dei.is.Assignment2.web.servlet;
 
 
 import javax.servlet.ServletException;
@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request,
-            HttpServletResponse response)
+                         HttpServletResponse response)
             throws ServletException, IOException {
         // Logica para evitar q usuario logado acesse pagina de login
         HttpSession sessao = request.getSession();
@@ -27,13 +27,13 @@ public class LoginServlet extends HttpServlet {
         request.getRequestDispatcher("/index.jsp")
                 .forward(request, response);
     }
-
-    @Override
-    protected void doPost(HttpServletRequest request,
-            HttpServletResponse response)
-            throws ServletException, IOException {
-        String username = request.getParameter("username");
-        String senha = request.getParameter("senha");
+//
+//    @Override
+//    protected void doPost(HttpServletRequest request,
+//            HttpServletResponse response)
+//            throws ServletException, IOException {
+//        String username = request.getParameter("username");
+//        String senha = request.getParameter("senha");
 
 //        User user;
 //        Map<Integer, Filial> filial;
@@ -68,5 +68,5 @@ public class LoginServlet extends HttpServlet {
 //                        .forward(request, response);
 //        }
 
-    }
+//    }
 }
