@@ -34,47 +34,34 @@
         <form action="${pageContext.request.contextPath}/home" method="post">
             <div class="home-items-categories-container">
                 <div class="home-items-categories-art-container">
-                    <input type="submit" name="category" value="utensilios"/>
+                    <input type="submit" name="category" value="Art"/>
                 </div>
                 <div class="home-items-categories-house-container">
-                    <input type="submit" name="category" value="Button 2" />
+                    <input type="submit" name="category" value="House"/>
                 </div>
                 <div class="home-items-categories-sport-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Sport"/>
                 </div>
                 <div class="home-items-categories-technology-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Technology"/>
                 </div>
                 <div class="home-items-categories-toys-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Toys"/>
                 </div>
                 <div class="home-items-categories-vehicle-pieces-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Vehicle Pieces"/>
                 </div>
                 <div class="home-items-categories-fashion-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Fashion"/>
                 </div>
                 <div class="home-items-categories-music-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Music"/>
                 </div>
                 <div class="home-items-categories-other-container">
-                    <button class="home-button">Search</button>
+                    <input type="submit" name="category" value="Other"/>
                 </div>
             </div>
         </form>
-
-<%--        <%--%>
-<%--            List<Item> items=(List<Item>) request.getAttribute("items");--%>
-<%--            for (Item item: items) {--%>
-<%--        %>--%>
-<%--        <tr>--%>
-<%--            <h1><%=item.getName()%></h1>--%>
-<%--        </tr>--%>
-<%--        <%}%>--%>
-
-<%--        <c:forEach var = "i" begin = "1" end = "5">--%>
-<%--            Item <c:out value = "${i}"/><p>--%>
-<%--        </c:forEach>--%>
 
         <c:forEach items="${items}" var="item">
             <h1>${item.getName()}</h1>
