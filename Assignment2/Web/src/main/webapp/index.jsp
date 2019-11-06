@@ -1,72 +1,45 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
     <head>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Pet Shop</title>
-
-        <!-- Bootstrap core CSS -->
-        <link href="tools/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom fonts for this template -->
-        <link href="tools/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-        <!-- Plugin CSS -->
-        <link href="tools/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-        <!-- Custom styles for this template -->
-        <link href="tools/css/freelancer.min.css" rel="stylesheet">
-
-        <link rel="stylesheet" type="text/css" href="tools/css/modificacao.css">
-
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/login.css"/>
+        <title>MyBay</title>
     </head>
-    <body id="page-top">
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="${pageContext.request.contextPath}/home">Pet Shop</a>
-                <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fa fa-bars"></i>
-                </button>
-
-
+    <body>
+        <div class="login-container">
+            <div class="logo-container">
+                <a href="${pageContext.request.contextPath}/login"><img class="mb-4" src="images/logo.png"></a>
             </div>
-        </nav>
-
-        <section class="col-md-12">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="margin: 0 auto;">
-                        <form class="form-signin" style="margin-top: 80px;" action="${pageContext.request.contextPath}/login" method="post">
-                            <div class="col-md-6" style="margin: 0 auto;">
-                                <img class="mb-4" src="tools/img/Dog-vector-now.jpg" width="130">
-                            </div>
-                            <h1 class="h3 mb-3 font-weight-normal" align="center">Logar</h1>
-                            <label for="inputUser" class="sr-only">Login </label>
-                            <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required autofocus>
-                            <label for="inputPassword" class="sr-only" >Senha</label>
-                            <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required >
-                            <div class="checkbox mb-3" style="margin-top:15px;">
-                                <label>
-                                    <input type="checkbox" value="remember-me"> Lembrar
-                                </label>
-                            </div>
-                            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-
-                        </form>
-                    </div>
+            <div class="login-form-container">
+                <div class="login-text-container">
+                    <h1 align="center">Login</h1>
                 </div>
-            </div>
-        </section>          
+                <form class="form-signin" action="${pageContext.request.contextPath}/login" method="post">
+                    <div class="login-form-fields-container">
+                        <div class="login-fields-container">
+                            <input type="email" id="email" name="email" placeholder="Email" maxlength="150" required autofocus>
+                        </div>
 
+                        <div class="login-fields-container">
+                            <input type="password" id="password" name="password" placeholder="Password" maxlength="15" required>
+                        </div>
+<%--                        <c:if test="${errorMsg}">--%>
+<%--                            <div class="invalid-login-message">--%>
+<%--                                <h4 align="center">Invalid Credentials</h4>--%>
+<%--                            </div>--%>
+<%--                        </c:if>--%>
+                        <div class="login-button-container">
+                            <input type="submit" class="login-button" value="Login">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="register-button-container">
+                <a href="${pageContext.request.contextPath}/register"><input type="button" class="register-button" value="Register"/></a>
+            </div>
+        </div>
     </body>
 </html>

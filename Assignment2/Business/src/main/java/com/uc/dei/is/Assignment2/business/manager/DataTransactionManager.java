@@ -13,7 +13,7 @@ public class DataTransactionManager {
 
     private static EntityManagerFactory ENTITY_MANAGER_FACTORY = Persistence.createEntityManagerFactory("IS_Assignment2");
 
-    public static void addUser(String name, String email, String password, String country){
+    public static int addUser(String name, String email, String password, String country){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -27,11 +27,14 @@ public class DataTransactionManager {
                 user.setDk(passEncrypted[0]);
                 em.persist(user);
                 et.commit();
+                return 1;
             }
+            return 0;
         } catch (Exception ex){
             if(et != null)
                 et.rollback();
             ex.printStackTrace();
+            return 0;
         } finally {
             em.close();
         }
@@ -280,19 +283,20 @@ public class DataTransactionManager {
         return queryString += " order by i." + sortingParameter + " " + sortingOrder;
     }
 
-    public static void getUser(String userEmail){
+    public static User getUser(String userEmail){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
             Query query = em.createQuery("from User u where u.email = :email")
                     .setParameter("email", userEmail);
-            User user = (User) query.getSingleResult();
-            System.out.println(EncryptionManager.decprypt(user.getDk(), user.getPassword()));
+            return (User) query.getSingleResult();
         } catch (NoResultException ex){
             ex.printStackTrace();
+            return null;
         }finally {
             em.close();
         }
     }
+
 }
