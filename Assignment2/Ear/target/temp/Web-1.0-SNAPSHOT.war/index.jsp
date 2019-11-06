@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -25,11 +26,11 @@
                         <div class="login-fields-container">
                             <input type="password" id="password" name="password" placeholder="Password" maxlength="15" required>
                         </div>
-<%--                        <c:if test="${errorMsg}">--%>
-<%--                            <div class="invalid-login-message">--%>
-<%--                                <h4 align="center">Invalid Credentials</h4>--%>
-<%--                            </div>--%>
-<%--                        </c:if>--%>
+                        <c:if test="${errorMsg}">
+                            <div class="invalid-login-message">
+                                <h4 align="center">Invalid Credentials</h4>
+                            </div>
+                        </c:if>
                         <div class="login-button-container">
                             <input type="submit" class="login-button" value="Login">
                         </div>

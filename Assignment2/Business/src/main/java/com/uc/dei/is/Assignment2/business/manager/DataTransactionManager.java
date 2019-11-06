@@ -155,7 +155,7 @@ public class DataTransactionManager {
         }
     }
 
-    public static void getItemsByFilter(Filter filter) {
+    public static List<Item> getItemsByFilter(Filter filter) {
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -179,12 +179,7 @@ public class DataTransactionManager {
         if (filter.getFinalPriceRange() > 0)
             query.setParameter("finalPriceRange", filter.getFinalPriceRange());
 
-        List<Item> items = query.getResultList();
-
-        System.out.println(items.size());
-
-        for(Item item : items)
-            System.out.println(item.toString());
+        return query.getResultList();
     }
 
     public static void getItemsOrderedByFilter(Filter filter, String sortingParameter, String sortingOrder) {

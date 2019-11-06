@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -62,11 +63,11 @@
                         <option value="Ucrania">Ucrânia</option>
                     </select>
                 </div>
-<%--                <c:if test="${errorMsg}">--%>
-<%--                    <div class="invalid-register-message">--%>
-<%--                        <h4 align="center">Email is already used</h4>--%>
-<%--                    </div>--%>
-<%--                </c:if>--%>
+                <c:if test="${errorMsg}">
+                    <div class="invalid-register-message">
+                        <h4 align="center">Email is already used</h4>
+                    </div>
+                </c:if>
                 <div class="register-button-container">
                     <input type="submit" class="register-button" value="Register">
                 </div>

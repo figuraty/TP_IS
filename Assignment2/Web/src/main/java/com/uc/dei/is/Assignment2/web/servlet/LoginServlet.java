@@ -35,11 +35,11 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        int userID = OperationsController.login(email, password);
+        int loginResult = OperationsController.login(email, password);
 
-        if (userID != 0){
+        if (loginResult != 0){
             HttpSession session = request.getSession();
-            session.setAttribute("userID", userID);
+            session.setAttribute("userEmail", email);
             response.sendRedirect(request.getContextPath() + "/home");
         } else {
             request.setAttribute("errorMsg", "true");
