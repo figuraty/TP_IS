@@ -40,7 +40,7 @@ public class DataTransactionManager {
         }
     }
 
-    public static void updateUser(int userId, String name, String email, String password, String country){
+    public static void updateUser(String userEmail, String name, String email, String password, String country){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -50,7 +50,9 @@ public class DataTransactionManager {
             et.begin();
             String[] passEncrypted = EncryptionManager.encprypt(password);
             if (passEncrypted!= null && passEncrypted.length == 2) {
-                User user = em.find(User.class, userId);
+                Query query = em.createQuery("from User u where u.email = :email")
+                        .setParameter("email", userEmail);
+                User user = (User) query.getSingleResult();
                 user.setName(name);
                 user.setEmail(email);
                 user.setPassword(passEncrypted[1]);
@@ -292,6 +294,36 @@ public class DataTransactionManager {
         }finally {
             em.close();
         }
+    }
+
+    public static void deleteUser(String userEmail){
+
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("from User u where u.email = :email")
+                    .setParameter("email", userEmail);
+            User user = (User) query.getSingleResult();
+            em.remove(user);
+        } catch (NoResultException ex){
+            ex.printStackTrace();
+        }finally {
+            em.close();
+        }
+    }
+
+    public static List<Item> getAllItems(){
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            return em.createQuery("from Item i").getResultList();
+        } catch (NoResultException ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+
     }
 
 }

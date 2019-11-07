@@ -27,11 +27,27 @@ public class OperationsController {
         return DataTransactionManager.getUser(userEmail).getName();
     }
 
+    public static User getUser(String userEmail){
+        return DataTransactionManager.getUser(userEmail);
+    }
+
     public static int register(String name, String email,String password,String country){
         return DataTransactionManager.addUser(name, email, password, country);
     }
 
+    public static void updateUser(String userEmail, String name, String email,String password,String country){
+        DataTransactionManager.updateUser(userEmail, name, email, password, country);
+    }
+
     public static List<Item> getItemsByCategory(String category){
         return DataTransactionManager.getItemsByFilter(new Filter(null, category, null, null, null, 0, 0));
+    }
+
+    public static List<Item> getAllItems(){
+        return DataTransactionManager.getAllItems();
+    }
+
+    public static void deleteUser(String email){
+        DataTransactionManager.deleteUser(email);
     }
 }

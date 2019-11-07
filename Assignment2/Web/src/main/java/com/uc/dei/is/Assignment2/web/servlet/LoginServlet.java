@@ -15,15 +15,14 @@ import java.io.IOException;
 @WebServlet(name = "LoginServlet", urlPatterns = {"/login"})
 public class LoginServlet extends HttpServlet {
 
-    //        DataTransactionManager.addUser("Acacio", "acaciobotagel@gmail.com", "muitosohms", "Marrocos");
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        if (session.getAttribute("email") != null) {
+        if (session.getAttribute("userEmail") != null) {
             response.sendRedirect(request.getContextPath() + "/home");
             return;
         }
+
         request.getRequestDispatcher("/index.jsp")
                 .forward(request, response);
     }
