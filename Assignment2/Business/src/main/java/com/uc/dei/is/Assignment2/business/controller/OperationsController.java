@@ -40,11 +40,15 @@ public class OperationsController {
     }
 
     public static List<Item> getItemsByCategory(String category){
-        return DataTransactionManager.getItemsByFilter(new Filter(null, category, null, null, null, 0, 0));
+        return DataTransactionManager.getItemsByFilter(new Filter(null, category, null, false, null, null, 0, 0));
     }
 
     public static List<Item> getAllItems(){
         return DataTransactionManager.getAllItems();
+    }
+
+    public static List<Item> getItemsByFilter(Filter filter){
+        return DataTransactionManager.getItemsByFilter(filter);
     }
 
     public static void deleteUser(String email){

@@ -30,7 +30,7 @@
                 </div>
                 <div class="userDetails-fields-container">
                     <select id="country" name="country">
-                        <option value="" selected disabled hidden>Choose here</option>
+                        <option value="${user.country}" selected hidden>${user.country}</option>
                         <option value="Alemanha">Alemanha</option>
                         <option value="Austria">Aústria</option>
                         <option value="Belgica">Bélgica</option>

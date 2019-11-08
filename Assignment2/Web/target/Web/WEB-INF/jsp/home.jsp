@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<form action="${pageContext.request.contextPath}/home" method="post">
 <div class="home-container">
     <div class="home-account-container">
         <div class="home-account-info-container">
@@ -20,10 +21,8 @@
                 <a href="${pageContext.request.contextPath}/userDetails"><img class="mb-4" style="height: 25px" src="images/avatar.png"></a>
             </div>
             <div class="home-account-info-logout-container">
-                <form action="${pageContext.request.contextPath}/home" method="post">
                     <input type="hidden" name="logout" value="logout">
                     <input type="image" name="logout" src="images/logout.png" border="0" alt="Submit" style="height: 25px;" />
-                </form>
             </div>
         </div>
     </div>
@@ -36,10 +35,9 @@
                 <input type="text" id="name" name="name" placeholder="Search here" maxlength="150">
             </div>
             <div class="home-items-search-bar-button-container">
-                <button class="home-button">Search</button>
+                <input type="submit" class="home-button" style="padding: 8px 12px;" name="search" value="Search"/>
             </div>
         </div>
-        <form action="${pageContext.request.contextPath}/home" method="post">
             <div class="home-items-categories-container">
                 <div class="home-items-categories-art-container">
                     <input type="submit" name="category" value="All"/>
@@ -72,7 +70,6 @@
                     <input type="submit" name="category" value="Other"/>
                 </div>
             </div>
-        </form>
         <div class="separator-container">
             <hr>
         </div>
@@ -127,5 +124,6 @@
         </div>
     </div>
 </div>
+</form>
 </body>
 </html>

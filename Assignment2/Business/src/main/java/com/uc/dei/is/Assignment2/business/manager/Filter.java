@@ -6,12 +6,13 @@ public class Filter {
     private String name;
     private String category;
     private String country;
+    private boolean myItems;
     private Date intialInsertionDate;
     private Date finalInsertionDate;
     private float intitialPriceRange;
     private float finalPriceRange;
 
-    public Filter(String name, String category, String country, Date intialInsertionDate, Date finalInsertionDate, float intitialPriceRange, float finalPriceRange) {
+    public Filter(String name, String category, String country, boolean myItems, Date intialInsertionDate, Date finalInsertionDate, float intitialPriceRange, float finalPriceRange) {
         this.name = name;
         this.category = category;
         this.country = country;
@@ -19,6 +20,7 @@ public class Filter {
         this.finalInsertionDate = finalInsertionDate;
         this.intitialPriceRange = intitialPriceRange;
         this.finalPriceRange = finalPriceRange;
+        this.myItems = myItems;
     }
 
     public String getName() {
@@ -43,6 +45,14 @@ public class Filter {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public boolean isMyItems() {
+        return myItems;
+    }
+
+    public void setMyItems(boolean myItems) {
+        this.myItems = myItems;
     }
 
     public Date getIntialInsertionDate() {

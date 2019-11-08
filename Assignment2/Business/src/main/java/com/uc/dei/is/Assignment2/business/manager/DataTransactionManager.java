@@ -70,7 +70,23 @@ public class DataTransactionManager {
         }
     }
 
-    public static void deleteUser(int userId){
+    public static User getUser(String userEmail){
+
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("from User u where u.email = :email")
+                    .setParameter("email", userEmail);
+            return (User) query.getSingleResult();
+        } catch (NoResultException ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public static void deleteUser(String userEmail){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -78,16 +94,32 @@ public class DataTransactionManager {
         try {
             et = em.getTransaction();
             et.begin();
-            User user = em.find(User.class, userId);
+            Query query = em.createQuery("from User u where u.email = :email")
+                    .setParameter("email", userEmail);
+            User user = (User) query.getSingleResult();
             em.remove(user);
             et.commit();
-        } catch (Exception ex){
+        } catch (NoResultException ex){
             if(et != null)
                 et.rollback();
             ex.printStackTrace();
-        } finally {
+        }finally {
             em.close();
         }
+    }
+
+    public static List<Item> getAllItems(){
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            return em.createQuery("from Item i").getResultList();
+        } catch (NoResultException ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+
     }
 
     public static void addItem(String email, String name, String category, String country, String picture, float price){
@@ -184,7 +216,7 @@ public class DataTransactionManager {
         return query.getResultList();
     }
 
-    public static void getItemsOrderedByFilter(Filter filter, String sortingParameter, String sortingOrder) {
+    public static void getItemsByFilterOrdered(Filter filter, String sortingParameter, String sortingOrder) {
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -278,52 +310,6 @@ public class DataTransactionManager {
 
     private static String sortingQuery(String sortingParameter, String sortingOrder, String queryString){
         return queryString += " order by i." + sortingParameter + " " + sortingOrder;
-    }
-
-    public static User getUser(String userEmail){
-
-        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-
-        try {
-            Query query = em.createQuery("from User u where u.email = :email")
-                    .setParameter("email", userEmail);
-            return (User) query.getSingleResult();
-        } catch (NoResultException ex){
-            ex.printStackTrace();
-            return null;
-        }finally {
-            em.close();
-        }
-    }
-
-    public static void deleteUser(String userEmail){
-
-        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-
-        try {
-            Query query = em.createQuery("from User u where u.email = :email")
-                    .setParameter("email", userEmail);
-            User user = (User) query.getSingleResult();
-            em.remove(user);
-        } catch (NoResultException ex){
-            ex.printStackTrace();
-        }finally {
-            em.close();
-        }
-    }
-
-    public static List<Item> getAllItems(){
-        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-
-        try {
-            return em.createQuery("from Item i").getResultList();
-        } catch (NoResultException ex){
-            ex.printStackTrace();
-            return null;
-        }finally {
-            em.close();
-        }
-
     }
 
 }
