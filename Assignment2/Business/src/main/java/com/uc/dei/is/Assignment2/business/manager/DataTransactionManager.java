@@ -40,7 +40,7 @@ public class DataTransactionManager {
         }
     }
 
-    public static void updateUser(String userEmail, String name, String email, String password, String country){
+    public static int updateUser(String userEmail, String name, String email, String password, String country){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -60,11 +60,14 @@ public class DataTransactionManager {
                 user.setDk(passEncrypted[0]);
                 em.merge(user);
                 et.commit();
+                return 1;
             }
+            return 0;
         } catch (Exception ex){
             if(et != null)
                 et.rollback();
             ex.printStackTrace();
+            return 0;
         } finally {
             em.close();
         }
@@ -192,14 +195,8 @@ public class DataTransactionManager {
     public static List<Item> getItemsByFilter(Filter filter) {
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-        EntityTransaction et = null;
-
-        et = em.getTransaction();
-        et.begin();
 
         Query query = em.createQuery(createFilteredQuery(filter));
-        if (filter.getName() != null)
-            query.setParameter("name", filter.getName());
         if (filter.getCategory() != null)
             query.setParameter("category", filter.getCategory());
         if (filter.getCountry() != null)
@@ -225,8 +222,6 @@ public class DataTransactionManager {
         et.begin();
 
         Query query = em.createQuery(sortingQuery(sortingParameter, sortingOrder, createFilteredQuery(filter)));
-        if (filter.getName() != null)
-            query.setParameter("name", filter.getName());
         if (filter.getCategory() != null)
             query.setParameter("category", filter.getCategory());
         if (filter.getCountry() != null)
@@ -250,17 +245,17 @@ public class DataTransactionManager {
 
     private static String createFilteredQuery(Filter filter){
         boolean first = false;
-        String queryString = "from Item i where ";
+        String queryString = "from Item i";
 
         if (filter.getName() != null) {
             first = true;
-            queryString += "i.name = :name";
+            queryString += " where i.name like '%" + filter.getName() + "%'";
 
         }
         if (filter.getCategory() != null) {
             if (!first) {
                 first = true;
-                queryString += "i.category = :category";
+                queryString += " where i.category = :category";
             }
             else
                 queryString += " and i.category = :category";
@@ -268,15 +263,15 @@ public class DataTransactionManager {
         if (filter.getCountry() != null) {
             if (!first) {
                 first = true;
-                queryString += "i.country = :country";
+                queryString += " where i.country = :country";
             }
             else
-                queryString += " and i.country = :country";
+                queryString += " where i.country = :country";
         }
         if (filter.getIntialInsertionDate() != null) {
             if (!first) {
                 first = true;
-                queryString += "i.insertionDate >= :intialInsertionDate";
+                queryString += " where i.insertionDate >= :intialInsertionDate";
             }
             else
                 queryString += " and i.insertionDate >= :intialInsertionDate";
@@ -284,7 +279,7 @@ public class DataTransactionManager {
         if (filter.getFinalInsertionDate() != null) {
             if (!first) {
                 first = true;
-                queryString += "i.insertionDate <= :finalInsertionDate";
+                queryString += " where i.insertionDate <= :finalInsertionDate";
             }
             else
                 queryString += " and i.insertionDate <= :finalInsertionDate";
@@ -292,7 +287,7 @@ public class DataTransactionManager {
         if (filter.getIntitialPriceRange() > 0) {
             if (!first) {
                 first = true;
-                queryString += "i.price >= :intitialPriceRange";
+                queryString += " where i.price >= :intitialPriceRange";
             }
             else
                 queryString += " and i.price >= :intitialPriceRange";
@@ -300,7 +295,7 @@ public class DataTransactionManager {
         if (filter.getFinalPriceRange() > 0) {
             if (!first) {
                 first = true;
-                queryString += "i.price <= :finalPriceRange";
+                queryString += " where i.price <= :finalPriceRange";
             }
             else
                 queryString += " and i.price <= :finalPriceRange";
@@ -310,6 +305,20 @@ public class DataTransactionManager {
 
     private static String sortingQuery(String sortingParameter, String sortingOrder, String queryString){
         return queryString += " order by i." + sortingParameter + " " + sortingOrder;
+    }
+
+    public static List<Item> getLastThreeItems() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try{
+            Query query = em.createQuery("from Item order by itemID desc").setMaxResults(3);
+            return (List<Item>) query.getResultList();
+        } catch (NoResultException ex){
+            ex.printStackTrace();
+            return null;
+        } finally {
+            em.close();
+        }
     }
 
 }

@@ -33,8 +33,8 @@ public class RegisterServlet extends HttpServlet {
         int register = OperationsController.register(name, email, password, country);
 
         if (register != 0){
-            HttpSession session = request.getSession();
             response.sendRedirect(request.getContextPath() + "/login");
+            request.removeAttribute("errorMsg");
         } else {
             request.setAttribute("errorMsg", "true");
             request.getRequestDispatcher("/WEB-INF/jsp/register.jsp")

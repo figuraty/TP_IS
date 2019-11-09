@@ -35,8 +35,12 @@ public class OperationsController {
         return DataTransactionManager.addUser(name, email, password, country);
     }
 
-    public static void updateUser(String userEmail, String name, String email,String password,String country){
-        DataTransactionManager.updateUser(userEmail, name, email, password, country);
+    public static int updateUser(String userEmail, String name, String email,String password,String country){
+        return DataTransactionManager.updateUser(userEmail, name, email, password, country);
+    }
+
+    public static List<Item> getLastThreeItems(){
+        return DataTransactionManager.getLastThreeItems();
     }
 
     public static List<Item> getItemsByCategory(String category){

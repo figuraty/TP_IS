@@ -40,6 +40,7 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("userEmail", email);
             response.sendRedirect(request.getContextPath() + "/home");
+            request.removeAttribute("errorMsg");
         } else {
             request.setAttribute("errorMsg", "true");
             request.getRequestDispatcher("/index.jsp")

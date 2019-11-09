@@ -37,26 +37,32 @@ public class UserDetailsServlet extends HttpServlet {
         HttpSession session = request.getSession();
 
         if (request.getParameter("cancel") != null){
-            System.out.println("CANCEL");
             response.sendRedirect(request.getContextPath() + "/home");
             return;
         } else if (request.getParameter("delete") != null){
-            System.out.println("DELETE");
             String userEmail = (String) session.getAttribute("userEmail");
             OperationsController.deleteUser(userEmail);
             session.removeAttribute("userEmail");
             response.sendRedirect(request.getContextPath() + "/login");
             return;
         } else {
-            System.out.println("UPDATE");
             String userEmail = (String) session.getAttribute("userEmail");
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String password = request.getParameter("password");
             String country = request.getParameter("country");
-            OperationsController.updateUser(userEmail, name, email, password, country);
-            response.sendRedirect(request.getContextPath() + "/home");
-            return;
+            int update = OperationsController.updateUser(userEmail, name, email, password, country);
+            if (update != 0){
+                session.setAttribute("userEmail", userEmail);
+                request.removeAttribute("errorMsg");
+                response.sendRedirect(request.getContextPath() + "/home");
+                return;
+            } else {
+                request.setAttribute("errorMsg", "true");
+                request.getRequestDispatcher("/WEB-INF/jsp/userDetails.jsp")
+                        .forward(request, response);
+                return;
+            }
         }
     }
 }

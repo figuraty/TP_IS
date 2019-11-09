@@ -260,3 +260,15 @@ input[type=submit]:hover {
     background-color: aquamarine;
     margin-bottom: 2rem;
 }
+
+.home-clear-filters-button {
+    background-color: #999999;
+}
+
+.home-clear-filters-button:hover {
+    background-color: #999999;
+}
+
+.home-items-line-item-container{
+    display: flex;
+}
