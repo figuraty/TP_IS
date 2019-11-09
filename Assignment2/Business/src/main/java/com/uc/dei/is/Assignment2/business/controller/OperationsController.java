@@ -55,6 +55,10 @@ public class OperationsController {
         return DataTransactionManager.getItemsByFilter(filter);
     }
 
+    public static List<Item> getItemsByFilterOrdered(Filter filter, String sortingParameter, String sortingOrder){
+        return DataTransactionManager.getItemsByFilterOrdered(filter, sortingParameter, sortingOrder);
+    }
+
     public static void deleteUser(String email){
         DataTransactionManager.deleteUser(email);
     }

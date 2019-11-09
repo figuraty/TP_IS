@@ -47,6 +47,7 @@ public class HomeServlet extends HttpServlet {
         String itemName = request.getParameter("name");
         String resetFilters = request.getParameter("resetFilters");
         String itemID = request.getParameter("itemID");
+        String sort = request.getParameter("sort");
         Filter filter = (Filter) session.getAttribute("filter");
         List<Item> items = null;
 
@@ -72,6 +73,13 @@ public class HomeServlet extends HttpServlet {
                 session.setAttribute("filter", filter);
                 items = OperationsController.getItemsByFilter(filter);
             }
+
+            session.removeAttribute("ordingCategory");
+            session.removeAttribute("ordingCountry");
+            session.removeAttribute("ordingName");
+            session.removeAttribute("ordingPrice");
+            session.removeAttribute("ordingDate");
+
             request.setAttribute("items", items);
             request.getRequestDispatcher("/WEB-INF/jsp/home.jsp")
                     .forward(request, response);
@@ -147,6 +155,12 @@ public class HomeServlet extends HttpServlet {
                 session.setAttribute("filter", filter);
                 items = OperationsController.getItemsByFilter(filter);
 
+                session.removeAttribute("ordingCategory");
+                session.removeAttribute("ordingCountry");
+                session.removeAttribute("ordingName");
+                session.removeAttribute("ordingPrice");
+                session.removeAttribute("ordingDate");
+
                 request.setAttribute("items", items);
                 request.getRequestDispatcher("/WEB-INF/jsp/home.jsp")
                         .forward(request, response);
@@ -168,6 +182,11 @@ public class HomeServlet extends HttpServlet {
                 session.removeAttribute("finalDate");
                 session.removeAttribute("filter");
             }
+            session.removeAttribute("ordingCategory");
+            session.removeAttribute("ordingCountry");
+            session.removeAttribute("ordingName");
+            session.removeAttribute("ordingPrice");
+            session.removeAttribute("ordingDate");
             request.getRequestDispatcher("/WEB-INF/jsp/home.jsp")
                     .forward(request, response);
             return;
@@ -183,8 +202,123 @@ public class HomeServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/jsp/home.jsp")
                     .forward(request, response);
             return;
+        } else if (sort != null){
+            switch (sort){
+                case "category":
+                    if(session.getAttribute("ordingCategory") == null) {
+                        session.setAttribute("ordingCategory", "ascending");
+                        items = OperationsController.getItemsByFilterOrdered(filter, "category", "asc");
+                    }
+                    else {
+                        if(session.getAttribute("ordingCategory").equals("ascending")) {
+                            session.setAttribute("ordingCategory", "descending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "category", "desc");
+                        }
+                        else {
+                            session.setAttribute("ordingCategory", "ascending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "category", "asc");
+                        }
+                    }
+                    session.removeAttribute("ordingCountry");
+                    session.removeAttribute("ordingName");
+                    session.removeAttribute("ordingPrice");
+                    session.removeAttribute("ordingDate");
+                    break;
+                case "country":
+                    if(session.getAttribute("ordingCountry") == null) {
+                        session.setAttribute("ordingCountry", "ascending");
+                        items = OperationsController.getItemsByFilterOrdered(filter, "country", "asc");
+                    }
+                    else {
+                        if(session.getAttribute("ordingCountry").equals("ascending")) {
+                            session.setAttribute("ordingCountry", "descending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "country", "desc");
+                        }
+                        else {
+                            session.setAttribute("ordingCountry", "ascending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "country", "asc");
+                        }
+                    }
+                    session.removeAttribute("ordingCategory");
+                    session.removeAttribute("ordingName");
+                    session.removeAttribute("ordingPrice");
+                    session.removeAttribute("ordingDate");
+                    break;
+                case "name":
+                    if(session.getAttribute("ordingName") == null) {
+                        session.setAttribute("ordingName", "ascending");
+                        items = OperationsController.getItemsByFilterOrdered(filter, "name", "asc");
+                    }
+                    else {
+                        if(session.getAttribute("ordingName").equals("ascending")) {
+                            session.setAttribute("ordingName", "descending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "name", "desc");
+                        }
+                        else {
+                            session.setAttribute("ordingName", "ascending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "name", "asc");
+                        }
+                    }
+                    session.removeAttribute("ordingCategory");
+                    session.removeAttribute("ordingCountry");
+                    session.removeAttribute("ordingPrice");
+                    session.removeAttribute("ordingDate");
+                    break;
+                case "price":
+                    if(session.getAttribute("ordingPrice") == null) {
+                        session.setAttribute("ordingPrice", "ascending");
+                        items = OperationsController.getItemsByFilterOrdered(filter, "price", "asc");
+                    }
+                    else {
+                        if(session.getAttribute("ordingPrice").equals("ascending")) {
+                            session.setAttribute("ordingPrice", "descending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "price", "desc");
+                        }
+                        else {
+                            session.setAttribute("ordingPrice", "ascending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "price", "asc");
+                        }
+                    }
+                    session.removeAttribute("ordingCategory");
+                    session.removeAttribute("ordingCountry");
+                    session.removeAttribute("ordingName");
+                    session.removeAttribute("ordingDate");
+                    break;
+                case "date":
+                    if(session.getAttribute("ordingDate") == null) {
+                        session.setAttribute("ordingDate", "ascending");
+                        items = OperationsController.getItemsByFilterOrdered(filter, "insertionDate", "asc");
+                    }
+                    else {
+                        if(session.getAttribute("ordingDate").equals("ascending")) {
+                            session.setAttribute("ordingDate", "descending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "insertionDate", "desc");
+                        }
+                        else {
+                            session.setAttribute("ordingDate", "ascending");
+                            items = OperationsController.getItemsByFilterOrdered(filter, "insertionDate", "asc");
+                        }
+                    }
+                    session.removeAttribute("ordingCategory");
+                    session.removeAttribute("ordingCountry");
+                    session.removeAttribute("ordingName");
+                    session.removeAttribute("ordingPrice");
+                    break;
+            }
+            session.setAttribute("items", items);
+            request.getRequestDispatcher("/WEB-INF/jsp/home.jsp")
+                    .forward(request, response);
+            return;
         } else if (itemID != null){
             session.setAttribute("itemID", itemID);
+            session.removeAttribute("filter");
+            session.removeAttribute("category");
+            session.removeAttribute("userEmail");
+            session.removeAttribute("ordingCategory");
+            session.removeAttribute("ordingCountry");
+            session.removeAttribute("ordingName");
+            session.removeAttribute("ordingPrice");
+            session.removeAttribute("ordingDate");
             response.sendRedirect(request.getContextPath() + "/itemDetails");
         }
         else if (logout != null){
@@ -192,6 +326,11 @@ public class HomeServlet extends HttpServlet {
                 session.removeAttribute("category");
                 session.removeAttribute("userEmail");
                 session.removeAttribute("itemID");
+                session.removeAttribute("ordingCategory");
+                session.removeAttribute("ordingCountry");
+                session.removeAttribute("ordingName");
+                session.removeAttribute("ordingPrice");
+                session.removeAttribute("ordingDate");
                 response.sendRedirect(request.getContextPath() + "/login");
         }
     }

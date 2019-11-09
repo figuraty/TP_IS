@@ -213,29 +213,28 @@ public class DataTransactionManager {
         return query.getResultList();
     }
 
-    public static void getItemsByFilterOrdered(Filter filter, String sortingParameter, String sortingOrder) {
+    public static List<Item> getItemsByFilterOrdered(Filter filter, String sortingParameter, String sortingOrder) {
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-        EntityTransaction et = null;
-
-        et = em.getTransaction();
-        et.begin();
-
-        Query query = em.createQuery(sortingQuery(sortingParameter, sortingOrder, createFilteredQuery(filter)));
-        if (filter.getCategory() != null)
-            query.setParameter("category", filter.getCategory());
-        if (filter.getCountry() != null)
-            query.setParameter("country", filter.getCountry());
-        if (filter.getIntialInsertionDate() != null)
-            query.setParameter("intialInsertionDate", filter.getIntialInsertionDate());
-        if (filter.getFinalInsertionDate() != null)
-            query.setParameter("finalInsertionDate", filter.getFinalInsertionDate());
-        if (filter.getIntitialPriceRange() > 0)
-            query.setParameter("intitialPriceRange", filter.getIntitialPriceRange());
-        if (filter.getFinalPriceRange() > 0)
-            query.setParameter("finalPriceRange", filter.getFinalPriceRange());
-
-        List<Item> items = query.getResultList();
+        Query query = null;
+        if (filter != null) {
+            query = em.createQuery(sortingQuery(sortingParameter, sortingOrder, createFilteredQuery(filter)));
+            if (filter.getCategory() != null)
+                query.setParameter("category", filter.getCategory());
+            if (filter.getCountry() != null)
+                query.setParameter("country", filter.getCountry());
+            if (filter.getIntialInsertionDate() != null)
+                query.setParameter("intialInsertionDate", filter.getIntialInsertionDate());
+            if (filter.getFinalInsertionDate() != null)
+                query.setParameter("finalInsertionDate", filter.getFinalInsertionDate());
+            if (filter.getIntitialPriceRange() > 0)
+                query.setParameter("intitialPriceRange", filter.getIntitialPriceRange());
+            if (filter.getFinalPriceRange() > 0)
+                query.setParameter("finalPriceRange", filter.getFinalPriceRange());
+        }
+        else
+            query = em.createQuery(sortingQuery(sortingParameter, sortingOrder, "from Item i"));
+        return query.getResultList();
     }
 
     private static String createFilteredQuery(Filter filter){

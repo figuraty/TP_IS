@@ -74,6 +74,30 @@
         <div class="separator-container">
             <hr>
         </div>
+        <div class="home-items-sorting-container">
+            <div class="home-items-sorting-buttons-container">
+                <h5 style="margin-right: 8px; align-self: center;">Sorting by:</h5>
+                <c:if test="${ordingCategory == null}"><button class="item-sorting-button" name="sort" value="category" type="submit">Category</button></c:if>
+                <c:if test="${ordingCategory != null && ordingCategory == 'ascending'}"><button class="item-sorting-button" name="sort" value="category" type="submit" style="background-image: url(images/ascending.png)">Category</button></c:if>
+                <c:if test="${ordingCategory != null && ordingCategory == 'descending'}"><button class="item-sorting-button" name="sort" value="category" type="submit" style="background-image: url(images/descending.png)">Category</button></c:if>
+
+                <c:if test="${ordingCountry == null}"><button class="item-sorting-button" name="sort" value="country" type="submit">Country</button></c:if>
+                <c:if test="${ordingCountry != null && ordingCountry == 'ascending'}"><button class="item-sorting-button" name="sort" value="country" type="submit" style="background-image: url(images/ascending.png)">Country</button></c:if>
+                <c:if test="${ordingCountry != null && ordingCountry == 'descending'}"><button class="item-sorting-button" name="sort" value="country" type="submit" style="background-image: url(images/descending.png)">Country</button></c:if>
+
+                <c:if test="${ordingName == null}"><button class="item-sorting-button" name="sort" value="name" type="submit">Name</button></c:if>
+                <c:if test="${ordingName != null && ordingName == 'ascending'}"><button class="item-sorting-button" name="sort" value="name" type="submit" style="background-image: url(images/ascending.png)">Name</button></c:if>
+                <c:if test="${ordingName != null && ordingName == 'descending'}"><button class="item-sorting-button" name="sort" value="name" type="submit" style="background-image: url(images/descending.png)">Name</button></c:if>
+
+                <c:if test="${ordingPrice == null}"><button class="item-sorting-button" name="sort" value="price" type="submit">Price</button></c:if>
+                <c:if test="${ordingPrice != null && ordingPrice == 'ascending'}"><button class="item-sorting-button" name="sort" value="price" type="submit" style="background-image: url(images/ascending.png)">Price</button></c:if>
+                <c:if test="${ordingPrice != null && ordingPrice == 'descending'}"><button class="item-sorting-button" name="sort" value="price" type="submit" style="background-image: url(images/descending.png)">Price</button></c:if>
+
+                <c:if test="${ordingDate == null}"><button class="item-sorting-button" name="sort" value="date" type="submit">Date</button></c:if>
+                <c:if test="${ordingDate != null && ordingDate == 'ascending'}"><button class="item-sorting-button" name="sort" value="date" type="submit" style="background-image: url(images/ascending.png)">Date</button></c:if>
+                <c:if test="${ordingDate != null && ordingDate == 'descending'}"><button class="item-sorting-button" name="sort" value="date" type="submit" style="background-image: url(images/descending.png)">Date</button></c:if>
+            </div>
+        </div>
 
         <div class="home-items-products-container">
             <div class="home-items-products-filter-container">
