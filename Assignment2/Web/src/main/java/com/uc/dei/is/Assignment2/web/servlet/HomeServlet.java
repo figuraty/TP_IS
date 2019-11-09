@@ -46,6 +46,7 @@ public class HomeServlet extends HttpServlet {
         String searchName = request.getParameter("search");
         String itemName = request.getParameter("name");
         String resetFilters = request.getParameter("resetFilters");
+        String itemID = request.getParameter("itemID");
         Filter filter = (Filter) session.getAttribute("filter");
         List<Item> items = null;
 
@@ -182,10 +183,15 @@ public class HomeServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/jsp/home.jsp")
                     .forward(request, response);
             return;
-        } else if (logout != null){
+        } else if (itemID != null){
+            session.setAttribute("itemID", itemID);
+            response.sendRedirect(request.getContextPath() + "/itemDetails");
+        }
+        else if (logout != null){
                 session.removeAttribute("filter");
                 session.removeAttribute("category");
                 session.removeAttribute("userEmail");
+                session.removeAttribute("itemID");
                 response.sendRedirect(request.getContextPath() + "/login");
         }
     }

@@ -18,6 +18,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
+        System.out.println(session.getAttribute("itemID"));
         if (session.getAttribute("userEmail") != null) {
             response.sendRedirect(request.getContextPath() + "/home");
             return;

@@ -1,5 +1,3 @@
-<%@ page import="java.text.DateFormat" %>
-<%@ page import="java.text.SimpleDateFormat" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -100,9 +98,11 @@
                     <div class="text">Price Range</div>
                     <div class="range">
                         <div class="money-text">EUR</div>
-                        <input type="text" name="initialPriceRange" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" <c:if test="${filter != null &&  filter.intitialPriceRange > 0}">value="${filter.intitialPriceRange}" </c:if>/>
+                        <input type="text" name="initialPriceRange" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                               <c:if test="${filter != null &&  filter.intitialPriceRange > 0}">value="${filter.intitialPriceRange}" </c:if>/>
                         <div class="money-text" style="margin-left: 8px">EUR</div>
-                        <input type="text" name="finalPriceRange" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" <c:if test="${filter != null &&  filter.finalPriceRange > 0}">value="${filter.finalPriceRange}" </c:if>/>
+                        <input type="text" name="finalPriceRange" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                               <c:if test="${filter != null &&  filter.finalPriceRange > 0}">value="${filter.finalPriceRange}" </c:if>/>
                     </div>
 
                 </div>
@@ -115,19 +115,17 @@
             </div>
             <div class="home-items-products-list-container">
                 <div class="home-items-line-container">
-
                     <div class="home-items-line-item-container">
-<%--                        --%>
-                        <a href="${pageContext.request.contextPath}/addItem" style="width: 100%; height: 100%; border-style: dotted; border-width: 2px; border-color: #999999;"><img style="width: 100%; height: 100%;" src="images/addItem.png"><%--</button>--%></a>
+                        <a href="${pageContext.request.contextPath}/addItem" style="width: 100%; height: 100%; border-style: dotted; border-width: 2px; border-color: #999999;"><img style="width: 100%; height: 100%;" src="images/addItem.png"></a>
                     </div>
                     <c:if test = "${fn:length(items) > 0}">
                         <div class="home-items-line-item-container">
-
+                            <button class="item-details-button" name="itemID" value="${items[0].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
                         </div>
                     </c:if>
                     <c:if test = "${fn:length(items) > 1}">
                         <div class="home-items-line-item-container">
-
+                            <button class="item-details-button" name="itemID" value="${items[1].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
                         </div>
                     </c:if>
                 </div>
@@ -137,7 +135,7 @@
                             <c:forEach var = "j" begin = "${(i*3) - 1}" end = "${((i *3) + 1)}">
                                 <c:if test = "${j < fn:length(items)}">
                                     <div class="home-items-line-item-container">
-
+                                        <button class="item-details-button" name="itemID" value="${items[j].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
                                     </div>
                                 </c:if>
                             </c:forEach>

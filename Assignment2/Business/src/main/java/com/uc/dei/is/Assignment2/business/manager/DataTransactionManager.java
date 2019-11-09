@@ -236,11 +236,6 @@ public class DataTransactionManager {
             query.setParameter("finalPriceRange", filter.getFinalPriceRange());
 
         List<Item> items = query.getResultList();
-
-        System.out.println(items.size());
-
-        for(Item item : items)
-            System.out.println(item.toString());
     }
 
     private static String createFilteredQuery(Filter filter){

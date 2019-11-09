@@ -257,7 +257,6 @@ input[type=submit]:hover {
 .home-items-line-item-container {
     width: 30%;
     margin-right: 2rem;
-    background-color: aquamarine;
     margin-bottom: 2rem;
 }
 
@@ -271,4 +270,12 @@ input[type=submit]:hover {
 
 .home-items-line-item-container{
     display: flex;
+}
+
+.item-details-button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
 }
