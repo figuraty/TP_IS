@@ -270,6 +270,8 @@ input[type=submit]:hover {
 
 .home-items-line-item-container{
     display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .item-details-button{

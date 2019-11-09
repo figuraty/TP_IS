@@ -145,11 +145,13 @@
                     <c:if test = "${fn:length(items) > 0}">
                         <div class="home-items-line-item-container">
                             <button class="item-details-button" name="itemID" value="${items[0].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
+                            <h4 style="margin: 4px;">${items[0].name}</h4>
                         </div>
                     </c:if>
                     <c:if test = "${fn:length(items) > 1}">
                         <div class="home-items-line-item-container">
                             <button class="item-details-button" name="itemID" value="${items[1].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
+                            <h4 style="margin: 4px;">${items[1].name}</h4>
                         </div>
                     </c:if>
                 </div>
@@ -160,6 +162,7 @@
                                 <c:if test = "${j < fn:length(items)}">
                                     <div class="home-items-line-item-container">
                                         <button class="item-details-button" name="itemID" value="${items[j].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
+                                        <h4 style="margin: 4px;">${items[j].name}</h4>
                                     </div>
                                 </c:if>
                             </c:forEach>
