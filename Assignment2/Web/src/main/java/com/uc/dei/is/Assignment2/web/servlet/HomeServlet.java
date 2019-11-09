@@ -181,6 +181,7 @@ public class HomeServlet extends HttpServlet {
                 session.removeAttribute("initialDate");
                 session.removeAttribute("finalDate");
                 session.removeAttribute("filter");
+                request.setAttribute("items", items);
             }
             session.removeAttribute("ordingCategory");
             session.removeAttribute("ordingCountry");
@@ -313,7 +314,6 @@ public class HomeServlet extends HttpServlet {
             session.setAttribute("itemID", itemID);
             session.removeAttribute("filter");
             session.removeAttribute("category");
-            session.removeAttribute("userEmail");
             session.removeAttribute("ordingCategory");
             session.removeAttribute("ordingCountry");
             session.removeAttribute("ordingName");

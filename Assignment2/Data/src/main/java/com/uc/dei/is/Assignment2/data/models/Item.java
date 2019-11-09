@@ -56,6 +56,10 @@ public class Item implements Serializable {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -86,6 +90,22 @@ public class Item implements Serializable {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public Date getInsertionDate() {
+        return insertionDate;
+    }
+
+    public void setInsertionDate(Date insertionDate) {
+        this.insertionDate = insertionDate;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
     }
 
     public User getUser() {

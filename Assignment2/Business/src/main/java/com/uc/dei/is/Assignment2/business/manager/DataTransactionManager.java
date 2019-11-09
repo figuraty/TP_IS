@@ -7,6 +7,7 @@ import com.uc.dei.is.Assignment2.data.models.User;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class DataTransactionManager {
@@ -148,7 +149,7 @@ public class DataTransactionManager {
         }
     }
 
-    public static void updateItem(int itemId, String name, String category, String country, String picture){
+    public static void updateItem(int itemId, String name, String category, String country, String picture, Date initialInsertionDate, Float price){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction et = null;
@@ -161,6 +162,8 @@ public class DataTransactionManager {
             item.setCategory(category);
             item.setCountry(country);
             item.setPicture(picture);
+            item.setInsertionDate(initialInsertionDate);
+            item.setPrice(price);
             em.merge(item);
             et.commit();
         } catch (Exception ex){
@@ -168,6 +171,22 @@ public class DataTransactionManager {
                 et.rollback();
             ex.printStackTrace();
         } finally {
+            em.close();
+        }
+    }
+
+    public static Item getItem(int itemID){
+
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("from Item i where i.id = :itemID")
+                    .setParameter("itemID", itemID);
+            return (Item) query.getSingleResult();
+        } catch (NoResultException ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
             em.close();
         }
     }

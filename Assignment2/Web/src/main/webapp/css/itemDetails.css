@@ -3,14 +3,14 @@ body{
     height: 100%;
 }
 
-.userDetails-container{
+.itemDetails-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.userDetails-account-container{
+.itemDetails-account-container{
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,23 +22,23 @@ body{
     margin-bottom: 100px;
 }
 
-.userDetails-account-info-container{
+.itemDetails-account-info-container{
     display: flex;
     margin-right: 2rem;
 }
 
-.userDetails-account-info-username-container{
+.itemDetails-account-info-username-container{
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 18px;
     color: black;
     margin-right: 0.5rem;
 }
 
-.userDetails-account-info-avatar-container{
+.itemDetails-account-info-avatar-container{
     width: 25px;
 }
 
-.userDetails-account-info-logout-container{
+.itemDetails-account-info-logout-container{
     width: 25px;
     margin-left: 0.5rem;
 }
@@ -49,7 +49,7 @@ body{
     justify-content: center;
 }
 
-.userDetails-form-container{
+.itemDetails-form-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,31 +57,31 @@ body{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    width: 25%;
+    width: 30%;
 }
 
-.userDetails-text-container{
+.itemDetails-text-container{
     display: flex;
     width: 100%;
     justify-content: center;
     font-family: 'Source Sans Pro',sans-serif;
 }
 
-.userDetails-form-fields-container{
+.itemDetails-form-fields-container{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.userDetails-fields-container{
+.itemDetails-fields-container{
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 0rem 2rem
 }
 
-.userDetails-button-container{
+.itemDetails-button-container{
     width: 100%;
 }
 
@@ -95,7 +95,7 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-input[type=email], select {
+input[type=date], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -105,36 +105,26 @@ input[type=email], select {
     box-sizing: border-box;
 }
 
-input[type=password], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.invalid-userDetails-message{
+.invalid-itemDetails-message{
     display: flex;
     color: #EB0000;
 }
 
-.userDetails-button-container{
+.itemDetails-button-container{
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.userDetails-delete-button-container{
+.itemDetails-delete-button-container{
     margin-right: 8px;
 }
 
-.userDetails-cancel-button-container{
+.itemDetails-cancel-button-container{
     margin-right: 8px;
 }
 
-.userDetails-button {
+.itemDetails-button {
     background-color: #416CA8;
     border: none;
     color: white;
@@ -149,11 +139,11 @@ input[type=password], select {
     border-radius: 4px;
 }
 
-.userDetails-button:hover{
+.itemDetails-button:hover{
     background-color: #325281;
 }
 
-.userDetails-cancel-button {
+.itemDetails-cancel-button {
     background-color: #ff6666;
     border: none;
     color: white;
@@ -168,11 +158,11 @@ input[type=password], select {
     border-radius: 4px;
 }
 
-.userDetails-cancel-button:hover{
+.itemDetails-cancel-button:hover{
     background-color: #ff5050;
 }
 
-.userDetails-delete-button {
+.itemDetails-delete-button {
     background-color: #ff3333;
     border: none;
     color: white;
@@ -187,6 +177,29 @@ input[type=password], select {
     border-radius: 4px;
 }
 
-.userDetails-delete-button:hover{
+.itemDetails-delete-button:hover{
     background-color: #e60000;
+}
+
+.itemDetails-edit-button-container{
+    margin-right: 8px;
+}
+
+.itemDetails-edit-button {
+    background-color: #416CA8;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.itemDetails-edit-button:hover{
+    background-color: #325281;
 }

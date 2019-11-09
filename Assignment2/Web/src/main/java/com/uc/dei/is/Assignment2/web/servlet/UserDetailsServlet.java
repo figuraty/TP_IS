@@ -2,7 +2,6 @@
 package com.uc.dei.is.Assignment2.web.servlet;
 
 import com.uc.dei.is.Assignment2.business.controller.OperationsController;
-import com.uc.dei.is.Assignment2.data.models.Item;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
 
 
 @WebServlet(name = "userDetailsServlet", urlPatterns = {"/userDetails"})
@@ -25,6 +23,7 @@ public class UserDetailsServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/login");
             return;
         }
+        session.setAttribute("userName", OperationsController.getUserName(userEmail));
         session.setAttribute("user", OperationsController.getUser(userEmail));
         request.getRequestDispatcher("/WEB-INF/jsp/userDetails.jsp")
                 .forward(request, response);
@@ -45,7 +44,7 @@ public class UserDetailsServlet extends HttpServlet {
             session.removeAttribute("userEmail");
             response.sendRedirect(request.getContextPath() + "/login");
             return;
-        } else {
+        } else if (request.getParameter("save") != null){
             String userEmail = (String) session.getAttribute("userEmail");
             String name = request.getParameter("name");
             String email = request.getParameter("email");
@@ -63,6 +62,10 @@ public class UserDetailsServlet extends HttpServlet {
                         .forward(request, response);
                 return;
             }
+        } else if (request.getParameter("logout") != null){
+            session.removeAttribute("userEmail");
+            session.removeAttribute("errorMsg");
+            response.sendRedirect(request.getContextPath() + "/login");
         }
     }
 }

@@ -6,6 +6,7 @@ import com.uc.dei.is.Assignment2.business.manager.Filter;
 import com.uc.dei.is.Assignment2.data.models.Item;
 import com.uc.dei.is.Assignment2.data.models.User;
 
+import java.util.Date;
 import java.util.List;
 
 public class OperationsController {
@@ -31,12 +32,20 @@ public class OperationsController {
         return DataTransactionManager.getUser(userEmail);
     }
 
+    public static Item getItem(int itemID){
+        return DataTransactionManager.getItem(itemID);
+    }
+
     public static int register(String name, String email,String password,String country){
         return DataTransactionManager.addUser(name, email, password, country);
     }
 
-    public static int updateUser(String userEmail, String name, String email,String password,String country){
+    public static int updateUser(String userEmail, String name, String email, String password, String country){
         return DataTransactionManager.updateUser(userEmail, name, email, password, country);
+    }
+
+    public static void updateItem(int itemID, String name, String category, String country, String picture, Date initialInsertionDate, Float price){
+        DataTransactionManager.updateItem(itemID, name, category, country, picture, initialInsertionDate, price);
     }
 
     public static List<Item> getLastThreeItems(){
@@ -61,5 +70,9 @@ public class OperationsController {
 
     public static void deleteUser(String email){
         DataTransactionManager.deleteUser(email);
+    }
+
+    public static void deleteItem(int itemID){
+        DataTransactionManager.deleteItem(itemID);
     }
 }
