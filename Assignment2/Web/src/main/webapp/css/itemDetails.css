@@ -1,0 +1,211 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.itemDetails-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.itemDetails-account-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    height: 30px;
+    box-shadow: 0 4px 6px 0 rgba(156,156,156,.4);
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+.itemDetails-account-info-container{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.itemDetails-account-info-username-container{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.itemDetails-account-info-avatar-container{
+    width: 25px;
+}
+
+.itemDetails-account-info-logout-container{
+    width: 25px;
+    margin-left: 0.5rem;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemDetails-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 30%;
+}
+
+.itemDetails-text-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+.itemDetails-form-fields-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.itemDetails-fields-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: left;
+    /* margin: 0rem 2rem; */
+}
+
+.itemDetails-button-container{
+    width: 100%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.invalid-itemDetails-message{
+    display: flex;
+    color: #EB0000;
+}
+
+.itemDetails-button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.itemDetails-delete-button-container{
+    margin-right: 8px;
+}
+
+.itemDetails-cancel-button-container{
+    margin-right: 8px;
+}
+
+.itemDetails-button {
+    background-color: #416CA8;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.itemDetails-button:hover{
+    background-color: #325281;
+}
+
+.itemDetails-cancel-button {
+    background-color: #ff6666;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.itemDetails-cancel-button:hover{
+    background-color: #ff5050;
+}
+
+.itemDetails-delete-button {
+    background-color: #ff3333;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.itemDetails-delete-button:hover{
+    background-color: #e60000;
+}
+
+.itemDetails-edit-button-container{
+    margin-right: 8px;
+}
+
+.itemDetails-edit-button {
+    background-color: #416CA8;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.itemDetails-edit-button:hover{
+    background-color: #325281;
+}
+
+label {
+    float: left;
+}
