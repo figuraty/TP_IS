@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<form class="form-itemDetails" style="width: 100%" action="${pageContext.request.contextPath}/itemDetails" method="post">
+<form class="form-itemDetails" style="width: 100%" action="${pageContext.request.contextPath}/itemDetails" method="post" enctype="multipart/form-data">
     <div class="itemDetails-container">
         <div class="itemDetails-account-container">
             <div class="itemDetails-account-info-container">
@@ -31,14 +31,20 @@
             <div class="itemDetails-text-container">
                 <h1 align="center">Item Details</h1>
             </div>
-                <div class="itemDetails-form-fields-container">
+                <div class="itemDetails-fields-container">
+                    <c:if test="${editItem != null && editItem != false}">
+                        <div class="additem-fields-container">
+                            Select File to Upload:<input type="file" name="fileName">
+                        </div>
+                    </c:if>
+
                     <div class="itemDetails-fields-container">
-                        <h5 style="margin-right: 4px">Name</h5>
+                        <label style="margin-right: 4px">Name</label>
                         <input type="text" id="name" name="name" placeholder="Name" maxlength="150"
                         <c:if test="${editItem == null || editItem == false}"> disabled </c:if> value="${item.name}" required>
                     </div>
                     <div class="itemDetails-fields-container">
-                        <h5 style="margin-right: 4px">Category</h5>
+                        <label style="margin-right: 4px">Category</label>
                         <select id="category" name="category" <c:if test="${editItem == null || editItem == false}"> disabled </c:if>>
                             <option value="${item.category}" selected hidden>${item.category}</option>
                             <option value="Art">Art</option>
@@ -53,7 +59,7 @@
                         </select>
                     </div>
                     <div class="itemDetails-fields-container">
-                        <h5 style="margin-right: 4px">Country</h5>
+                        <label style="margin-right: 4px">Country</label>
                         <select id="country" name="country" <c:if test="${editItem == null || editItem == false}"> disabled </c:if>>
                             <option value="${item.country}" selected hidden>${item.country}</option>
                             <option value="Alemanha">Alemanha</option>
@@ -90,12 +96,12 @@
                         </select>
                     </div>
                     <div class="itemDetails-fields-container">
-                        <h5 style="margin-right: 4px">Insertion Date</h5>
+                        <label style="margin-right: 4px">Insertion Date</label>
                         <input type="date" name="initialInsertionDate" value="${itemDate}" <c:if test="${editItem == null || editItem == false}"> disabled </c:if>>
                     </div>
 
                     <div class="itemDetails-fields-container">
-                        <h5 style="margin-right: 4px">Price</h5>
+                        <label style="margin-right: 4px">Price</label>
                         <input type="text" name="price" value="${item.price}" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" <c:if test="${editItem == null || editItem == false}"> disabled </c:if>/>
                     </div>
                     <div class="itemDetails-button-container">

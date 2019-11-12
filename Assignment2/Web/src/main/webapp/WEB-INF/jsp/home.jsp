@@ -140,18 +140,20 @@
             <div class="home-items-products-list-container">
                 <div class="home-items-line-container">
                     <div class="home-items-line-item-container">
-                        <a href="${pageContext.request.contextPath}/addItem" style="width: 100%; height: 100%; border-style: dotted; border-width: 2px; border-color: #999999;"><img style="width: 100%; height: 100%;" src="images/addItem.png"></a>
+                        <a href="${pageContext.request.contextPath}/additem" style="width: 100%; height: 100%; border-style: dotted; border-width: 2px; border-color: #999999;"><img style="width: 100%; height: 100%;" src="images/addItem.png"></a>
                     </div>
                     <c:if test = "${fn:length(items) > 0}">
                         <div class="home-items-line-item-container">
-                            <button class="item-details-button" name="itemID" value="${items[0].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
+                            <button class="item-details-button" name="itemID" value="${items[0].id}" type="submit"><img src="${items[0].picture}" style="width: 100%; height: 100%"></button>
                             <h4 style="margin: 4px;">${items[0].name}</h4>
+                            <h4 style="margin: 4px;">EUR ${items[0].price}</h4>
                         </div>
                     </c:if>
                     <c:if test = "${fn:length(items) > 1}">
                         <div class="home-items-line-item-container">
-                            <button class="item-details-button" name="itemID" value="${items[1].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
+                            <button class="item-details-button" name="itemID" value="${items[1].id}" type="submit"><img src="${items[1].picture}"  style="width: 100%; height: 100%"></button>
                             <h4 style="margin: 4px;">${items[1].name}</h4>
+                            <h4 style="margin: 4px;">EUR ${items[1].price}</h4>
                         </div>
                     </c:if>
                 </div>
@@ -161,8 +163,9 @@
                             <c:forEach var = "j" begin = "${(i*3) - 1}" end = "${((i *3) + 1)}">
                                 <c:if test = "${j < fn:length(items)}">
                                     <div class="home-items-line-item-container">
-                                        <button class="item-details-button" name="itemID" value="${items[j].id}" type="submit"><img src="images/logout.png" style="width: 100%; height: 100%"></button>
+                                        <button class="item-details-button" name="itemID" value="${items[j].id}" type="submit"><img src="${items[j].picture}  " style="width: 100%; height: 100%"></button>
                                         <h4 style="margin: 4px;">${items[j].name}</h4>
+                                        <h4 style="margin: 4px;">EUR ${items[j].price}</h4>
                                     </div>
                                 </c:if>
                             </c:forEach>

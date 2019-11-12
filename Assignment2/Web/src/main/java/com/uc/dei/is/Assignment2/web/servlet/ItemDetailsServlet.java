@@ -6,11 +6,10 @@ import com.uc.dei.is.Assignment2.data.models.Item;
 import com.uc.dei.is.Assignment2.data.models.User;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
+import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -19,13 +18,14 @@ import java.util.Date;
 
 
 @WebServlet(name = "itemDetailsServlet", urlPatterns = {"/itemDetails"})
+@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, maxFileSize = 1024 * 1024 * 10, maxRequestSize = 1024 * 1024 * 50)
 public class ItemDetailsServlet extends HttpServlet {
+    private static final String UPLOAD_DIR = "resources";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         String userEmail = (String) session.getAttribute("userEmail");
-        String itemID = (String) session.getAttribute("itemID");
         if (userEmail == null) {
             response.sendRedirect(request.getContextPath() + "/login");
             return;
@@ -33,6 +33,7 @@ public class ItemDetailsServlet extends HttpServlet {
         session.setAttribute("userName", OperationsController.getUserName(userEmail));
         User user = OperationsController.getUser(userEmail);
         session.setAttribute("user", user);
+        String itemID = (String) session.getAttribute("itemID");
         Item item = OperationsController.getItem(Integer.parseInt(itemID));
         session.setAttribute("item", item);
         session.setAttribute("itemUserID", item.getUser().getId());
@@ -72,14 +73,14 @@ public class ItemDetailsServlet extends HttpServlet {
             String name = request.getParameter("name");
             String category = request.getParameter("category");
             String country = request.getParameter("country");
-//            String picture = request.getParameter("picture");
+            String picture = UploadFile(request, response);
             String initialInsertionDate = request.getParameter("initialInsertionDate");
             String price = request.getParameter("price");
 
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
             try {
                 Date itemDate = formatter.parse(initialInsertionDate);
-                OperationsController.updateItem(Integer.parseInt(itemID), name, category, country, "ref", itemDate, Float.parseFloat(price));
+                OperationsController.updateItem(Integer.parseInt(itemID), name, category, country, picture, itemDate, Float.parseFloat(price));
                 session.removeAttribute("item");
                 session.removeAttribute("itemUserID");
                 session.removeAttribute("editItem");
@@ -98,5 +99,26 @@ public class ItemDetailsServlet extends HttpServlet {
             session.removeAttribute("userEmail");
             response.sendRedirect(request.getContextPath() + "/login");
         }
+    }
+
+    private String UploadFile(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+        String applicationPath = request.getServletContext().getRealPath("");
+        String uploadFilePath = applicationPath + File.separator + UPLOAD_DIR;
+
+        File fileSaveDir = new File(uploadFilePath);
+        if (!fileSaveDir.exists()) {
+            fileSaveDir.mkdirs();
+        }
+
+        String fileName = "";
+        for(Part parte : request.getParts()){
+            System.out.println("\n\n\n" + parte.getName());
+        }
+        Part part = request.getParts().stream().skip(1).findFirst().orElse(null);
+        fileName = part.getSubmittedFileName();
+        part.write(uploadFilePath + File.separator + fileName);
+
+        return "resources/" + fileName;
     }
 }
