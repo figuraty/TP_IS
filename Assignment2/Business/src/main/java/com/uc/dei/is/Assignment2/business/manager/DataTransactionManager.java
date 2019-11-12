@@ -279,7 +279,7 @@ public class DataTransactionManager {
                 queryString += " where i.country = :country";
             }
             else
-                queryString += " where i.country = :country";
+                queryString += " and i.country = :country";
         }
         if (filter.getIntialInsertionDate() != null) {
             if (!first) {

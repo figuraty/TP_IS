@@ -76,9 +76,11 @@ body{
 
 .itemDetails-fields-container{
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    justify-content: center;
-    margin: 0rem 2rem
+    justify-content: left;
+    /* margin: 0rem 2rem; */
 }
 
 .itemDetails-button-container{
@@ -202,4 +204,8 @@ input[type=date], select {
 
 .itemDetails-edit-button:hover{
     background-color: #325281;
+}
+
+label {
+    float: left;
 }
