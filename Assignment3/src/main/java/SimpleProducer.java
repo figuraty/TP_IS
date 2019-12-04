@@ -29,8 +29,8 @@ public class SimpleProducer {
         //Set acknowledgements for producer requests.
         props.put("acks", "all");
 
-                //If the request fails, the producer can automatically retry,
-                props.put("retries", 0);
+        //If the request fails, the producer can automatically retry,
+        props.put("retries", 0);
 
         //Specify buffer size in config
         props.put("batch.size", 16384);
