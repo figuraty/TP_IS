@@ -1,7 +1,7 @@
 package rest;
 
 import data.Course;
-import data.ListCountries;
+import data.ListCountriesXML;
 import data.ListCourses;
 import ejb.MyBean;
 
@@ -26,15 +26,14 @@ public class ServerAPI {
     @GET
     @Path("addcountry")
     public void addCountry(@QueryParam("country") String country) {
-        System.out.println(country);
         db.addCountry(country);
     }
 
     //2. List countries from the database.
     @GET
     @Path("listcountries")
-    @Produces({MediaType.APPLICATION_XML})
-    public ListCountries listCountries() {
+    @Produces({MediaType.APPLICATION_JSON})
+    public ListCountriesXML listCountries() {
         return db.listCountries();
     }
 

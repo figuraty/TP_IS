@@ -1,10 +1,11 @@
 package ejb;
 
 import data.*;
-import org.apache.kafka.common.metrics.stats.Count;
+import org.modelmapper.ModelMapper;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Model;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,16 +35,18 @@ public class MyBean {
         DataTransactionManager.addCountry(country);
     }
 
-    public ListCountries listCountries() {
+    public ListCountriesXML listCountries() {
         List<Country> countries = DataTransactionManager.listCountries();
         List<CountryXML> listCountriesAux = new ArrayList<>();
 
         for(Country country : countries){
-            listCountriesAux.add(new CountryXML(country.getName()));
+            CountryXML countryXML = new CountryXML();
+            countryXML.setName(country.getName());
+            listCountriesAux.add(countryXML);
         }
-        System.out.println(listCountriesAux);
-        ListCountries listCountries = new ListCountries(listCountriesAux);
-        return listCountries;
+        ListCountriesXML listcountries = new ListCountriesXML();
+        listcountries.setCountries(listCountriesAux);
+        return listcountries;
     }
 
     public String addItem(String name) {

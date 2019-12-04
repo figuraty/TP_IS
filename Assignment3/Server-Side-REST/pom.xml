@@ -28,6 +28,16 @@
                 <groupId>javax</groupId>
                 <artifactId>javaee-api</artifactId>
             </dependency>
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jaxb-provider</artifactId>
+                <version>3.0.16.Final</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

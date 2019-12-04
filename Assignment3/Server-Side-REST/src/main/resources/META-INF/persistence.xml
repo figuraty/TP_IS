@@ -7,6 +7,7 @@
     <persistence-unit name="IS_Assignment3">
         <jta-data-source>java:/MySqlDS</jta-data-source>
         <class>data.Country</class>
+        <class>data.Item</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
             <property name="hibernate.hbm2ddl.auto" value="update" />

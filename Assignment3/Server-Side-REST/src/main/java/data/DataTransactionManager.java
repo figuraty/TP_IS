@@ -87,10 +87,11 @@ public class DataTransactionManager {
         }
     }
 
+    //http://localhost:8080/play-REST-server/webapi/project3webservices/listcountries
     public static List<Country> listCountries(){
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
-            System.out.println(em.createQuery("from Country c").getResultList());
+            //System.out.println(em.createQuery("from Country c").getResultList());
             return em.createQuery("from Country c").getResultList();
         } catch (NoResultException ex){
             em.getTransaction().rollback();

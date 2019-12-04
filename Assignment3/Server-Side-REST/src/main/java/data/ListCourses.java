@@ -15,7 +15,6 @@ public class ListCourses implements Serializable {
     private static final long serialVersionUID = 1L;
     private List<Course> courses;
 
-
     public ListCourses() {
         this.courses = new ArrayList<>();
     }
