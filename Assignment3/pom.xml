@@ -15,9 +15,6 @@
     <modules>
         <module>Server-Side-REST</module>
         <module>AdminConsole</module>
-        <module>AdminConsole</module>
-        <module>AdminConsole</module>
-        <module>AdminConsole</module>
     </modules>
 
 
