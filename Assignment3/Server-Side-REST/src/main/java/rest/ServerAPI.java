@@ -18,7 +18,7 @@ import java.util.List;
 public class ServerAPI {
 
     @Inject
-    MyBean db;
+    MyBean my;
 
     public ServerAPI() {
     }
@@ -27,7 +27,7 @@ public class ServerAPI {
     @GET
     @Path("addcountry")
     public void addCountry(@QueryParam("name") String name) {
-        db.addCountry(name);
+        my.addCountry(name);
     }
 
     //2. List countries from the database.
@@ -35,14 +35,14 @@ public class ServerAPI {
     @Path("listcountries")
     @Produces({MediaType.APPLICATION_JSON})
     public List<CountryDTO> listCountries() {
-        return db.listCountries();
+        return my.listCountries();
     }
 
     //Add items for sale in the shop to the database. Again, these cannot be deleted, but may be changed if students wish.
     @GET
     @Path("additem")
     public void addItem(@QueryParam("name") String name, @QueryParam("price") int price) {
-        db.addItem(name, price);
+        my.addItem(name, price);
     }
 
     //4. List items from the database.
@@ -50,7 +50,7 @@ public class ServerAPI {
     @Path("listitems")
     @Produces({MediaType.APPLICATION_JSON})
     public List<ItemDTO> listItems() {
-        return db.listItems();
+        return my.listItems();
     }
 
     //5. Get the revenue per item.
@@ -58,53 +58,53 @@ public class ServerAPI {
     @Path("getitemrevenue")
     @Produces({MediaType.APPLICATION_JSON})
     public String getItemRevenue(@QueryParam("name") String name) {
-        return db.getItemRevenue(name);
+        return my.getItemRevenue(name);
     }
 
     //6. Get the expenses per item.
     @GET
     @Path("getitemexpenses")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getItemExpenses(@QueryParam("name") String name) {
-        return db.getItemExpenses(name);
+        return my.getItemExpenses(name);
     }
 
     //7. Get the profit per item.
     @GET
     @Path("getitemprofit")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getItemProfit() {
-        return db.getItemProfit();
+        return my.getItemProfit();
     }
 
     //8. Get the total revenues.
     @GET
     @Path("gettotalrevenues")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getTotalRevenues() {
-        return db.getTotalRevenues();
+        return my.getTotalRevenues();
     }
 
     //9. Get the total expenses.
     @GET
     @Path("gettotalexpenses")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getTotalExpenses() {
-        return db.getTotalExpenses();
+        return my.getTotalExpenses();
     }
 
     //10. Get the total profit.
     @GET
     @Path("gettotalprofit")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getTotalProfit() {
-        return db.getTotalProfit();
+        return my.getTotalProfit();
     }
 
     //11. Get the average amount spent in each purchase (separated by item).
     @GET
     @Path("getavgamountperitem")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getAvgAmountSpentPerItem() {
         return "";
     }
@@ -112,23 +112,23 @@ public class ServerAPI {
     //12. Get the average amount spent in each purchase (aggregated for all items).
     @GET
     @Path("getavgamountspenteachpurchase")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getAvgAmountSpentEachPurchase() {
-        return db.getAvgAmountSpentEachPurchase();
+        return my.getAvgAmountSpentEachPurchase();
     }
 
     //13. Get the item with the highest profit of all (only one if there is a tie).
     @GET
     @Path("getitemhighestprofit")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getItemHighestProfit() {
-        return db.getItemHighestProfit();
+        return my.getItemHighestProfit();
     }
 
     //14. Get the total revenue in the last hour 1 (use a tumbling time window).
     @GET
     @Path("gettotalrevenuelasthour")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getTotalRevenueLastHour() {
         return "";
     }
@@ -136,24 +136,24 @@ public class ServerAPI {
     //15. Get the total expenses in the last hour (use a tumbling time window)
     @GET
     @Path("gettotalexpenseslasthour")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getTotalExpensesLastHour() {
-        return db.getTotalExpensesLastHour();
+        return my.getTotalExpensesLastHour();
     }
 
     //16. Get the total profits in the last hour (use a tumbling time window).
     @GET
     @Path("gettotalprofitslasthour")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getTotalProfitsLastHour() {
-        return db.getTotalProfitsLastHour();
+        return my.getTotalProfitsLastHour();
     }
 
     //17. Get the name of the country with the highest sales per item. Include the value of such sales.
     @GET
     @Path("getcountryhighestsalesperitem")
-    @Produces({MediaType.APPLICATION_XML})
+    @Produces({MediaType.APPLICATION_JSON})
     public String getCountryHighestSalesPerItem() {
-        return db.getCountryHighestSalesPerItem();
+        return my.getCountryHighestSalesPerItem();
     }
 }

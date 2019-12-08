@@ -149,7 +149,6 @@ public class Main {
     private static void listItems() {
         String unparsedJSON;
         List<Item> itemList;
-
         String url = Main.applicationPath + "/listitems";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
@@ -159,7 +158,6 @@ public class Main {
         for(int i = 0; i < itemList.size(); i++){
             System.out.println(" - Name: " + itemList.get(i).getName() + ", Price: " + itemList.get(i).getPrice());
         }
-//        System.out.println("\n");
         Main.pressAnyKeyToContinue();
     }
 }
