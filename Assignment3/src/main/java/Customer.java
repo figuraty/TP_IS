@@ -11,14 +11,14 @@ import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 //Create java class named “SimpleProducer”
-public class SimpleProducer {
+public class Customer {
 
     public static void main(String[] args) throws Exception{
 
 
 
         //Assign topicName to string variable
-        String topicName = "test";
+        String topicName = "salesTopic";
 
         // create instance for properties to access producer configs
         Properties props = new Properties();
@@ -29,8 +29,8 @@ public class SimpleProducer {
         //Set acknowledgements for producer requests.
         props.put("acks", "all");
 
-                //If the request fails, the producer can automatically retry,
-                props.put("retries", 0);
+        //If the request fails, the producer can automatically retry,
+        props.put("retries", 0);
 
         //Specify buffer size in config
         props.put("batch.size", 16384);
@@ -50,10 +50,12 @@ public class SimpleProducer {
         Producer<String, String> producer = new KafkaProducer
                 <String, String>(props);
 
-        for(int i = 0; i < 10; i++)
+        int i = 1;
+        while(true){
             producer.send(new ProducerRecord<String, String>(topicName,
                     Integer.toString(i), Integer.toString(i)));
-        System.out.println("Message sent successfully");
-        producer.close();
+            Thread.sleep(100);
+            i++;
+        }
     }
 }
