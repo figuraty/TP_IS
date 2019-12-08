@@ -1,60 +1,47 @@
 package ejb;
 
 import data.*;
-import org.modelmapper.ModelMapper;
+import data.dtos.CountryDTO;
+import data.dtos.ItemDTO;
+import data.entities.Country;
+import data.entities.Item;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.enterprise.inject.Model;
 import java.util.ArrayList;
 import java.util.List;
 
 @LocalBean
 @Stateless
 public class MyBean {
+    public MyBean() { }
 
-    ListCourses lc;
-    /**
-     * Default constructor.
-     */
-    public MyBean() {
-    }
-
-
-    public ListCourses getListCourses() {
-        return this.lc;
-    }
-
-    public Course getCourse(int id) {
-        return this.lc.get(id);
-    }
-
-
-    // apagar daqui para cima
     public void addCountry(String country) {
         DataTransactionManager.addCountry(country);
     }
 
-    public ListCountriesXML listCountries() {
-        List<Country> countries = DataTransactionManager.listCountries();
-        List<CountryXML> listCountriesAux = new ArrayList<>();
+    public List<CountryDTO> listCountries(){
+        List<Country> listcountries = DataTransactionManager.listCountries();
 
-        for(Country country : countries){
-            CountryXML countryXML = new CountryXML();
-            countryXML.setName(country.getName());
-            listCountriesAux.add(countryXML);
+        List<CountryDTO> countryDTOList = new ArrayList<>();
+        for(Country country : listcountries){
+            countryDTOList.add(new CountryDTO(country.getName()));
         }
-        ListCountriesXML listcountries = new ListCountriesXML();
-        listcountries.setCountries(listCountriesAux);
-        return listcountries;
+        return countryDTOList;
     }
 
-    public String addItem(String name) {
-        return null;
+    public void addItem(String name, int price) {
+        DataTransactionManager.addItem(name, price);
     }
 
-    public String listItems() {
-        return null;
+    public List<ItemDTO> listItems() {
+        List<Item> listitems = DataTransactionManager.listItems();
+
+        List<ItemDTO> itemDTOList = new ArrayList<>();
+        for(Item item : listitems){
+            itemDTOList.add(new ItemDTO(item.getName(), item.getPrice()));
+        }
+        return itemDTOList;
     }
 
     public String getItemRevenue(String name) {

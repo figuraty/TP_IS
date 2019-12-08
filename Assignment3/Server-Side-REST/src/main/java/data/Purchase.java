@@ -1,5 +1,7 @@
 package data;
 
+import data.entities.Item;
+
 import java.io.Serializable;
 
 public class Purchase implements Serializable{

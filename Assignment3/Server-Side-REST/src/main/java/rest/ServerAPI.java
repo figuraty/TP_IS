@@ -1,15 +1,17 @@
 package rest;
 
-import data.Course;
-import data.ListCountriesXML;
-import data.ListCourses;
+import data.dtos.CountryDTO;
+import data.dtos.ItemDTO;
 import ejb.MyBean;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.naming.NamingException;
-import javax.ws.rs.*;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 @Path("/project3webservices")
 @RequestScoped
@@ -18,37 +20,36 @@ public class ServerAPI {
     @Inject
     MyBean db;
 
-    public ServerAPI() throws NamingException {
-        System.out.println("Server-Side REST created db = " + this.db);
+    public ServerAPI() {
     }
 
     //1. Add countries to the database. To simplify countries cannot be deleted and optionally not changed.
     @GET
     @Path("addcountry")
-    public void addCountry(@QueryParam("country") String country) {
-        db.addCountry(country);
+    public void addCountry(@QueryParam("name") String name) {
+        db.addCountry(name);
     }
 
     //2. List countries from the database.
     @GET
     @Path("listcountries")
     @Produces({MediaType.APPLICATION_JSON})
-    public ListCountriesXML listCountries() {
+    public List<CountryDTO> listCountries() {
         return db.listCountries();
     }
 
     //Add items for sale in the shop to the database. Again, these cannot be deleted, but may be changed if students wish.
-    @PUT
+    @GET
     @Path("additem")
-    public String addItem(@QueryParam("name") String name) {
-        return db.addItem(name);
+    public void addItem(@QueryParam("name") String name, @QueryParam("price") int price) {
+        db.addItem(name, price);
     }
 
     //4. List items from the database.
     @GET
     @Path("listitems")
-    @Produces({MediaType.APPLICATION_XML})
-    public String listItems() {
+    @Produces({MediaType.APPLICATION_JSON})
+    public List<ItemDTO> listItems() {
         return db.listItems();
     }
 
@@ -154,31 +155,5 @@ public class ServerAPI {
     @Produces({MediaType.APPLICATION_XML})
     public String getCountryHighestSalesPerItem() {
         return db.getCountryHighestSalesPerItem();
-    }
-
-
-    // http://localhost:8080/play-REST-server/webapi/project3webservices/gettext
-    @GET
-    @Path("gettext")
-    @Produces({MediaType.TEXT_PLAIN})
-    public String getText() {
-        return "Hello World!";
-    }
-
-    // http://localhost:8080/play-REST-server/webapi/project3webservices/getmaterials
-    @GET
-    @Path("getmaterials")
-    @Produces({MediaType.APPLICATION_XML})
-    public ListCourses getAllMaterials() {
-        return db.getListCourses();
-    }
-
-
-    // http://localhost:8080/play-REST-server/webapi/project3webservices/getstudents?id=1
-    @GET
-    @Path("getstudents")
-    @Produces({MediaType.APPLICATION_JSON})
-    public Course getAllStudents(@QueryParam("courseid") int id) {
-        return db.getCourse(id);
     }
 }

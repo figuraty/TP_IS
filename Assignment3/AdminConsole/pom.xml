@@ -12,11 +12,19 @@
     <artifactId>AdminConsole</artifactId>
     <dependencyManagement>
         <dependencies>
-            <!-- https://mvnrepository.com/artifact/org.json/json -->
             <dependency>
                 <groupId>org.json</groupId>
                 <artifactId>json</artifactId>
             </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

@@ -1,5 +1,7 @@
 package data;
 
+import data.entities.Item;
+
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name="Revenues")

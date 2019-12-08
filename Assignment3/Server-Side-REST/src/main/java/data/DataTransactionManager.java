@@ -1,5 +1,8 @@
 package data;
 
+import data.entities.Country;
+import data.entities.Item;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -58,17 +61,11 @@ public class DataTransactionManager {
     //http://localhost:8080/play-REST-server/webapi/project3webservices/addcountry?country=olaolao
     static public void addCountry(String countryName) {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-        EntityTransaction et = null;
-
         try {
-//            et = em.getTransaction();
-//            et.begin();
             Country country = new Country(countryName);
             em.persist(country);
-//            et.commit();
         } catch (Exception ex){
-            if(et != null)
-                et.rollback();
+            em.getTransaction().rollback();
             ex.printStackTrace();
         } finally {
             em.close();
@@ -91,7 +88,6 @@ public class DataTransactionManager {
     public static List<Country> listCountries(){
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
-            //System.out.println(em.createQuery("from Country c").getResultList());
             return em.createQuery("from Country c").getResultList();
         } catch (NoResultException ex){
             em.getTransaction().rollback();
@@ -105,17 +101,12 @@ public class DataTransactionManager {
     public static void addItem(String name, int price){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-        EntityTransaction et = null;
 
         try {
-            et = em.getTransaction();
-            et.begin();
             Item item = new Item(name, price);
             em.persist(item);
-            et.commit();
         } catch (Exception ex){
-            if(et != null)
-                et.rollback();
+            em.getTransaction().rollback();
             ex.printStackTrace();
         } finally {
             em.close();

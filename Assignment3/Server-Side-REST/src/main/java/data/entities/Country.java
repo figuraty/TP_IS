@@ -1,6 +1,9 @@
-package data;
+package data.entities;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "Country")
@@ -9,7 +12,7 @@ public class Country {
     @Column(name = "name")
     String name;
 
-    public Country(){
+    public Country() {
         super();
     }
 
