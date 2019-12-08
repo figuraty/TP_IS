@@ -13,8 +13,8 @@ import java.util.List;
 
 @LocalBean
 @Stateless
-public class MyBean {
-    public MyBean() { }
+public class Bean {
+    public Bean() { }
 
     public void addCountry(String country) {
         DataTransactionManager.addCountry(country);
@@ -56,16 +56,22 @@ public class MyBean {
         return null;
     }
 
-    public String getTotalRevenues() {
-        return null;
+    public int getTotalRevenues() {
+        String  stringTotalRevenues = DataTransactionManager.getTotalRevenues();
+        int totalRevenues = Integer.parseInt(stringTotalRevenues);
+        return totalRevenues;
     }
 
-    public String getTotalExpenses() {
-        return null;
+    public int getTotalExpenses() {
+        String stringTotalExpenses = DataTransactionManager.getTotalExpenses();
+        int totalExpenses = Integer.parseInt(stringTotalExpenses);
+        return totalExpenses;
     }
 
-    public String getTotalProfit() {
-        return null;
+    public int getTotalProfit() {
+        String stringTotalProfit = DataTransactionManager.getTotalProfit();
+        int totalProfit = Integer.parseInt(stringTotalProfit);
+        return totalProfit;
     }
 
     public String getAvgAmountSpentEachPurchase() {
@@ -76,15 +82,26 @@ public class MyBean {
         return null;
     }
 
-    public String getTotalExpensesLastHour() {
-        return null;
+    public int getTotalRevenuesLastHour() {
+        String stringTotalRevenuesLastHour = DataTransactionManager.getTotalRevenuesLastHour();
+        int totalRevenuesLastHour = Integer.parseInt(stringTotalRevenuesLastHour);
+        return totalRevenuesLastHour;
+    }
+    public int getTotalExpensesLastHour() {
+        String stringTotalExpensesLastHour = DataTransactionManager.getTotalExpensesLastHour();
+        int totalExpensesLastHour = Integer.parseInt(stringTotalExpensesLastHour);
+        return totalExpensesLastHour;
     }
 
-    public String getTotalProfitsLastHour() {
-        return null;
+    public int getTotalProfitsLastHour() {
+        String stringTotalProfitsLastHour = DataTransactionManager.getTotalProfitsLastHour();
+        int totalProfitsLastHour = Integer.parseInt(stringTotalProfitsLastHour);
+        return totalProfitsLastHour;
     }
 
     public String getCountryHighestSalesPerItem() {
         return null;
     }
+
+
 }

@@ -10,55 +10,6 @@ public class DataTransactionManager {
 
     private static EntityManagerFactory ENTITY_MANAGER_FACTORY = Persistence.createEntityManagerFactory("IS_Assignment3");
 
-    public String addItem(String name) {
-        return null;
-    }
-
-    public String getItemRevenue(String name) {
-        return null;
-    }
-
-    public String getItemExpenses(String name) {
-        return null;
-    }
-
-    public String getItemProfit() {
-        return null;
-    }
-
-    public String getTotalRevenues() {
-        return null;
-    }
-
-    public String getTotalExpenses() {
-        return null;
-    }
-
-    public String getTotalProfit() {
-        return null;
-    }
-
-    public String getAvgAmountSpentEachPurchase() {
-        return null;
-    }
-
-    public String getItemHighestProfit() {
-        return null;
-    }
-
-    public String getTotalExpensesLastHour() {
-        return null;
-    }
-
-    public String getTotalProfitsLastHour() {
-        return null;
-    }
-
-    public String getCountryHighestSalesPerItem() {
-        return null;
-    }
-
-    //http://localhost:8080/play-REST-server/webapi/project3webservices/addcountry?country=olaolao
     static public void addCountry(String countryName) {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
@@ -72,19 +23,6 @@ public class DataTransactionManager {
         }
     }
 
-    public static List<Item> listItems(){
-        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
-        try {
-            return em.createQuery("from Item i").getResultList();
-        } catch (Exception ex){
-            ex.printStackTrace();
-            return null;
-        }finally {
-            em.close();
-        }
-    }
-
-    //http://localhost:8080/play-REST-server/webapi/project3webservices/listcountries
     public static List<Country> listCountries(){
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
@@ -111,6 +49,130 @@ public class DataTransactionManager {
         } finally {
             em.close();
         }
+    }
+
+    public static List<Item> listItems(){
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+        try {
+            return em.createQuery("from Item i").getResultList();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public String addItem(String name) {
+        return null;
+    }
+
+    public String getItemRevenue(String name) {
+        return null;
+    }
+
+    public String getItemExpenses(String name) {
+        return null;
+    }
+
+    public String getItemProfit() {
+        return null;
+    }
+
+    public static String getTotalRevenues() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("select t.totalRevenues from Total t");
+            return query.getSingleResult().toString();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public static String getTotalExpenses() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("select t.totalExpenses from Total t");
+            return query.getSingleResult().toString();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public static String getTotalProfit() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("select t.totalProfit from Total t");
+            return query.getSingleResult().toString();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public String getAvgAmountSpentEachPurchase() {
+        return null;
+    }
+
+    public String getItemHighestProfit() {
+        return null;
+    }
+
+    public static String getTotalRevenuesLastHour() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("select t.lastHourRevenues from Total t");
+            return query.getSingleResult().toString();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public static String getTotalExpensesLastHour() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("select t.lastHourExpenses from Total t");
+            return query.getSingleResult().toString();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public static String getTotalProfitsLastHour() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("select t.lastHourProfits from Total t");
+            return query.getSingleResult().toString();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
+    }
+
+    public String getCountryHighestSalesPerItem() {
+        return null;
     }
 
 //    public static void updateItem(int itemId, String name, String category, String country, String picture, Date initialInsertionDate, Float price){

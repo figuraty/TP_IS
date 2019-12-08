@@ -1,13 +1,5 @@
-import com.google.gson.Gson;
 import org.apache.commons.lang3.SystemUtils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -82,6 +74,40 @@ public class Main {
                     listItems();
                     break;
                 case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    getTotalRevenues();
+                    break;
+                case 9:
+                    getTotalExpenses();
+                    break;
+                case 10:
+                    getTotalProfit();
+                    break;
+                case 11:
+                    listItems();
+                    break;
+                case 12:
+                    listItems();
+                    break;
+                case 13:
+                    listItems();
+                    break;
+                case 14:
+                    getTotalRevenueLastHour();
+                    break;
+                case 15:
+                    getTotalExpensesLastHour();
+                    break;
+                case 16:
+                    getTotalProfitsLastHour();
+                    break;
+                case 17:
+                    listItems();
                     break;
             }
             System.out.println("\n");
@@ -158,6 +184,79 @@ public class Main {
         for(int i = 0; i < itemList.size(); i++){
             System.out.println(" - Name: " + itemList.get(i).getName() + ", Price: " + itemList.get(i).getPrice());
         }
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalRevenues(){
+        String unparsedJSON;
+        int totalRevenues;
+        String url = Main.applicationPath + "/gettotalrevenues";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalRevenues = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Revenues]: " + totalRevenues);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalExpenses(){
+        String unparsedJSON;
+        int totalExpenses;
+        String url = Main.applicationPath + "/gettotalexpenses";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalExpenses = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Expenses]: " + totalExpenses);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalProfit(){
+        String unparsedJSON;
+        int totalProfit;
+        String url = Main.applicationPath + "/gettotalprofit";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalProfit = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Expenses]: " + totalProfit);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalRevenueLastHour(){
+        String unparsedJSON;
+        int totalRevenueLastHour;
+        String url = Main.applicationPath + "/gettotalrevenueslasthour";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalRevenueLastHour = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Revenues Last Hour]: " + totalRevenueLastHour);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalExpensesLastHour(){
+        String unparsedJSON;
+        int totalExpensesLastHour;
+        String url = Main.applicationPath + "/gettotalexpenseslasthour";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalExpensesLastHour = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Expenses Last Hour]: " + totalExpensesLastHour);
+        Main.pressAnyKeyToContinue();
+    }
+
+
+    private static void getTotalProfitsLastHour() {
+        String unparsedJSON;
+        int totalProfitsLastHour;
+        String url = Main.applicationPath + "/gettotalprofitslasthour";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalProfitsLastHour = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Profits Last Hour]: " + totalProfitsLastHour);
         Main.pressAnyKeyToContinue();
     }
 }

@@ -18,4 +18,10 @@ public class parserJSON {
         List<Item> itemList = Arrays.asList(items);
         return itemList;
     }
+
+    public static int intParser(String unparsedJSON) {
+        Gson gson = new Gson();
+        int integer = gson.fromJson(unparsedJSON, int.class);
+        return integer;
+    }
 }
