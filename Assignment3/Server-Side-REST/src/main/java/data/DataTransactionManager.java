@@ -2,6 +2,7 @@ package data;
 
 import data.entities.Country;
 import data.entities.Item;
+import data.entities.bi.ItemsTransactions;
 
 import javax.persistence.*;
 import java.util.List;
@@ -63,20 +64,54 @@ public class DataTransactionManager {
         }
     }
 
+
+
+
+
     public String addItem(String name) {
         return null;
     }
 
-    public String getItemRevenue(String name) {
-        return null;
+    public static List<ItemsTransactions> getItemsRevenues() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("from ItemsTransactions i");
+            return query.getResultList();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
     }
 
-    public String getItemExpenses(String name) {
-        return null;
+    public static List<ItemsTransactions> getItemsExpenses() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("from ItemsTransactions i");
+            return query.getResultList();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
     }
 
-    public String getItemProfit() {
-        return null;
+    public static List<ItemsTransactions> getItemsProfits() {
+        EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
+
+        try {
+            Query query = em.createQuery("from ItemsTransactions i");
+            return query.getResultList();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }finally {
+            em.close();
+        }
     }
 
     public static String getTotalRevenues() {
@@ -107,7 +142,7 @@ public class DataTransactionManager {
         }
     }
 
-    public static String getTotalProfit() {
+    public static String getTotalProfits() {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {

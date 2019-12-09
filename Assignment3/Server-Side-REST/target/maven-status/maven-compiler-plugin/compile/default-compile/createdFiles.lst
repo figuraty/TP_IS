@@ -1,0 +1,12 @@
+rest/ServerAPI.class
+data/dtos/ItemDTO.class
+data/DataTransactionManager.class
+data/entities/Item.class
+data/Purchases.class
+data/Revenues.class
+rest/WebAPI.class
+data/entities/bi/ItemsTransactions.class
+data/entities/Country.class
+data/entities/bi/TotalTransactions.class
+data/dtos/CountryDTO.class
+ejb/Bean.class

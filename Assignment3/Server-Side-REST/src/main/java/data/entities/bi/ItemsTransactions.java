@@ -11,17 +11,17 @@ public class ItemsTransactions {
     private String itemName;
     private int revenues;
     private int expenses;
-    private int profit;
+    private int profits;
 
     public ItemsTransactions(){
         super();
     }
 
-    public ItemsTransactions(String itemName, int revenues, int expenses, int profit) {
+    public ItemsTransactions(String itemName, int revenues, int expenses, int profits) {
         this.itemName = itemName;
         this.revenues = revenues;
         this.expenses = expenses;
-        this.profit = profit;
+        this.profits = profits;
     }
 
     public String getItemName() {
@@ -36,8 +36,8 @@ public class ItemsTransactions {
         return expenses;
     }
 
-    public int getProfit() {
-        return profit;
+    public int getProfits() {
+        return profits;
     }
 }
 

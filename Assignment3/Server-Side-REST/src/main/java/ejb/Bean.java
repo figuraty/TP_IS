@@ -5,11 +5,14 @@ import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
 import data.entities.Country;
 import data.entities.Item;
+import data.entities.bi.ItemsTransactions;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @LocalBean
 @Stateless
@@ -44,16 +47,31 @@ public class Bean {
         return itemDTOList;
     }
 
-    public String getItemRevenue(String name) {
-        return null;
+    public Map<String, Integer> getItemsRevenues() {
+        List<ItemsTransactions> itemsTransactions = DataTransactionManager.getItemsRevenues();
+        Map<String, Integer> hashMap = new HashMap<>();
+        for(ItemsTransactions item : itemsTransactions){
+            hashMap.put(item.getItemName(), item.getRevenues());
+        }
+        return hashMap;
     }
 
-    public String getItemExpenses(String name) {
-        return null;
+    public Map<String, Integer> getItemsExpenses() {
+        List<ItemsTransactions> itemsTransactions = DataTransactionManager.getItemsExpenses();
+        Map<String, Integer> hashMap = new HashMap<>();
+        for(ItemsTransactions item : itemsTransactions){
+            hashMap.put(item.getItemName(), item.getExpenses());
+        }
+        return hashMap;
     }
 
-    public String getItemProfit() {
-        return null;
+    public Map<String, Integer> getItemsProfits() {
+        List<ItemsTransactions> itemsTransactions = DataTransactionManager.getItemsProfits();
+        Map<String, Integer> hashMap = new HashMap<>();
+        for(ItemsTransactions item : itemsTransactions){
+            hashMap.put(item.getItemName(), item.getProfits());
+        }
+        return hashMap;
     }
 
     public int getTotalRevenues() {
@@ -68,10 +86,10 @@ public class Bean {
         return totalExpenses;
     }
 
-    public int getTotalProfit() {
-        String stringTotalProfit = DataTransactionManager.getTotalProfit();
-        int totalProfit = Integer.parseInt(stringTotalProfit);
-        return totalProfit;
+    public int getTotalProfits() {
+        String stringTotalProfits = DataTransactionManager.getTotalProfits();
+        int totalProfits = Integer.parseInt(stringTotalProfits);
+        return totalProfits;
     }
 
     public String getAvgAmountSpentEachPurchase() {
@@ -87,6 +105,7 @@ public class Bean {
         int totalRevenuesLastHour = Integer.parseInt(stringTotalRevenuesLastHour);
         return totalRevenuesLastHour;
     }
+
     public int getTotalExpensesLastHour() {
         String stringTotalExpensesLastHour = DataTransactionManager.getTotalExpensesLastHour();
         int totalExpensesLastHour = Integer.parseInt(stringTotalExpensesLastHour);

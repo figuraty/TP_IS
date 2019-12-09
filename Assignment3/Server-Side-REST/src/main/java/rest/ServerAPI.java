@@ -12,6 +12,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.Map;
 
 @Path("/project3webservices")
 @RequestScoped
@@ -55,31 +56,31 @@ public class ServerAPI {
 
     //5. Get the revenue per item.
     @GET
-    @Path("getitemrevenue")
+    @Path("itemsrevenues")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getItemRevenue(@QueryParam("name") String name) {
-        return bean.getItemRevenue(name);
+    public Map<String, Integer> getItemsRevenue() {
+        return bean.getItemsRevenues();
     }
 
     //6. Get the expenses per item.
     @GET
-    @Path("getitemexpenses")
+    @Path("itemsexpenses")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getItemExpenses(@QueryParam("name") String name) {
-        return bean.getItemExpenses(name);
+    public Map<String, Integer> getItemExpenses() {
+        return bean.getItemsExpenses();
     }
 
     //7. Get the profit per item.
     @GET
-    @Path("getitemprofit")
+    @Path("itemsprofits")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getItemProfit() {
-        return bean.getItemProfit();
+    public Map<String, Integer> getItemProfits() {
+        return bean.getItemsProfits();
     }
 
     //8. Get the total revenues.
     @GET
-    @Path("gettotalrevenues")
+    @Path("totalrevenues")
     @Produces({MediaType.APPLICATION_JSON})
     public int getTotalRevenues() {
         return bean.getTotalRevenues();
@@ -87,7 +88,7 @@ public class ServerAPI {
 
     //9. Get the total expenses.
     @GET
-    @Path("gettotalexpenses")
+    @Path("totalexpenses")
     @Produces({MediaType.APPLICATION_JSON})
     public int getTotalExpenses() {
         return bean.getTotalExpenses();
@@ -95,15 +96,15 @@ public class ServerAPI {
 
     //10. Get the total profit.
     @GET
-    @Path("gettotalprofit")
+    @Path("totalprofits")
     @Produces({MediaType.APPLICATION_JSON})
-    public int getTotalProfit() {
-        return bean.getTotalProfit();
+    public int getTotalProfits() {
+        return bean.getTotalProfits();
     }
 
     //11. Get the average amount spent in each purchase (separated by item).
     @GET
-    @Path("getavgamountperitem")
+    @Path("avgamountperitem")
     @Produces({MediaType.APPLICATION_JSON})
     public String getAvgAmountSpentPerItem() {
         return "";
@@ -111,7 +112,7 @@ public class ServerAPI {
 
     //12. Get the average amount spent in each purchase (aggregated for all items).
     @GET
-    @Path("getavgamountspenteachpurchase")
+    @Path("avgamountspenteachpurchase")
     @Produces({MediaType.APPLICATION_JSON})
     public String getAvgAmountSpentEachPurchase() {
         return bean.getAvgAmountSpentEachPurchase();
@@ -119,7 +120,7 @@ public class ServerAPI {
 
     //13. Get the item with the highest profit of all (only one if there is a tie).
     @GET
-    @Path("getitemhighestprofit")
+    @Path("itemhighestprofit")
     @Produces({MediaType.APPLICATION_JSON})
     public String getItemHighestProfit() {
         return bean.getItemHighestProfit();
@@ -127,7 +128,7 @@ public class ServerAPI {
 
     //14. Get the total revenue in the last hour 1 (use a tumbling time window).
     @GET
-    @Path("gettotalrevenueslasthour")
+    @Path("totalrevenueslasthour")
     @Produces({MediaType.APPLICATION_JSON})
     public int getTotalRevenuesLastHour() {
         return bean.getTotalRevenuesLastHour();
@@ -135,7 +136,7 @@ public class ServerAPI {
 
     //15. Get the total expenses in the last hour (use a tumbling time window)
     @GET
-    @Path("gettotalexpenseslasthour")
+    @Path("totalexpenseslasthour")
     @Produces({MediaType.APPLICATION_JSON})
     public int getTotalExpensesLastHour() {
         return bean.getTotalExpensesLastHour();
@@ -143,7 +144,7 @@ public class ServerAPI {
 
     //16. Get the total profits in the last hour (use a tumbling time window).
     @GET
-    @Path("gettotalprofitslasthour")
+    @Path("totalprofitslasthour")
     @Produces({MediaType.APPLICATION_JSON})
     public int getTotalProfitsLastHour() {
         return bean.getTotalProfitsLastHour();
@@ -151,7 +152,7 @@ public class ServerAPI {
 
     //17. Get the name of the country with the highest sales per item. Include the value of such sales.
     @GET
-    @Path("getcountryhighestsalesperitem")
+    @Path("countryhighestsalesperitem")
     @Produces({MediaType.APPLICATION_JSON})
     public String getCountryHighestSalesPerItem() {
         return bean.getCountryHighestSalesPerItem();
