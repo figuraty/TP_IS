@@ -15,6 +15,9 @@
     <modules>
         <module>Server-Side-REST</module>
         <module>AdminConsole</module>
+        <module>Customer</module>
+        <module>PurchaseOrder</module>
+        <module>KafkaStreams</module>
     </modules>
 
     <dependencies>
@@ -62,6 +65,42 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.0</version>
         </dependency>
-
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.wildfly.plugins</groupId>
+                    <artifactId>wildfly-maven-plugin</artifactId>
+                    <version>2.0.1.Final</version>
+                    <configuration>
+                        <hostname>localhost</hostname>
+                        <port>9990</port>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.3</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
+
 </project>

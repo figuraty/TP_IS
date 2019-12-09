@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>AdminConsole</artifactId>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -20,15 +19,13 @@
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
             </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
+    <artifactId>Customer</artifactId>
 
     <build>
-        <finalName>AdminConsole</finalName>
+        <finalName>Customer</finalName>
     </build>
+
 </project>
