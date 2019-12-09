@@ -49,11 +49,11 @@ public class Main {
             System.out.println("10. Get total profit");
             System.out.println("11. Get average amount spent in each purchase (separated by item)");
             System.out.println("12. Get average amount spent in each purchase (aggregated for all items)");
-            System.out.println("13. Get the item with the highest profit of all (only one if there is a tie).");
-            System.out.println("14. Get the total revenue in the last hour 1 (use a tumbling time window).");
+            System.out.println("13. Get the item with the highest profit of all (only one if there is a tie)");
+            System.out.println("14. Get the total revenue in the last hour 1 (use a tumbling time window)");
             System.out.println("15. Get the total expenses in the last hour (use a tumbling time window)");
-            System.out.println("16. Get the total profits in the last hour (use a tumbling time window).");
-            System.out.println("17. Get the name of the country with the highest sales per item. Include the value of such sales.");
+            System.out.println("16. Get the total profits in the last hour (use a tumbling time window)");
+            System.out.println("17. Get the name of the country with the highest sales per item. Include the value of such sales");
 
             System.out.println("Option: ");
 
@@ -124,8 +124,13 @@ public class Main {
         String countryName = scanner.nextLine();
 
         String url = Main.applicationPath + "/addcountry?name=" + countryName;
-        OperationsHTTP.HttpRequestPost(url);
-        System.out.println("\nCountry [" + countryName + "] added to the database");
+        boolean isValid = OperationsHTTP.HttpRequestPost(url);
+        if(!isValid){
+            System.out.println("[ERROR] This country is already in the database.");
+        }
+        else {
+            System.out.println("\nCountry [" + countryName + "] added to the database");
+        }
         Main.pressAnyKeyToContinue();
     }
 
@@ -136,6 +141,9 @@ public class Main {
         String url = Main.applicationPath + "/listcountries";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        if(unparsedJSON == null){
+            return;
+        }
         countryList = parserJSON.listCountries(unparsedJSON);
         System.out.println("[Countries]: ");
         for(int i = 0; i < countryList.size(); i++){
@@ -190,7 +198,7 @@ public class Main {
     private static void getTotalRevenues(){
         String unparsedJSON;
         int totalRevenues;
-        String url = Main.applicationPath + "/gettotalrevenues";
+        String url = Main.applicationPath + "/totalrevenues";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalRevenues = parserJSON.intParser(unparsedJSON);
@@ -202,7 +210,7 @@ public class Main {
     private static void getTotalExpenses(){
         String unparsedJSON;
         int totalExpenses;
-        String url = Main.applicationPath + "/gettotalexpenses";
+        String url = Main.applicationPath + "/totalexpenses";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalExpenses = parserJSON.intParser(unparsedJSON);
@@ -214,7 +222,7 @@ public class Main {
     private static void getTotalProfit(){
         String unparsedJSON;
         int totalProfit;
-        String url = Main.applicationPath + "/gettotalprofit";
+        String url = Main.applicationPath + "/totalprofits";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalProfit = parserJSON.intParser(unparsedJSON);
@@ -226,7 +234,7 @@ public class Main {
     private static void getTotalRevenueLastHour(){
         String unparsedJSON;
         int totalRevenueLastHour;
-        String url = Main.applicationPath + "/gettotalrevenueslasthour";
+        String url = Main.applicationPath + "/totalrevenueslasthour";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalRevenueLastHour = parserJSON.intParser(unparsedJSON);
@@ -238,7 +246,7 @@ public class Main {
     private static void getTotalExpensesLastHour(){
         String unparsedJSON;
         int totalExpensesLastHour;
-        String url = Main.applicationPath + "/gettotalexpenseslasthour";
+        String url = Main.applicationPath + "/totalexpenseslasthour";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalExpensesLastHour = parserJSON.intParser(unparsedJSON);
@@ -251,7 +259,7 @@ public class Main {
     private static void getTotalProfitsLastHour() {
         String unparsedJSON;
         int totalProfitsLastHour;
-        String url = Main.applicationPath + "/gettotalprofitslasthour";
+        String url = Main.applicationPath + "/totalprofitslasthour";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalProfitsLastHour = parserJSON.intParser(unparsedJSON);

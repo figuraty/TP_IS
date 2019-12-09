@@ -118,7 +118,7 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.totalRevenues from Total t");
+            Query query = em.createQuery("select t.totalRevenues from TotalTransactions t");
             return query.getSingleResult().toString();
         } catch (Exception ex){
             ex.printStackTrace();
@@ -132,7 +132,7 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.totalExpenses from Total t");
+            Query query = em.createQuery("select t.totalExpenses from TotalTransactions t");
             return query.getSingleResult().toString();
         } catch (Exception ex){
             ex.printStackTrace();
@@ -146,11 +146,11 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.totalProfit from Total t");
+            Query query = em.createQuery("select t.totalProfit from TotalTransactions t");
             return query.getSingleResult().toString();
         } catch (Exception ex){
             ex.printStackTrace();
-            return null;
+            return "";
         }finally {
             em.close();
         }

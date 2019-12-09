@@ -1,6 +1,6 @@
 package ejb;
 
-import data.*;
+import data.DataTransactionManager;
 import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
 import data.entities.Country;
@@ -24,10 +24,10 @@ public class Bean {
     }
 
     public List<CountryDTO> listCountries(){
-        List<Country> listcountries = DataTransactionManager.listCountries();
+        List<Country> countryList = DataTransactionManager.listCountries();
 
         List<CountryDTO> countryDTOList = new ArrayList<>();
-        for(Country country : listcountries){
+        for(Country country : countryList){
             countryDTOList.add(new CountryDTO(country.getName()));
         }
         return countryDTOList;
@@ -38,10 +38,10 @@ public class Bean {
     }
 
     public List<ItemDTO> listItems() {
-        List<Item> listitems = DataTransactionManager.listItems();
+        List<Item> itemList = DataTransactionManager.listItems();
 
         List<ItemDTO> itemDTOList = new ArrayList<>();
-        for(Item item : listitems){
+        for(Item item : itemList){
             itemDTOList.add(new ItemDTO(item.getName(), item.getPrice()));
         }
         return itemDTOList;
