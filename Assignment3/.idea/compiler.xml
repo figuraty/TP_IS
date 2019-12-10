@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="KafkaStreams" />
-        <module name="Customer" />
+        <module name="Server-Side-REST" />
         <module name="AdminConsole" />
         <module name="PurchaseOrder" />
-        <module name="Server-Side-REST" />
+        <module name="Customer" />
       </profile>
     </annotationProcessing>
   </component>

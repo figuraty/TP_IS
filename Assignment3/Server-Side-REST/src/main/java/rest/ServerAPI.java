@@ -2,6 +2,7 @@ package rest;
 
 import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
+import data.dtos.ItemTransactionsDTO;
 import ejb.Bean;
 
 import javax.enterprise.context.RequestScoped;
@@ -12,7 +13,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
-import java.util.Map;
 
 @Path("/project3webservices")
 @RequestScoped
@@ -58,7 +58,7 @@ public class ServerAPI {
     @GET
     @Path("itemsrevenues")
     @Produces({MediaType.APPLICATION_JSON})
-    public Map<String, Integer> getItemsRevenue() {
+    public List<ItemTransactionsDTO> getItemsRevenue() {
         return bean.getItemsRevenues();
     }
 
@@ -66,7 +66,7 @@ public class ServerAPI {
     @GET
     @Path("itemsexpenses")
     @Produces({MediaType.APPLICATION_JSON})
-    public Map<String, Integer> getItemExpenses() {
+    public List<ItemTransactionsDTO> getItemExpenses() {
         return bean.getItemsExpenses();
     }
 
@@ -74,7 +74,7 @@ public class ServerAPI {
     @GET
     @Path("itemsprofits")
     @Produces({MediaType.APPLICATION_JSON})
-    public Map<String, Integer> getItemProfits() {
+    public List<ItemTransactionsDTO> getItemProfits() {
         return bean.getItemsProfits();
     }
 
@@ -106,16 +106,16 @@ public class ServerAPI {
     @GET
     @Path("avgamountperitem")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getAvgAmountSpentPerItem() {
-        return "";
+    public List<ItemTransactionsDTO> getItemAvgAmountEachPurchase() {
+        return bean.getItemAvgAmountEachPurchase();
     }
 
     //12. Get the average amount spent in each purchase (aggregated for all items).
     @GET
     @Path("avgamountspenteachpurchase")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getAvgAmountSpentEachPurchase() {
-        return bean.getAvgAmountSpentEachPurchase();
+    public int getTotalAvgAmountEachPurchase () {
+        return bean.getTotalAvgAmountEachPurchase();
     }
 
     //13. Get the item with the highest profit of all (only one if there is a tie).
@@ -154,7 +154,7 @@ public class ServerAPI {
     @GET
     @Path("countryhighestsalesperitem")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getCountryHighestSalesPerItem() {
+    public List<ItemTransactionsDTO> getCountryHighestSalesPerItem() {
         return bean.getCountryHighestSalesPerItem();
     }
 }

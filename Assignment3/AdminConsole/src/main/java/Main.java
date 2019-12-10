@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class Main {
     private static final String applicationPath =  "http://localhost:8080/play-REST-server/webapi/project3webservices";
+
     public static void main(String[] args) {
         initialMenu();
     }
-
 
     private static void clearConsole(){
         try {
@@ -23,15 +23,16 @@ public class Main {
         }
     }
 
-    private static void pressAnyKeyToContinue()
-    {
+    private static void pressAnyKeyToContinue() {
         System.out.println("Press Enter key to continue...");
         try
         {
             System.in.read();
         }
         catch(Exception e)
-        {}
+        {
+            e.printStackTrace();
+        }
     }
 
     public static void initialMenu() {
@@ -74,10 +75,13 @@ public class Main {
                     listItems();
                     break;
                 case 5:
+                    getItemsRevenues();
                     break;
                 case 6:
+                    getItemsExpenses();
                     break;
                 case 7:
+                    getItemsProfits();
                     break;
                 case 8:
                     getTotalRevenues();
@@ -86,19 +90,19 @@ public class Main {
                     getTotalExpenses();
                     break;
                 case 10:
-                    getTotalProfit();
+                    getTotalProfits();
                     break;
                 case 11:
-                    listItems();
+                    getItemAvgAmountEachPurchase();
                     break;
                 case 12:
-                    listItems();
+                    getTotalAvgAmountEachPurchase();
                     break;
                 case 13:
-                    listItems();
+                    getItemHighestProfit();
                     break;
                 case 14:
-                    getTotalRevenueLastHour();
+                    getTotalRevenuesLastHour();
                     break;
                 case 15:
                     getTotalExpensesLastHour();
@@ -107,7 +111,7 @@ public class Main {
                     getTotalProfitsLastHour();
                     break;
                 case 17:
-                    listItems();
+                    getCountryHighestSalesPerItem();
                     break;
             }
             System.out.println("\n");
@@ -123,13 +127,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String countryName = scanner.nextLine();
 
-        String url = Main.applicationPath + "/addcountry?name=" + countryName;
-        boolean isValid = OperationsHTTP.HttpRequestPost(url);
-        if(!isValid){
-            System.out.println("[ERROR] This country is already in the database.");
+        if(countryName.equals("") || countryName.equals(" ")){
+            System.out.println("[ERROR] Insert a valid country name.");
         }
         else {
-            System.out.println("\nCountry [" + countryName + "] added to the database");
+            String url = Main.applicationPath + "/addcountry?name=" + countryName;
+            boolean isValid = OperationsHTTP.HttpRequestPost(url);
+            if (!isValid) {
+                System.out.println("[ERROR] This country is already in the database.");
+            } else {
+                System.out.println("\nCountry [" + countryName + "] added to the database");
+            }
         }
         Main.pressAnyKeyToContinue();
     }
@@ -137,19 +145,19 @@ public class Main {
     public static void listCountries() {
         String unparsedJSON;
         List<Country> countryList;
-
         String url = Main.applicationPath + "/listcountries";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         if(unparsedJSON == null){
-            return;
+            System.out.println("There are no countries in the database");
         }
-        countryList = parserJSON.listCountries(unparsedJSON);
-        System.out.println("[Countries]: ");
-        for(int i = 0; i < countryList.size(); i++){
-            System.out.println(" - " + countryList.get(i).getName());
+        else {
+            countryList = parserJSON.listCountries(unparsedJSON);
+            System.out.println("[Countries]: ");
+            for (int i = 0; i < countryList.size(); i++) {
+                System.out.println(" - " + countryList.get(i).getName());
+            }
         }
-//        System.out.println("\n");
         Main.pressAnyKeyToContinue();
     }
 
@@ -163,19 +171,22 @@ public class Main {
         System.out.println(" - Name: ");
         Scanner scanner = new Scanner(System.in);
         itemName = scanner.nextLine();
-
-        System.out.println(" - Price: ");
-        try {
-            itemPrice = scanner.nextInt();
-        } catch (Exception e){
-            System.out.println("[ERRO] Type an integer");
-            Main.pressAnyKeyToContinue();
-            return;
+        if (itemName.equals("") || itemName.equals(" ")){
+            System.out.println("[ERROR] Insert a valid item name");
         }
-
-        String url = Main.applicationPath + "/additem?name=" + itemName + "&price=" + itemPrice;
-        OperationsHTTP.HttpRequestPost(url);
-        System.out.println("\nItem [" + itemName + "] worth [" + itemPrice + "$] added to the database");
+        else {
+            System.out.println(" - Price: ");
+            try {
+                itemPrice = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("[ERROR] Type an integer");
+                Main.pressAnyKeyToContinue();
+                return;
+            }
+            String url = Main.applicationPath + "/additem?name=" + itemName + "&price=" + itemPrice;
+            OperationsHTTP.HttpRequestPost(url);
+            System.out.println("\nItem [" + itemName + "] worth [" + itemPrice + "$] added to the database");
+        }
         Main.pressAnyKeyToContinue();
 
     }
@@ -188,9 +199,74 @@ public class Main {
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         itemList = parserJSON.listItems(unparsedJSON);
 
-        System.out.println("[Items]");
-        for(int i = 0; i < itemList.size(); i++){
-            System.out.println(" - Name: " + itemList.get(i).getName() + ", Price: " + itemList.get(i).getPrice());
+        if(itemList.size() == 0){
+            System.out.println("There are no items in the database");
+        }
+        else {
+            System.out.println("[Items]");
+            for (int i = 0; i < itemList.size(); i++) {
+                System.out.println(" - Name: " + itemList.get(i).getName() + ", Price: " + itemList.get(i).getPrice());
+            }
+        }
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getItemsRevenues() {
+        String unparsedJSON;
+        List<ItemTransactions> itemTransactions;
+        String url = Main.applicationPath + "/itemsrevenues";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        itemTransactions = parserJSON.listItemTransactions(unparsedJSON);
+
+        if(itemTransactions.size() == 0){
+            System.out.println("There are no item transactions in the database");
+        }
+        else {
+            System.out.println("[Items]");
+            for (ItemTransactions itemTransaction : itemTransactions) {
+                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Revenues: " + itemTransaction.getRevenues());
+            }
+        }
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getItemsExpenses() {
+        String unparsedJSON;
+        List<ItemTransactions> itemTransactions;
+        String url = Main.applicationPath + "/itemsexpenses";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        itemTransactions = parserJSON.listItemTransactions(unparsedJSON);
+
+        if(itemTransactions.size() == 0){
+            System.out.println("There are no item transactions in the database");
+        }
+        else {
+            System.out.println("[Items]");
+            for (ItemTransactions itemTransaction : itemTransactions) {
+                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Expenses: " + itemTransaction.getExpenses());
+            }
+        }
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getItemsProfits() {
+        String unparsedJSON;
+        List<ItemTransactions> itemTransactions;
+        String url = Main.applicationPath + "/itemsprofits";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        itemTransactions = parserJSON.listItemTransactions(unparsedJSON);
+
+        if(itemTransactions.size() == 0){
+            System.out.println("There are no item transactions in the database");
+        }
+        else {
+            System.out.println("[Items]");
+            for (ItemTransactions itemTransaction : itemTransactions) {
+                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Profits: " + itemTransaction.getProfits());
+            }
         }
         Main.pressAnyKeyToContinue();
     }
@@ -219,7 +295,7 @@ public class Main {
         Main.pressAnyKeyToContinue();
     }
 
-    private static void getTotalProfit(){
+    private static void getTotalProfits(){
         String unparsedJSON;
         int totalProfit;
         String url = Main.applicationPath + "/totalprofits";
@@ -227,11 +303,55 @@ public class Main {
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
         totalProfit = parserJSON.intParser(unparsedJSON);
 
-        System.out.println("[Total Expenses]: " + totalProfit);
+        System.out.println("[Total Profits]: " + totalProfit);
         Main.pressAnyKeyToContinue();
     }
 
-    private static void getTotalRevenueLastHour(){
+    private static void getItemAvgAmountEachPurchase() {
+        String unparsedJSON;
+        List<ItemTransactions> itemTransactions;
+        String url = Main.applicationPath + "/avgamountperitem";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        itemTransactions = parserJSON.listItemTransactions(unparsedJSON);
+
+        if(itemTransactions.size() == 0){
+            System.out.println("There are no item transactions in the database");
+        }
+        else {
+            System.out.println("[Items]");
+            for (ItemTransactions itemTransaction : itemTransactions) {
+                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Average Amount Purchases: " + itemTransaction.getAvgPurchaseAmount());
+            }
+        }
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalAvgAmountEachPurchase() {
+        String unparsedJSON;
+        int totalAvgAmountEachPurchase;
+        String url = Main.applicationPath + "/avgamountspenteachpurchase";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        totalAvgAmountEachPurchase = parserJSON.intParser(unparsedJSON);
+
+        System.out.println("[Total Average Amount of Each Purchases]: " + totalAvgAmountEachPurchase);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getItemHighestProfit() {
+        String unparsedJSON;
+        String itemHighestProfit;
+        String url = Main.applicationPath + "/itemhighestprofit";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        itemHighestProfit = parserJSON.stringParser(unparsedJSON);
+
+        System.out.println("[Item with Highest Profit]: " + itemHighestProfit);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getTotalRevenuesLastHour(){
         String unparsedJSON;
         int totalRevenueLastHour;
         String url = Main.applicationPath + "/totalrevenueslasthour";
@@ -255,7 +375,6 @@ public class Main {
         Main.pressAnyKeyToContinue();
     }
 
-
     private static void getTotalProfitsLastHour() {
         String unparsedJSON;
         int totalProfitsLastHour;
@@ -265,6 +384,26 @@ public class Main {
         totalProfitsLastHour = parserJSON.intParser(unparsedJSON);
 
         System.out.println("[Total Profits Last Hour]: " + totalProfitsLastHour);
+        Main.pressAnyKeyToContinue();
+    }
+
+    private static void getCountryHighestSalesPerItem(){
+        String unparsedJSON;
+        List<ItemTransactions> itemTransactions;
+        String url = Main.applicationPath + "/countryhighestsalesperitem";
+
+        unparsedJSON = OperationsHTTP.HttpRequestGet(url);
+        itemTransactions = parserJSON.listItemTransactions(unparsedJSON);
+
+        if(itemTransactions.size() == 0){
+            System.out.println("There are no item transactions in the database");
+        }
+        else {
+            System.out.println("[Items]");
+            for(ItemTransactions itemTransaction : itemTransactions){
+                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Country with Highest Sales: " + itemTransaction.getHighestSalesCountry() + " , Amount: " + itemTransaction.getRevenues());
+            }
+        }
         Main.pressAnyKeyToContinue();
     }
 }

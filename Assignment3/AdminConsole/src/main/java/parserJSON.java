@@ -1,5 +1,7 @@
 import com.google.gson.Gson;
+import org.apache.kafka.common.protocol.types.Field;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,5 +25,18 @@ public class parserJSON {
         Gson gson = new Gson();
         int integer = gson.fromJson(unparsedJSON, int.class);
         return integer;
+    }
+
+    public static String stringParser(String unparsedJSON){
+        Gson gson = new Gson();
+        String string = gson.fromJson(unparsedJSON, String.class);
+        return string;
+    }
+
+    public static List<ItemTransactions> listItemTransactions(String unparsedJSON){
+        Gson gson = new Gson();
+        ItemTransactions[] itemTransactions = gson.fromJson(unparsedJSON, ItemTransactions[].class);
+        List<ItemTransactions> itemTransactionsList = Arrays.asList(itemTransactions);
+        return itemTransactionsList;
     }
 }
