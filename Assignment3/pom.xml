@@ -17,7 +17,7 @@
         <module>AdminConsole</module>
         <module>Customer</module>
         <module>PurchaseOrder</module>
-        <module>KafkaStreams</module>
+        <module>KafkaStreamsProcessor</module>
     </modules>
 
     <dependencies>

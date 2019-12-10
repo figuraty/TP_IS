@@ -12,7 +12,7 @@
     <artifactId>KafkaStreams</artifactId>
 
     <build>
-        <finalName>KafkaStreams</finalName>
+        <finalName>KafkaStreamsProcessor</finalName>
     </build>
 
     <dependencies>
