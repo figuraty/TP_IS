@@ -1,0 +1,8 @@
+parametros vao por url nao permite introduzir parametros especiais
+
+
+
+
+{"item":"Cebola","numberOfUnits":1095,"totalPrice":78840,"country":"Portugal"}
+
+

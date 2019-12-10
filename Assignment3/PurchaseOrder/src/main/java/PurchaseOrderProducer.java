@@ -20,7 +20,8 @@ public class PurchaseOrderProducer extends Thread {
 
     public void run(){
 
-        String topicName = "purchasesTopic";
+//        String topicName = "purchasesTopic";
+        String topicName = "testTopic8";
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("acks", "all");
@@ -42,15 +43,14 @@ public class PurchaseOrderProducer extends Thread {
                         Random rand = new Random();
                         String item = items.get(rand.nextInt(items.size()));
                         int numberOfUnits = rand.nextInt(MAX_ITEMS) + 1;
-                        int price = rand.nextInt((MAX_PRICE - MIN_PRICE) + 1 ) + 1;
-                        Purchase purchase = new Purchase(item, numberOfUnits, price);
+                        int unitPrice = rand.nextInt((MAX_PRICE - MIN_PRICE) + 1) + 1;
+                        Purchase purchase = new Purchase(item, numberOfUnits, unitPrice);
                         Gson gson = new Gson();
                         String purchaseObject = gson.toJson(purchase);
-                        System.out.println(purchaseObject);
-                        producer.send(new ProducerRecord<String, String>(topicName, "Purchase", purchaseObject));
+                        producer.send(new ProducerRecord<String, String>(topicName, purchase.getItem(), purchaseObject));
                     }
                 }
-                Thread.sleep(1000);
+                Thread.sleep(10000);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

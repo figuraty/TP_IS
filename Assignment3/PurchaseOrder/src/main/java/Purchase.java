@@ -1,12 +1,12 @@
 public class Purchase {
     private String item;
     private int numberOfUnits;
-    private int totalPrice;
+    private int unitPrice;
 
-    public Purchase(String item, int numberOfUnits, int price) {
+    public Purchase(String item, int numberOfUnits, int unitPrice) {
         this.item = item;
         this.numberOfUnits = numberOfUnits;
-        totalPrice = numberOfUnits * price;
+        this.unitPrice = unitPrice;
     }
 
     public String getItem() {
@@ -25,12 +25,11 @@ public class Purchase {
         this.numberOfUnits = numberOfUnits;
     }
 
-    public int getTotalPrice() {
-        return totalPrice;
+    public int getUnitPrice() {
+        return unitPrice;
     }
 
-    public void setTotalPrice(int totalPrice) {
-        this.totalPrice = totalPrice;
+    public void setUnitPrice(int unitPrice) {
+        this.unitPrice = unitPrice;
     }
-
 }

@@ -1,14 +1,14 @@
 public class Sale {
     private String item;
     private int numberOfUnits;
-    private int totalPrice;
+    private int unitPrice;
     private String country;
 
-    public Sale(String item, int numberOfUnits, int price, String country) {
+    public Sale(String item, int numberOfUnits, int unitPrice, String country) {
         this.item = item;
         this.numberOfUnits = numberOfUnits;
         this.country = country;
-        totalPrice = numberOfUnits * price;
+        this.unitPrice = unitPrice;
     }
 
     public String getItem() {
@@ -27,12 +27,12 @@ public class Sale {
         this.numberOfUnits = numberOfUnits;
     }
 
-    public int getTotalPrice() {
-        return totalPrice;
+    public int getUnitPrice() {
+        return unitPrice;
     }
 
-    public void setTotalPrice(int totalPrice) {
-        this.totalPrice = totalPrice;
+    public void setUnitPrice(int unitPrice) {
+        this.unitPrice = unitPrice;
     }
 
     public String getCountry() {

@@ -44,7 +44,6 @@ public class PurchaseOrderConsumer extends Thread{
                         }
                     }
                 }
-                System.out.println("Purchases - " + items.size());
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
