@@ -9,9 +9,9 @@ import javax.persistence.Table;
 @Table(name = "Item")
 public class Item {
     @Id
-    @Column(name = "name")
+    @Column(nullable = false)
     private String name;
-    @Column(name = "price")
+    @Column(nullable = false)
     private int price;
 
     public Item(){

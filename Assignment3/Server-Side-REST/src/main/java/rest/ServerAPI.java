@@ -2,7 +2,8 @@ package rest;
 
 import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
-import ejb.MyBean;
+import data.dtos.ItemTransactionsDTO;
+import ejb.Bean;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -18,7 +19,7 @@ import java.util.List;
 public class ServerAPI {
 
     @Inject
-    MyBean my;
+    Bean bean;
 
     public ServerAPI() {
     }
@@ -27,7 +28,7 @@ public class ServerAPI {
     @GET
     @Path("addcountry")
     public void addCountry(@QueryParam("name") String name) {
-        my.addCountry(name);
+        bean.addCountry(name);
     }
 
     //2. List countries from the database.
@@ -35,14 +36,14 @@ public class ServerAPI {
     @Path("listcountries")
     @Produces({MediaType.APPLICATION_JSON})
     public List<CountryDTO> listCountries() {
-        return my.listCountries();
+        return bean.listCountries();
     }
 
     //Add items for sale in the shop to the database. Again, these cannot be deleted, but may be changed if students wish.
     @GET
     @Path("additem")
     public void addItem(@QueryParam("name") String name, @QueryParam("price") int price) {
-        my.addItem(name, price);
+        bean.addItem(name, price);
     }
 
     //4. List items from the database.
@@ -50,110 +51,110 @@ public class ServerAPI {
     @Path("listitems")
     @Produces({MediaType.APPLICATION_JSON})
     public List<ItemDTO> listItems() {
-        return my.listItems();
+        return bean.listItems();
     }
 
     //5. Get the revenue per item.
     @GET
-    @Path("getitemrevenue")
+    @Path("itemsrevenues")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getItemRevenue(@QueryParam("name") String name) {
-        return my.getItemRevenue(name);
+    public List<ItemTransactionsDTO> getItemsRevenue() {
+        return bean.getItemsRevenues();
     }
 
     //6. Get the expenses per item.
     @GET
-    @Path("getitemexpenses")
+    @Path("itemsexpenses")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getItemExpenses(@QueryParam("name") String name) {
-        return my.getItemExpenses(name);
+    public List<ItemTransactionsDTO> getItemExpenses() {
+        return bean.getItemsExpenses();
     }
 
     //7. Get the profit per item.
     @GET
-    @Path("getitemprofit")
+    @Path("itemsprofits")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getItemProfit() {
-        return my.getItemProfit();
+    public List<ItemTransactionsDTO> getItemProfits() {
+        return bean.getItemsProfits();
     }
 
     //8. Get the total revenues.
     @GET
-    @Path("gettotalrevenues")
+    @Path("totalrevenues")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getTotalRevenues() {
-        return my.getTotalRevenues();
+    public int getTotalRevenues() {
+        return bean.getTotalRevenues();
     }
 
     //9. Get the total expenses.
     @GET
-    @Path("gettotalexpenses")
+    @Path("totalexpenses")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getTotalExpenses() {
-        return my.getTotalExpenses();
+    public int getTotalExpenses() {
+        return bean.getTotalExpenses();
     }
 
     //10. Get the total profit.
     @GET
-    @Path("gettotalprofit")
+    @Path("totalprofits")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getTotalProfit() {
-        return my.getTotalProfit();
+    public int getTotalProfits() {
+        return bean.getTotalProfits();
     }
 
     //11. Get the average amount spent in each purchase (separated by item).
     @GET
-    @Path("getavgamountperitem")
+    @Path("avgamountperitem")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getAvgAmountSpentPerItem() {
-        return "";
+    public List<ItemTransactionsDTO> getItemAvgAmountEachPurchase() {
+        return bean.getItemAvgAmountEachPurchase();
     }
 
     //12. Get the average amount spent in each purchase (aggregated for all items).
     @GET
-    @Path("getavgamountspenteachpurchase")
+    @Path("avgamountspenteachpurchase")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getAvgAmountSpentEachPurchase() {
-        return my.getAvgAmountSpentEachPurchase();
+    public int getTotalAvgAmountEachPurchase () {
+        return bean.getTotalAvgAmountEachPurchase();
     }
 
     //13. Get the item with the highest profit of all (only one if there is a tie).
     @GET
-    @Path("getitemhighestprofit")
+    @Path("itemhighestprofit")
     @Produces({MediaType.APPLICATION_JSON})
     public String getItemHighestProfit() {
-        return my.getItemHighestProfit();
+        return bean.getItemHighestProfit();
     }
 
     //14. Get the total revenue in the last hour 1 (use a tumbling time window).
     @GET
-    @Path("gettotalrevenuelasthour")
+    @Path("totalrevenueslasthour")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getTotalRevenueLastHour() {
-        return "";
+    public int getTotalRevenuesLastHour() {
+        return bean.getTotalRevenuesLastHour();
     }
 
     //15. Get the total expenses in the last hour (use a tumbling time window)
     @GET
-    @Path("gettotalexpenseslasthour")
+    @Path("totalexpenseslasthour")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getTotalExpensesLastHour() {
-        return my.getTotalExpensesLastHour();
+    public int getTotalExpensesLastHour() {
+        return bean.getTotalExpensesLastHour();
     }
 
     //16. Get the total profits in the last hour (use a tumbling time window).
     @GET
-    @Path("gettotalprofitslasthour")
+    @Path("totalprofitslasthour")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getTotalProfitsLastHour() {
-        return my.getTotalProfitsLastHour();
+    public int getTotalProfitsLastHour() {
+        return bean.getTotalProfitsLastHour();
     }
 
     //17. Get the name of the country with the highest sales per item. Include the value of such sales.
     @GET
-    @Path("getcountryhighestsalesperitem")
+    @Path("countryhighestsalesperitem")
     @Produces({MediaType.APPLICATION_JSON})
-    public String getCountryHighestSalesPerItem() {
-        return my.getCountryHighestSalesPerItem();
+    public List<ItemTransactionsDTO> getCountryHighestSalesPerItem() {
+        return bean.getCountryHighestSalesPerItem();
     }
 }

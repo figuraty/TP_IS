@@ -1,8 +1,3 @@
-parametros vao por url nao permite introduzir parametros especiais
-
-
-
-
-{"item":"Cebola","numberOfUnits":1095,"totalPrice":78840,"country":"Portugal"}
-
-
+ - como é logico dos preços ( se há preços de venda e compra ? se é preciso fazer preços alteaorios para venda e compra)
+ - o processamento do item com maior lucro/pais com maior valor de vendas pode ser feito pelo admin ou tem que haver entrada na db com essa informação especifica
+ - parametros vao por url nao permite introduzir parametros especiais

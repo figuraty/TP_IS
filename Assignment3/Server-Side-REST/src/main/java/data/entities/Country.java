@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name = "Country")
 public class Country {
     @Id
-    @Column(name = "name")
+    @Column(nullable = false)
     String name;
 
     public Country() {
@@ -19,7 +19,6 @@ public class Country {
     public Country(String name) {
         this.name = name;
     }
-
 
     public String getName() {
         return name;

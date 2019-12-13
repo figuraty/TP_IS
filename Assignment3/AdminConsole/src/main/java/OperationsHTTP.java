@@ -20,7 +20,10 @@ public class OperationsHTTP {
             connection.setRequestMethod("GET");
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
-            //int status = connection.getResponseCode();
+
+            int status = connection.getResponseCode();
+
+
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             while ((line = reader.readLine()) != null) {
@@ -36,7 +39,7 @@ public class OperationsHTTP {
         return responseContent.toString();
     }
 
-    public static void HttpRequestPost(String Url) {
+    public static boolean HttpRequestPost(String Url) {
         HttpURLConnection connection = null;
         try {
 
@@ -46,6 +49,11 @@ public class OperationsHTTP {
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
 
+            int status = connection.getResponseCode();
+
+            if(status == 500){
+                return false;
+            }
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
 
@@ -56,5 +64,7 @@ public class OperationsHTTP {
         } finally {
             connection.disconnect();
         }
+
+        return true;
     }
 }
