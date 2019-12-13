@@ -14,5 +14,13 @@
     <build>
         <finalName>PurchaseOrder</finalName>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>2.3.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
