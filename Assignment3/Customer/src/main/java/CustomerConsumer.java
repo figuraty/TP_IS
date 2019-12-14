@@ -44,15 +44,16 @@ public class CustomerConsumer extends Thread{
                     synchronized (countries) {
                         if (records.count() != 0) {
                             for (ConsumerRecord<String, String> record : records) {
-                                ReadTopicObject readTopicObject = new Gson().fromJson(record.value(), ReadTopicObject.class);
-                                if (readTopicObject.payload.getType().equals("Item"))
-                                    addItem(readTopicObject.payload.getName(), items);
-                                else if (readTopicObject.payload.getType().equals("Country"))
-                                    addCountry(readTopicObject.payload.getName(), countries);
+                                ReadTopicObject ReadTopicObject = new Gson().fromJson(record.value(), ReadTopicObject.class);
+                                if (ReadTopicObject.payload.getType().equals("Item"))
+                                    addItem(ReadTopicObject.payload.getName(), items);
+                                else if (ReadTopicObject.payload.getType().equals("Country"))
+                                    addCountry(ReadTopicObject.payload.getName(), countries);
                             }
                         }
                     }
                 }
+                System.out.println(items);
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {

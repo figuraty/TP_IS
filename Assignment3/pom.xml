@@ -18,6 +18,7 @@
         <module>Customer</module>
         <module>PurchaseOrder</module>
         <module>KafkaStreamsProcessor</module>
+        <module>Data</module>
     </modules>
 
     <dependencies>

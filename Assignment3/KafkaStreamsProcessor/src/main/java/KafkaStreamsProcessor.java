@@ -7,6 +7,7 @@ import org.apache.kafka.streams.kstream.*;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Properties;
 
 public class KafkaStreamsProcessor {
@@ -16,6 +17,7 @@ public class KafkaStreamsProcessor {
         String salesTopic = "salesTopic";
         String testTopic = "testTopic20";
         String test2Topic = "testTopic21";
+        String test3Topic = "test42";
 
         Properties props = new Properties();
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, "exercises-application-15");
@@ -87,7 +89,7 @@ public class KafkaStreamsProcessor {
 
 
 
-//        revenuesPerItem.mapValues(KafkaStreamsProcessor::transformIntToString).toStream().to(purchasesTopic, Produced.with(Serdes.String(), Serdes.String()));
+        revenuesPerItem.mapValues(v -> transformData(v, "")).toStream().to(purchasesTopic, Produced.with(Serdes.String(), Serdes.String()));
 
 //        totalRevenues.mapValues(KafkaStreamsProcessor::transformIntToString).toStream().to(purchasesTopic, Produced.with(Serdes.String(), Serdes.String()));
 
@@ -112,6 +114,17 @@ public class KafkaStreamsProcessor {
 
     private static int getRevenuesPerItem(String message){
         Sale saleObject = new Gson().fromJson(message, Sale.class);
+
+        ReadTopicObject readTopicObject = new ReadTopicObject();
+        Schema schema = new Schema();
+        schema.setType("struct");
+        schema.setOptional(false);
+        ArrayList<Field> fields = new ArrayList<>();
+        fields.add(new Field("string", false, "name"));
+        fields.add(new Field("int", false, "revenues"));
+        Payload payload = new Payload();
+
+
         return saleObject.getNumberOfUnits() * saleObject.getUnitPrice();
     }
 
@@ -167,7 +180,7 @@ public class KafkaStreamsProcessor {
         return Integer.parseInt(number);
     }
 
-    private static String transformData(String number){
+    private static String transformData(int number, String name){
         System.out.println(number);
         return "1";
     }

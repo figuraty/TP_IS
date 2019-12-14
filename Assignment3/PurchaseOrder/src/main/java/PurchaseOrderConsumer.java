@@ -41,9 +41,9 @@ public class PurchaseOrderConsumer extends Thread{
                 synchronized (items) {
                     if (records.count() != 0) {
                         for (ConsumerRecord<String, String> record : records) {
-                            ReadTopicObject readTopicObject = new Gson().fromJson(record.value(), ReadTopicObject.class);
-                            if (readTopicObject.payload.getType().equals("Item"))
-                                addItem(readTopicObject.payload.getName(), items);
+                            ReadTopicObject ReadTopicObject = new Gson().fromJson(record.value(), ReadTopicObject.class);
+                            if (ReadTopicObject.payload.getType().equals("Item"))
+                                addItem(ReadTopicObject.payload.getName(), items);
                         }
                     }
                 }
