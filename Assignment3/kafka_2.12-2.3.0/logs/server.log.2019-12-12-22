@@ -1,0 +1,6 @@
+[2019-12-12 22:37:40,189] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-12-12 22:39:44,960] INFO [GroupCoordinator 0]: Member exercises-application-15-fd9ae8f6-3eac-4948-a061-90a4473298bb-StreamThread-1-consumer-56ced64a-87da-48cc-9590-865a15075b5e in group exercises-application-15 has failed, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2019-12-12 22:39:44,961] INFO [GroupCoordinator 0]: Preparing to rebalance group exercises-application-15 in state PreparingRebalance with old generation 2 (__consumer_offsets-29) (reason: removing member exercises-application-15-fd9ae8f6-3eac-4948-a061-90a4473298bb-StreamThread-1-consumer-56ced64a-87da-48cc-9590-865a15075b5e on heartbeat expiration) (kafka.coordinator.group.GroupCoordinator)
+[2019-12-12 22:39:44,961] INFO [GroupCoordinator 0]: Group exercises-application-15 with generation 3 is now empty (__consumer_offsets-29) (kafka.coordinator.group.GroupCoordinator)
+[2019-12-12 22:47:40,188] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2019-12-12 22:57:40,191] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
