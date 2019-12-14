@@ -1,23 +1,21 @@
 import com.google.gson.Gson;
-import org.apache.kafka.common.protocol.types.Field;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class parserJSON {
 
-    public static List<Country> listCountries(String unparsedJSON){
+    public static List<CountryDTO> listCountries(String unparsedJSON){
         Gson gson = new Gson();
-        Country[] countries = gson.fromJson(unparsedJSON, Country[].class);
-        List<Country> countryList = Arrays.asList(countries);
+        CountryDTO[] countries = gson.fromJson(unparsedJSON, CountryDTO[].class);
+        List<CountryDTO> countryList = Arrays.asList(countries);
         return countryList;
     }
 
-    public static List<Item> listItems(String unparsedJSON) {
+    public static List<ItemDTO> listItems(String unparsedJSON) {
         Gson gson = new Gson();
-        Item[] items = gson.fromJson(unparsedJSON, Item[].class);
-        List<Item> itemList = Arrays.asList(items);
+        ItemDTO[] items = gson.fromJson(unparsedJSON, ItemDTO[].class);
+        List<ItemDTO> itemList = Arrays.asList(items);
         return itemList;
     }
 

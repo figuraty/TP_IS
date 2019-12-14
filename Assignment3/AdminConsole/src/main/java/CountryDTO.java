@@ -1,9 +1,7 @@
-package data.dtos;
-
-public class ItemDTO {
+public class CountryDTO {
     private String name;
 
-    public ItemDTO(String name) {
+    public CountryDTO(String name) {
         this.name = name;
     }
 

@@ -42,8 +42,8 @@ public class ServerAPI {
     //Add items for sale in the shop to the database. Again, these cannot be deleted, but may be changed if students wish.
     @GET
     @Path("additem")
-    public void addItem(@QueryParam("name") String name, @QueryParam("price") int price) {
-        bean.addItem(name, price);
+    public void addItem(@QueryParam("name") String name) {
+        bean.addItem(name);
     }
 
     //4. List items from the database.

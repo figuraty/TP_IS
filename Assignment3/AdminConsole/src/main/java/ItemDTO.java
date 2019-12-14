@@ -1,7 +1,7 @@
-public class Country {
+public class ItemDTO {
     private String name;
 
-    public Country(String name) {
+    public ItemDTO(String name) {
         this.name = name;
     }
 

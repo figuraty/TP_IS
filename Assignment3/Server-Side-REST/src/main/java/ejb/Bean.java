@@ -4,8 +4,7 @@ import data.DataTransactionManager;
 import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
 import data.dtos.ItemTransactionsDTO;
-import data.entities.Country;
-import data.entities.Item;
+import data.entities.DBEntity;
 import data.entities.ItemTransactions;
 
 import javax.ejb.LocalBean;
@@ -24,25 +23,25 @@ public class Bean {
     }
 
     public List<CountryDTO> listCountries() {
-        List<Country> countryList = DataTransactionManager.listCountries();
+        List<DBEntity> countryList = DataTransactionManager.listCountries();
 
         List<CountryDTO> countryDTOList = new ArrayList<>();
-        for (Country country : countryList) {
+        for (DBEntity country : countryList) {
             countryDTOList.add(new CountryDTO(country.getName()));
         }
         return countryDTOList;
     }
 
-    public void addItem(String name, int price) {
-        DataTransactionManager.addItem(name, price);
+    public void addItem(String name) {
+        DataTransactionManager.addItem(name);
     }
 
     public List<ItemDTO> listItems() {
-        List<Item> itemList = DataTransactionManager.listItems();
+        List<DBEntity> itemList = DataTransactionManager.listItems();
 
         List<ItemDTO> itemDTOList = new ArrayList<>();
-        for (Item item : itemList) {
-            itemDTOList.add(new ItemDTO(item.getName(), item.getPrice()));
+        for (DBEntity item : itemList) {
+            itemDTOList.add(new ItemDTO(item.getName()));
         }
         return itemDTOList;
     }

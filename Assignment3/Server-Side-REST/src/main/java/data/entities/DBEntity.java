@@ -1,26 +1,31 @@
 package data.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Country")
-public class Country {
+@Table(name = "DBEntity")
+public class DBEntity {
     @Id
-    @Column(nullable = false)
     String name;
 
-    public Country() {
+    String type;
+
+    public DBEntity() {
         super();
     }
 
-    public Country(String name) {
+    public DBEntity(String name, String type) {
         this.name = name;
+        this.type = type;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getType() {
+        return type;
     }
 }

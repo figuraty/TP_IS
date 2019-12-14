@@ -144,7 +144,7 @@ public class Main {
 
     public static void listCountries() {
         String unparsedJSON;
-        List<Country> countryList;
+        List<CountryDTO> countryList;
         String url = Main.applicationPath + "/listcountries";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
@@ -164,7 +164,6 @@ public class Main {
     private static void addItem() {
         //Main.clearConsole();
         String itemName;
-        int itemPrice;
 
         System.out.println("[Add Item]\n");
 
@@ -175,17 +174,9 @@ public class Main {
             System.out.println("[ERROR] Insert a valid item name");
         }
         else {
-            System.out.println(" - Price: ");
-            try {
-                itemPrice = scanner.nextInt();
-            } catch (Exception e) {
-                System.out.println("[ERROR] Type an integer");
-                Main.pressAnyKeyToContinue();
-                return;
-            }
-            String url = Main.applicationPath + "/additem?name=" + itemName + "&price=" + itemPrice;
+            String url = Main.applicationPath + "/additem?name=" + itemName;
             OperationsHTTP.HttpRequestPost(url);
-            System.out.println("\nItem [" + itemName + "] worth [" + itemPrice + "$] added to the database");
+            System.out.println("\nItem [" + itemName + "] added to the database");
         }
         Main.pressAnyKeyToContinue();
 
@@ -193,7 +184,7 @@ public class Main {
 
     private static void listItems() {
         String unparsedJSON;
-        List<Item> itemList;
+        List<ItemDTO> itemList;
         String url = Main.applicationPath + "/listitems";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
@@ -205,7 +196,7 @@ public class Main {
         else {
             System.out.println("[Items]");
             for (int i = 0; i < itemList.size(); i++) {
-                System.out.println(" - Name: " + itemList.get(i).getName() + ", Price: " + itemList.get(i).getPrice());
+                System.out.println(" - Name: " + itemList.get(i).getName());
             }
         }
         Main.pressAnyKeyToContinue();

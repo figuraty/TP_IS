@@ -1,3 +1,4 @@
+import com.google.gson.Gson;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -19,7 +20,8 @@ public class CustomerConsumer extends Thread{
 
     public void run(){
 
-        String topicName = "DBInfoTopic";
+//        String topicName = "DBInfoTopic";
+        String topicName = "test25";
         Properties props = new Properties();
 
         props.put("bootstrap.servers", "localhost:9092");
@@ -42,10 +44,11 @@ public class CustomerConsumer extends Thread{
                     synchronized (countries) {
                         if (records.count() != 0) {
                             for (ConsumerRecord<String, String> record : records) {
-                                if (record.key().equals("Item"))
-                                    items.add(record.value());
-                                else if (record.key().equals("Country"))
-                                    countries.add(record.value());
+                                ReadTopicObject readTopicObject = new Gson().fromJson(record.value(), ReadTopicObject.class);
+                                if (readTopicObject.payload.getType().equals("Item"))
+                                    addItem(readTopicObject.payload.getName(), items);
+                                else if (readTopicObject.payload.getType().equals("Country"))
+                                    addCountry(readTopicObject.payload.getName(), countries);
                             }
                         }
                     }
@@ -55,5 +58,15 @@ public class CustomerConsumer extends Thread{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void addItem(String item, List<String> items){
+        if (!items.contains(item))
+            items.add(item);
+    }
+
+    private static void addCountry(String country, List<String> countries){
+        if (!countries.contains(country))
+            countries.add(country);
     }
 }

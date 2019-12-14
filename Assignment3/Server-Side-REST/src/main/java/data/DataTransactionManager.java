@@ -1,7 +1,6 @@
 package data;
 
-import data.entities.Country;
-import data.entities.Item;
+import data.entities.DBEntity;
 import data.entities.ItemTransactions;
 
 import javax.persistence.*;
@@ -14,7 +13,7 @@ public class DataTransactionManager {
     static public void addCountry(String countryName) {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
-            Country country = new Country(countryName);
+            DBEntity country = new DBEntity(countryName, "Country");
             em.persist(country);
         } catch (Exception ex){
             em.getTransaction().rollback();
@@ -24,10 +23,12 @@ public class DataTransactionManager {
         }
     }
 
-    public static List<Country> listCountries(){
+    public static List<DBEntity> listCountries(){
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
-            return em.createQuery("from Country c").getResultList();
+            return em.createQuery("from DBEntity d WHERE d.type = :type")
+                    .setParameter("type", "Country")
+                    .getResultList();
         } catch (NoResultException ex){
             em.getTransaction().rollback();
             ex.printStackTrace();
@@ -37,12 +38,12 @@ public class DataTransactionManager {
         }
     }
 
-    public static void addItem(String name, int price){
+    public static void addItem(String name){
 
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Item item = new Item(name, price);
+            DBEntity item = new DBEntity(name, "Item");
             em.persist(item);
         } catch (Exception ex){
             em.getTransaction().rollback();
@@ -52,24 +53,18 @@ public class DataTransactionManager {
         }
     }
 
-    public static List<Item> listItems(){
+    public static List<DBEntity> listItems(){
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
         try {
-            return em.createQuery("from Item i").getResultList();
+            return em.createQuery("from DBEntity d WHERE d.type = :type")
+                    .setParameter("type", "Item")
+                    .getResultList();
         } catch (Exception ex){
             ex.printStackTrace();
             return null;
         }finally {
             em.close();
         }
-    }
-
-
-
-
-
-    public String addItem(String name) {
-        return null;
     }
 
     public static List<ItemTransactions> getItemsRevenues() {
