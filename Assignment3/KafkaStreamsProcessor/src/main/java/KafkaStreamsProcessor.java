@@ -14,10 +14,8 @@ import java.util.Properties;
 public class KafkaStreamsProcessor {
 
     public static void main(String[] args) throws InterruptedException, IOException {
-//        String purchasesTopic = "purchasesTopic";
-//        String salesTopic = "salesTopic";
-        String purchasesTopic = "testTopic20";
-        String salesTopic = "testTopic23";
+        String purchasesTopic = "purchasesTopic";
+        String salesTopic = "salesTopic";
         String revenuesPerItemTopic = "revenuesPerItem";
         String expensesPerItemTopic = "expensesPerItem";
         String profitPerItemTopic = "profitPerItem";
@@ -34,7 +32,7 @@ public class KafkaStreamsProcessor {
 
 
         Properties props = new Properties();
-        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "exercises-application-75");
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "IS-Assignment-3");
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
         props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
