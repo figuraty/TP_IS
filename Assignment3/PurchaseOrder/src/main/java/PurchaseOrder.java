@@ -7,8 +7,6 @@ public class PurchaseOrder {
         List<String> items = new ArrayList<String>();
         PurchaseOrderProducer pop = new PurchaseOrderProducer(items);
         PurchaseOrderConsumer poc = new PurchaseOrderConsumer(items);
-        TestProducer tp = new TestProducer();
-        tp.start();
         pop.start();
         poc.start();
     }

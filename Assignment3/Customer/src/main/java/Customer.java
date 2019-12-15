@@ -8,8 +8,6 @@ public class Customer {
         List<String> countries = new ArrayList<String>();
         CustomerProducer cp = new CustomerProducer(items, countries);
         CustomerConsumer cc = new CustomerConsumer(items, countries);
-        TestProducer tp = new TestProducer();
-        tp.start();
         cp.start();
         cc.start();
     }

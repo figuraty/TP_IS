@@ -23,8 +23,7 @@ public class CustomerProducer extends Thread {
 
     public void run(){
 
-//        String topicName = "salesTopic";
-        String topicName = "testTopic22";
+        String topicName = "salesTopic";
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("acks", "all");

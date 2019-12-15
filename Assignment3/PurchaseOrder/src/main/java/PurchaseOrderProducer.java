@@ -22,8 +22,7 @@ public class PurchaseOrderProducer extends Thread {
 
     public void run(){
 
-//        String topicName = "purchasesTopic";
-        String topicName = "testTopic20";
+        String topicName = "purchasesTopic";
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("acks", "all");
