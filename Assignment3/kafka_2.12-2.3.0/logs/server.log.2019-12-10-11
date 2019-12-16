@@ -1,0 +1,7 @@
+[2019-12-10 11:46:08,785] INFO [GroupCoordinator 0]: Member consumer-1-c1b3e807-1ace-4f27-964b-30b47c3d6605 in group salesConsumer has left, removing it from the group (kafka.coordinator.group.GroupCoordinator)
+[2019-12-10 11:46:08,788] INFO [GroupCoordinator 0]: Preparing to rebalance group salesConsumer in state PreparingRebalance with old generation 20 (__consumer_offsets-40) (reason: removing member consumer-1-c1b3e807-1ace-4f27-964b-30b47c3d6605 on LeaveGroup) (kafka.coordinator.group.GroupCoordinator)
+[2019-12-10 11:46:08,789] INFO [GroupCoordinator 0]: Group salesConsumer with generation 21 is now empty (__consumer_offsets-40) (kafka.coordinator.group.GroupCoordinator)
+[2019-12-10 11:46:08,794] INFO [GroupCoordinator 0]: Preparing to rebalance group salesConsumer in state PreparingRebalance with old generation 21 (__consumer_offsets-40) (reason: Adding new member consumer-1-907264fa-ec28-4bf3-96dd-15b419a4132e with group instanceid None) (kafka.coordinator.group.GroupCoordinator)
+[2019-12-10 11:46:08,797] INFO [GroupCoordinator 0]: Stabilized group salesConsumer generation 22 (__consumer_offsets-40) (kafka.coordinator.group.GroupCoordinator)
+[2019-12-10 11:46:08,802] INFO [GroupCoordinator 0]: Assignment received from leader for group salesConsumer for generation 22 (kafka.coordinator.group.GroupCoordinator)
+[2019-12-10 11:54:28,831] INFO [GroupMetadataManager brokerId=0] Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.group.GroupMetadataManager)

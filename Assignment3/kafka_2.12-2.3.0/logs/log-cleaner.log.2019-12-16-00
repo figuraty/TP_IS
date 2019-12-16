@@ -1,0 +1,8 @@
+[2019-12-16 00:25:10,415] INFO Starting the log cleaner (kafka.log.LogCleaner)
+[2019-12-16 00:25:10,504] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner)
+[2019-12-16 00:26:32,918] INFO The cleaning for partition a9-0 is aborted and paused (kafka.log.LogCleaner)
+[2019-12-16 00:26:32,919] INFO The cleaning for partition a9-0 is aborted (kafka.log.LogCleaner)
+[2019-12-16 00:26:42,672] INFO The cleaning for partition test25-0 is aborted and paused (kafka.log.LogCleaner)
+[2019-12-16 00:26:42,672] INFO The cleaning for partition test25-0 is aborted (kafka.log.LogCleaner)
+[2019-12-16 00:36:47,091] INFO The cleaning for partition countryHighestSalesPerItem-0 is aborted and paused (kafka.log.LogCleaner)
+[2019-12-16 00:36:47,091] INFO The cleaning for partition countryHighestSalesPerItem-0 is aborted (kafka.log.LogCleaner)

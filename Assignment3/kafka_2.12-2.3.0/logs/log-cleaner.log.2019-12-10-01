@@ -1,0 +1,6 @@
+[2019-12-10 01:30:11,930] INFO The cleaning for partition exercises-application-KSTREAM-AGGREGATE-STATE-STORE-0000000001-changelog-0 is aborted and paused (kafka.log.LogCleaner)
+[2019-12-10 01:30:11,931] INFO The cleaning for partition exercises-application-KSTREAM-AGGREGATE-STATE-STORE-0000000001-changelog-0 is aborted (kafka.log.LogCleaner)
+[2019-12-10 01:30:16,889] INFO The cleaning for partition exercises-application-KSTREAM-AGGREGATE-STATE-STORE-0000000003-changelog-0 is aborted and paused (kafka.log.LogCleaner)
+[2019-12-10 01:30:16,892] INFO The cleaning for partition exercises-application-KSTREAM-AGGREGATE-STATE-STORE-0000000003-changelog-0 is aborted (kafka.log.LogCleaner)
+[2019-12-10 01:30:22,240] INFO The cleaning for partition exercises-application-KSTREAM-AGGREGATE-STATE-STORE-0000000003-repartition-0 is aborted and paused (kafka.log.LogCleaner)
+[2019-12-10 01:30:22,240] INFO The cleaning for partition exercises-application-KSTREAM-AGGREGATE-STATE-STORE-0000000003-repartition-0 is aborted (kafka.log.LogCleaner)
