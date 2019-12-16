@@ -216,7 +216,7 @@ public class Main {
         else {
             System.out.println("[Items]");
             for (ItemTransactions itemTransaction : itemTransactions) {
-                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Revenues: " + itemTransaction.getRevenues());
+                System.out.println(" - Name: " + itemTransaction.getName() + ", Revenues: " + itemTransaction.getValue());
             }
         }
         Main.pressAnyKeyToContinue();
@@ -236,7 +236,7 @@ public class Main {
         else {
             System.out.println("[Items]");
             for (ItemTransactions itemTransaction : itemTransactions) {
-                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Expenses: " + itemTransaction.getExpenses());
+                System.out.println(" - Name: " + itemTransaction.getName() + ", Expenses: " + itemTransaction.getValue());
             }
         }
         Main.pressAnyKeyToContinue();
@@ -256,7 +256,7 @@ public class Main {
         else {
             System.out.println("[Items]");
             for (ItemTransactions itemTransaction : itemTransactions) {
-                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Profits: " + itemTransaction.getProfits());
+                System.out.println(" - Name: " + itemTransaction.getName() + ", Profits: " + itemTransaction.getValue());
             }
         }
         Main.pressAnyKeyToContinue();
@@ -312,7 +312,7 @@ public class Main {
         else {
             System.out.println("[Items]");
             for (ItemTransactions itemTransaction : itemTransactions) {
-                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Average Amount Purchases: " + itemTransaction.getAvgPurchaseAmount());
+                System.out.println(" - Name: " + itemTransaction.getName() + ", Average Amount Purchases: " + itemTransaction.getValue());
             }
         }
         Main.pressAnyKeyToContinue();
@@ -320,11 +320,11 @@ public class Main {
 
     private static void getTotalAvgAmountEachPurchase() {
         String unparsedJSON;
-        int totalAvgAmountEachPurchase;
+        double totalAvgAmountEachPurchase;
         String url = Main.applicationPath + "/avgamountspenteachpurchase";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
-        totalAvgAmountEachPurchase = parserJSON.intParser(unparsedJSON);
+        totalAvgAmountEachPurchase = parserJSON.doubleParser(unparsedJSON);
 
         System.out.println("[Total Average Amount of Each Purchases]: " + totalAvgAmountEachPurchase);
         Main.pressAnyKeyToContinue();
@@ -380,19 +380,19 @@ public class Main {
 
     private static void getCountryHighestSalesPerItem(){
         String unparsedJSON;
-        List<ItemTransactions> itemTransactions;
+        List<ItemTransactionCountry> itemTransactions;
         String url = Main.applicationPath + "/countryhighestsalesperitem";
 
         unparsedJSON = OperationsHTTP.HttpRequestGet(url);
-        itemTransactions = parserJSON.listItemTransactions(unparsedJSON);
+        itemTransactions = parserJSON.itemTransactionCountries(unparsedJSON);
 
         if(itemTransactions.size() == 0){
             System.out.println("There are no item transactions in the database");
         }
         else {
             System.out.println("[Items]");
-            for(ItemTransactions itemTransaction : itemTransactions){
-                System.out.println(" - Name: " + itemTransaction.getItemName() + ", Country with Highest Sales: " + itemTransaction.getHighestSalesCountry() + " , Amount: " + itemTransaction.getRevenues());
+            for(ItemTransactionCountry itemTransaction : itemTransactions){
+                System.out.println(" - Name: " + itemTransaction.getName() + ", Country with Highest Sales: " + itemTransaction.getCountry() + " , Amount: " + itemTransaction.getRevenues());
             }
         }
         Main.pressAnyKeyToContinue();

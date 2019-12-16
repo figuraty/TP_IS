@@ -1,7 +1,6 @@
 package data;
 
-import data.entities.DBEntity;
-import data.entities.ItemTransactions;
+import data.entities.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -45,7 +44,7 @@ public class DataTransactionManager {
         try {
             DBEntity item = new DBEntity(name, "Item");
             em.persist(item);
-        } catch (Exception ex){
+        } catch (Exception ex) {
             em.getTransaction().rollback();
             ex.printStackTrace();
         } finally {
@@ -67,44 +66,44 @@ public class DataTransactionManager {
         }
     }
 
-    public static List<ItemTransactions> getItemsRevenues() {
+    public static List<revenuesPerItem> getItemsRevenues() {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("from ItemTransactions i");
+            Query query = em.createQuery("from revenuesPerItem i");
             return query.getResultList();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
 
-    public static List<ItemTransactions> getItemsExpenses() {
+    public static List<expensesPerItem> getItemsExpenses() {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("from ItemTransactions i");
+            Query query = em.createQuery("from expensesPerItem i");
             return query.getResultList();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
 
-    public static List<ItemTransactions> getItemsProfits() {
+    public static List<profitPerItem> getItemsProfits() {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("from ItemTransactions i");
+            Query query = em.createQuery("from profitPerItem i");
             return query.getResultList();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
@@ -113,12 +112,12 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.totalRevenues from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalRevenues t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
@@ -127,12 +126,12 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.totalExpenses from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalExpenses t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
@@ -141,27 +140,27 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.totalProfit from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalProfit t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
-            return "";
-        }finally {
+            return null;
+        } finally {
             em.close();
         }
     }
 
 
-    public static List<ItemTransactions> getItemAvgAmountEachPurchase(){
+    public static List<averageExpensesPerItem> getItemAvgAmountEachPurchase() {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("from ItemTransactions i");
+            Query query = em.createQuery("from averageExpensesPerItem i");
             return query.getResultList();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
@@ -170,12 +169,12 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.averagePurchaseAmount from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalAverageExpenses t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
-            return "";
-        }finally {
+            return null;
+        } finally {
             em.close();
         }
     }
@@ -184,12 +183,12 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.itemHighestProfit from TotalTransactions t");
+            Query query = em.createQuery("select t.value from itemHighestProfit t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
-            return "";
-        }finally {
+            return null;
+        } finally {
             em.close();
         }
     }
@@ -198,12 +197,12 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.lastHourRevenues from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalRevenuesLastHour t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
@@ -212,12 +211,12 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.lastHourExpenses from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalExpensesLastHour t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
@@ -226,26 +225,26 @@ public class DataTransactionManager {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("select t.lastHourProfits from TotalTransactions t");
+            Query query = em.createQuery("select t.value from totalProfitLastHour t");
             return query.getSingleResult().toString();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }
 
-    public static List<ItemTransactions> getCountryHighestSalesPerItem() {
+    public static List<countryHighestSalePerItem> getCountryHighestSalesPerItem() {
         EntityManager em = ENTITY_MANAGER_FACTORY.createEntityManager();
 
         try {
-            Query query = em.createQuery("from ItemTransactions i");
+            Query query = em.createQuery("from countryHighestSalePerItem i");
             return query.getResultList();
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             return null;
-        }finally {
+        } finally {
             em.close();
         }
     }

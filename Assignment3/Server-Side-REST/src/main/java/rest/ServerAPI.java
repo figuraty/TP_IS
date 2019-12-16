@@ -2,6 +2,7 @@ package rest;
 
 import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
+import data.dtos.ItemTransactionsCountryDTO;
 import data.dtos.ItemTransactionsDTO;
 import ejb.Bean;
 
@@ -114,7 +115,7 @@ public class ServerAPI {
     @GET
     @Path("avgamountspenteachpurchase")
     @Produces({MediaType.APPLICATION_JSON})
-    public int getTotalAvgAmountEachPurchase () {
+    public double getTotalAvgAmountEachPurchase () {
         return bean.getTotalAvgAmountEachPurchase();
     }
 
@@ -154,7 +155,7 @@ public class ServerAPI {
     @GET
     @Path("countryhighestsalesperitem")
     @Produces({MediaType.APPLICATION_JSON})
-    public List<ItemTransactionsDTO> getCountryHighestSalesPerItem() {
-        return bean.getCountryHighestSalesPerItem();
+    public List<ItemTransactionsCountryDTO> getCountryHighestSalePerItem() {
+        return bean.getCountryHighestSalePerItem();
     }
 }

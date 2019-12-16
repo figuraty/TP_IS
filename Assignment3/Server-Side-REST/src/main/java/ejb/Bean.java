@@ -3,9 +3,9 @@ package ejb;
 import data.DataTransactionManager;
 import data.dtos.CountryDTO;
 import data.dtos.ItemDTO;
+import data.dtos.ItemTransactionsCountryDTO;
 import data.dtos.ItemTransactionsDTO;
-import data.entities.DBEntity;
-import data.entities.ItemTransactions;
+import data.entities.*;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
@@ -47,28 +47,28 @@ public class Bean {
     }
 
     public List<ItemTransactionsDTO> getItemsRevenues() {
-        List<ItemTransactions> itemTransactions = DataTransactionManager.getItemsRevenues();
+        List<revenuesPerItem> itemTransactions = DataTransactionManager.getItemsRevenues();
         List<ItemTransactionsDTO> itemTransactionsDTOS = new ArrayList<>();
-        for (ItemTransactions itemTransaction : itemTransactions) {
-            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getItemName(), String.valueOf(itemTransaction.getRevenues()), null, null, null, null));
+        for (revenuesPerItem itemTransaction : itemTransactions) {
+            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getName(), String.valueOf(itemTransaction.getValue())));
         }
         return itemTransactionsDTOS;
     }
 
     public List<ItemTransactionsDTO> getItemsExpenses() {
-        List<ItemTransactions> itemTransactions = DataTransactionManager.getItemsExpenses();
+        List<expensesPerItem> itemTransactions = DataTransactionManager.getItemsExpenses();
         List<ItemTransactionsDTO> itemTransactionsDTOS = new ArrayList<>();
-        for (ItemTransactions itemTransaction : itemTransactions) {
-            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getItemName(), null, String.valueOf(itemTransaction.getExpenses()), null, null, null));
+        for (expensesPerItem itemTransaction : itemTransactions) {
+            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getName(), String.valueOf(itemTransaction.getValue())));
         }
         return itemTransactionsDTOS;
     }
 
     public List<ItemTransactionsDTO> getItemsProfits() {
-        List<ItemTransactions> itemTransactions = DataTransactionManager.getItemsProfits();
+        List<profitPerItem> itemTransactions = DataTransactionManager.getItemsProfits();
         List<ItemTransactionsDTO> itemTransactionsDTOS = new ArrayList<>();
-        for (ItemTransactions itemTransaction : itemTransactions) {
-            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getItemName(), null, null, String.valueOf(itemTransaction.getProfits()), null, null));
+        for (profitPerItem itemTransaction : itemTransactions) {
+            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getName(), String.valueOf(itemTransaction.getValue())));
         }
         return itemTransactionsDTOS;
     }
@@ -89,17 +89,17 @@ public class Bean {
     }
 
     public List<ItemTransactionsDTO> getItemAvgAmountEachPurchase() {
-        List<ItemTransactions> itemTransactions = DataTransactionManager.getItemAvgAmountEachPurchase();
+        List<averageExpensesPerItem> itemTransactions = DataTransactionManager.getItemAvgAmountEachPurchase();
         List<ItemTransactionsDTO> itemTransactionsDTOS = new ArrayList<>();
-        for (ItemTransactions itemTransaction : itemTransactions) {
-            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getItemName(), null, null, null, String.valueOf(itemTransaction.getAvgPurchaseAmount()), null));
+        for (averageExpensesPerItem itemTransaction : itemTransactions) {
+            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getName(), String.valueOf(itemTransaction.getValue())));
         }
         return itemTransactionsDTOS;
     }
 
-    public int getTotalAvgAmountEachPurchase() {
+    public double getTotalAvgAmountEachPurchase() {
         String stringTotalAvgAmountEachPurchase = DataTransactionManager.getTotalAvgAmountEachPurchase();
-        return stringTotalAvgAmountEachPurchase != null ? Integer.parseInt(stringTotalAvgAmountEachPurchase) : -1;
+        return stringTotalAvgAmountEachPurchase != null ? Double.parseDouble(stringTotalAvgAmountEachPurchase) : -1;
     }
 
     public String getItemHighestProfit() {
@@ -108,29 +108,27 @@ public class Bean {
 
     public int getTotalRevenuesLastHour() {
         String stringTotalRevenuesLastHour = DataTransactionManager.getTotalRevenuesLastHour();
-        int totalRevenuesLastHour = Integer.parseInt(stringTotalRevenuesLastHour);
-        return totalRevenuesLastHour;
+        return stringTotalRevenuesLastHour != null ? Integer.parseInt(stringTotalRevenuesLastHour) : -1;
     }
 
     public int getTotalExpensesLastHour() {
         String stringTotalExpensesLastHour = DataTransactionManager.getTotalExpensesLastHour();
-        int totalExpensesLastHour = Integer.parseInt(stringTotalExpensesLastHour);
-        return totalExpensesLastHour;
+        return stringTotalExpensesLastHour != null ? Integer.parseInt(stringTotalExpensesLastHour) : -1;
+
     }
 
     public int getTotalProfitsLastHour() {
         String stringTotalProfitsLastHour = DataTransactionManager.getTotalProfitsLastHour();
-        int totalProfitsLastHour = Integer.parseInt(stringTotalProfitsLastHour);
-        return totalProfitsLastHour;
+        return stringTotalProfitsLastHour != null ? Integer.parseInt(stringTotalProfitsLastHour) : -1;
     }
 
-    public List<ItemTransactionsDTO> getCountryHighestSalesPerItem() {
-        List<ItemTransactions> itemTransactions = DataTransactionManager.getCountryHighestSalesPerItem();
-        List<ItemTransactionsDTO> itemTransactionsDTOS = new ArrayList<>();
-        for (ItemTransactions itemTransaction : itemTransactions) {
-            itemTransactionsDTOS.add(new ItemTransactionsDTO(itemTransaction.getItemName(), String.valueOf(itemTransaction.getRevenues()), null, null, null, itemTransaction.getHighestSalesCountry()));
+    public List<ItemTransactionsCountryDTO> getCountryHighestSalePerItem() {
+        List<countryHighestSalePerItem> itemTransactions = DataTransactionManager.getCountryHighestSalesPerItem();
+        List<ItemTransactionsCountryDTO> itemTransactionsCountryDTOS = new ArrayList<>();
+        for (countryHighestSalePerItem itemTransaction : itemTransactions) {
+            itemTransactionsCountryDTOS.add(new ItemTransactionsCountryDTO(itemTransaction.getName(), String.valueOf(itemTransaction.getRevenues()), itemTransaction.getCountry()));
         }
-        return itemTransactionsDTOS;
+        return itemTransactionsCountryDTOS;
     }
 
 

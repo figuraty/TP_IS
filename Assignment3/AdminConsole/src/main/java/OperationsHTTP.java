@@ -7,7 +7,7 @@ import java.net.URL;
 
 public class OperationsHTTP {
 
-    public static String HttpRequestGet(String Url) {
+    public static String HttpRequestGet(String stringedURL) {
         BufferedReader reader;
         String line;
         StringBuffer responseContent = new StringBuffer();
@@ -15,7 +15,7 @@ public class OperationsHTTP {
 
         try {
 
-            URL url = new URL(Url);
+            URL url = new URL(stringedURL);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setConnectTimeout(5000);
@@ -39,11 +39,10 @@ public class OperationsHTTP {
         return responseContent.toString();
     }
 
-    public static boolean HttpRequestPost(String Url) {
+    public static boolean HttpRequestPost(String stringedURL) {
         HttpURLConnection connection = null;
         try {
-
-            URL url = new URL(Url);
+            URL url = new URL(stringedURL);
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.setConnectTimeout(5000);
@@ -54,6 +53,7 @@ public class OperationsHTTP {
             if(status == 500){
                 return false;
             }
+
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
 

@@ -12,9 +12,9 @@ public class CustomerProducer extends Thread {
     private List<String> items;
     private List<String> countries;
 
-    private int MAX_ITEMS = 10000;
+    private int MAX_ITEMS = 20;
     private int MAX_PRICE = 100;
-    private int MIN_PRICE = 10;
+    private int MIN_PRICE = 1;
 
     public CustomerProducer(List<String> items, List<String> countries){
         this.items = items;

@@ -1,0 +1,28 @@
+package data.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class expensesPerItem {
+    @Id
+    private String name;
+    private String value;
+
+    public expensesPerItem(){
+        super();
+    }
+
+    public expensesPerItem(String name, String value) {
+        this.name = name;
+        this.value = value;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getValue() {
+        return value;
+    }
+}

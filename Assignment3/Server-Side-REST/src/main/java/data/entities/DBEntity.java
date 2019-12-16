@@ -5,11 +5,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "DBEntity")
 public class DBEntity {
     @Id
     String name;
-
     String type;
 
     public DBEntity() {

@@ -1,0 +1,8 @@
+[2019-12-14 08:10:44,937] INFO Got user-level KeeperException when processing sessionid:0x100000436880000 type:setData cxid:0x1eb zxid:0xb7 txntype:-1 reqpath:n/a Error Path:/config/topics/DBInfoTopic Error:KeeperErrorCode = NoNode for /config/topics/DBInfoTopic (org.apache.zookeeper.server.PrepRequestProcessor)
+[2019-12-14 08:11:14,584] INFO Got user-level KeeperException when processing sessionid:0x100000436880000 type:setData cxid:0x1f7 zxid:0xbd txntype:-1 reqpath:n/a Error Path:/config/topics/testTopic21 Error:KeeperErrorCode = NoNode for /config/topics/testTopic21 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2019-12-14 08:24:36,093] INFO Got user-level KeeperException when processing sessionid:0x100000436880000 type:setData cxid:0x203 zxid:0xc3 txntype:-1 reqpath:n/a Error Path:/config/topics/test42 Error:KeeperErrorCode = NoNode for /config/topics/test42 (org.apache.zookeeper.server.PrepRequestProcessor)
+[2019-12-14 08:51:17,301] WARN Unable to read additional data from client sessionid 0x100000436880000, likely client has closed socket (org.apache.zookeeper.server.NIOServerCnxn)
+[2019-12-14 08:51:17,305] INFO Closed socket connection for client /127.0.0.1:34980 which had sessionid 0x100000436880000 (org.apache.zookeeper.server.NIOServerCnxn)
+[2019-12-14 08:51:18,946] INFO Accepted socket connection from /127.0.0.1:36378 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2019-12-14 08:51:18,946] INFO Client attempting to renew session 0x100000436880000 at /127.0.0.1:36378 (org.apache.zookeeper.server.ZooKeeperServer)
+[2019-12-14 08:51:18,947] INFO Established session 0x100000436880000 with negotiated timeout 6000 for client /127.0.0.1:36378 (org.apache.zookeeper.server.ZooKeeperServer)

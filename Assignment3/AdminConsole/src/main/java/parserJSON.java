@@ -25,6 +25,12 @@ public class parserJSON {
         return integer;
     }
 
+    public static double doubleParser(String unparsedJSON) {
+        Gson gson = new Gson();
+        double number = gson.fromJson(unparsedJSON, double.class);
+        return number;
+    }
+
     public static String stringParser(String unparsedJSON){
         Gson gson = new Gson();
         String string = gson.fromJson(unparsedJSON, String.class);
@@ -35,6 +41,13 @@ public class parserJSON {
         Gson gson = new Gson();
         ItemTransactions[] itemTransactions = gson.fromJson(unparsedJSON, ItemTransactions[].class);
         List<ItemTransactions> itemTransactionsList = Arrays.asList(itemTransactions);
+        return itemTransactionsList;
+    }
+
+    public static List<ItemTransactionCountry> itemTransactionCountries(String unparsedJSON){
+        Gson gson = new Gson();
+        ItemTransactionCountry[] itemTransactionCountries = gson.fromJson(unparsedJSON, ItemTransactionCountry[].class);
+        List<ItemTransactionCountry> itemTransactionsList = Arrays.asList(itemTransactionCountries);
         return itemTransactionsList;
     }
 }

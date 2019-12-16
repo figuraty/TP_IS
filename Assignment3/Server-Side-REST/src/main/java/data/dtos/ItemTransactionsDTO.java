@@ -1,43 +1,19 @@
 package data.dtos;
 
 public class ItemTransactionsDTO {
-    private String itemName;
-    private String revenues;
-    private String expenses;
-    private String profits;
-    private String avgPurchaseAmount;
-    private String highestSalesCountry;
+    private String name;
+    private String value;
 
-    public ItemTransactionsDTO(String itemName, String revenues, String expenses, String profits, String avgPurchaseAmount, String highestSalesCountry) {
-        this.itemName = itemName;
-        this.revenues = revenues;
-        this.expenses = expenses;
-        this.profits = profits;
-        this.avgPurchaseAmount = avgPurchaseAmount;
-        this.highestSalesCountry = highestSalesCountry;
+    public ItemTransactionsDTO(String name, String value) {
+        this.name = name;
+        this.value = value;
     }
 
-    public String getItemName() {
-        return itemName;
+    public String getName() {
+        return name;
     }
 
-    public String getRevenues() {
-        return revenues;
-    }
-
-    public String getExpenses() {
-        return expenses;
-    }
-
-    public String getProfits() {
-        return profits;
-    }
-
-    public String getAvgPurchaseAmount() {
-        return avgPurchaseAmount;
-    }
-
-    public String getHighestSalesCountry() {
-        return highestSalesCountry;
+    public String getValue() {
+        return value;
     }
 }

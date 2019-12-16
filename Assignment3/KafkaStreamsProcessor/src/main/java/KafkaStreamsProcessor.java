@@ -28,7 +28,7 @@ public class KafkaStreamsProcessor {
         String totalRevenuesLastHourTopic = "totalRevenuesLastHour";
         String totalExpensesLastHourTopic = "totalExpensesLastHour";
         String totalProfitLastHourTopic = "totalProfitLastHour";
-        String countryHighestSalesPerItemTopic = "countryHighestSalesPerItem";
+        String countryHighestSalesPerItemTopic = "countryHighestSalePerItem";
 
 
         Properties props = new Properties();
@@ -708,8 +708,8 @@ public class KafkaStreamsProcessor {
         ArrayList<String> varValue = new ArrayList<String>(){
             {
                 add(name);
-                add(country);
                 add(String.valueOf(salesCountry));
+                add(country);
             }
         };
 

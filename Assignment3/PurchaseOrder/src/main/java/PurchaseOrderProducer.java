@@ -12,9 +12,9 @@ import java.util.Random;
 public class PurchaseOrderProducer extends Thread {
 
     private List<String> items;
-    private int MAX_ITEMS = 10000;
+    private int MAX_ITEMS = 20;
     private int MAX_PRICE = 100;
-    private int MIN_PRICE = 10;
+    private int MIN_PRICE = 1;
 
     public PurchaseOrderProducer(List<String> items){
         this.items = items;
